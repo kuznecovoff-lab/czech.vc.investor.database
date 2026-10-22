@@ -1,0 +1,15 @@
+{
+  "name": "czech-vc-investor-database",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A source-backed pilot investor dataset and lightweight quality checks.",
+  "type": "module",
+  "scripts": {
+    "validate": "node src/cli.js validate",
+    "evaluate": "node src/cli.js evaluate",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
