@@ -1,4 +1,9 @@
 {
   "datasetDate": "2026-10-22",
+  "freeze": {
+    "frozenOn": "2026-10-22",
+    "candidatesFingerprint": "5dd76ba0d2722da9d075ffef4185bfc5bc21c8185930994eaf94e1e5c8c6f8cd",
+    "predictionsFingerprint": "8cc70f92dc3fe5354ac4bab5fba468f69e343bc90888198d9fb5bbc640081f4a"
+  },
   "reviews": []
 }

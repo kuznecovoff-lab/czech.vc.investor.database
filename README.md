@@ -4,7 +4,7 @@ An auditable pilot for identifying venture capital investors whose main operatin
 
 ## Current status
 
-The project scaffold, quality-check scripts, and first-pass profiles for three Czech VC candidates are in place. All three are named by Delta Green as investors in a dated 2024 financing. Profile sources have been collected for Credo Ventures, Tilia Impact Ventures, and Purple Ventures. The user has manually checked selected Credo and Tilia profile claims; consistent review of investment evidence and the broader candidate list remains in progress. They are not yet final included records, and no precision result or global scale estimate is claimed. Because the three were discovered through one recipient announcement, this is a demonstration sample rather than a representative estimate of the Czech VC market.
+A 20-organization pilot discovery frame has been drawn from the CzechStartups investor directory and the CVCA full-member list (docs/discovery.md). It has preliminary predictions: 4 included, 8 needs_review, 8 excluded. The frame is not frozen, and no candidate has a human review label. The user has manually checked selected sources for the original three candidates (Credo Ventures, Tilia Impact Ventures, Purple Ventures). No precision result or global scale estimate is claimed. The frame is a small pilot sample, not a representative estimate of the Czech VC market.
 
 ## Scope
 
@@ -24,7 +24,7 @@ Requires Node.js 20 or newer. No third-party packages are needed.
     npm run validate
     npm run evaluate
 
-The commands read data/investors.json and data/reviews.json. The current files are intentionally empty until records and human review are ready.
+`npm run validate` checks data/candidates.json against the candidate schema and data/investors.json against the stricter final investor schema. `npm run evaluate` reads data/investors.json and data/reviews.json. The investor and review files are intentionally empty until records and human review are ready.
 
 ## Data and evidence
 

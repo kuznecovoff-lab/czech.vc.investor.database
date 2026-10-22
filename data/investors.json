@@ -1,4 +1,689 @@
 {
   "datasetDate": "2026-10-22",
-  "records": []
+  "records": [
+    {
+      "id": "rec-credo-ventures",
+      "candidateId": "candidate-credo-ventures",
+      "name": "Credo Ventures",
+      "decision": "included",
+      "activityStatus": "active",
+      "reason": "VC (official strategy), Prague office on the official website, named in the recipient's announcement of a completed investment dated 2024-05-27, within the 36-month window.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Karlovo Náměstí 10"
+      },
+      "evidence": [
+        {
+          "claim": "direct_investment",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "eventDate": "2024-05-27",
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Credo Ventures.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the recipient company announcement screenshot showing the completed EUR 2.2m investment and naming this investor; announcement date and event date were cross-checked against the page header."
+          }
+        },
+        {
+          "claim": "strategy_stage_ticket",
+          "url": "https://www.credoventures.com/",
+          "title": "Credo Ventures",
+          "publisher": "Credo Ventures",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Pre-seed; $1M–$5M checks; CEE founders; not thesis-driven."
+        },
+        {
+          "claim": "operating_office",
+          "url": "https://www.credoventures.com/",
+          "title": "Credo Ventures",
+          "publisher": "Credo Ventures",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Prague, Karlovo Náměstí 10, Czech Republic.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the official website address in browser."
+          }
+        }
+      ]
+    },
+    {
+      "id": "rec-tilia-impact-ventures",
+      "candidateId": "candidate-tilia-impact-ventures",
+      "name": "Tilia Impact Ventures",
+      "decision": "included",
+      "activityStatus": "active",
+      "reason": "VC (official strategy and SFDR page), Prague contact address on the official homepage, named in the recipient's announcement of a completed investment dated 2024-05-27 and in a 2025-07-01 report of the completed Lifeyear round.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Drtinova 557/10"
+      },
+      "evidence": [
+        {
+          "claim": "direct_investment",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "eventDate": "2024-05-27",
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "Delta Green says it finalized the investment with three VC funds and names Tilia Impact Ventures as the lead investor.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the recipient company announcement screenshot showing the completed EUR 2.2m investment and naming this investor; announcement date and event date were cross-checked against the page header."
+          }
+        },
+        {
+          "claim": "direct_investment",
+          "url": "https://en.ain.ua/2025/07/01/lifeyear-raises-eur28m/",
+          "title": "UK-Estonian healthtech startup Lifeyear raises €2.8M to launch digital cardiovascular care platform",
+          "publisher": "AIN.Capital (news media)",
+          "eventDate": "2025-07-01",
+          "publishedDate": "2025-07-01",
+          "accessDate": "2026-10-22",
+          "excerpt": "Article dated 01 July 2025: Lifeyear \"has raised €2.8 million\"; \"The round was baked by deep tech grant funding from the Estonian government and Verge HealthTech Fund, Tilia Impact Ventures, PurposeTech, and Estonian angel investors.\" The €2.8m total includes grant funding; Tilia's individual amount is not disclosed.",
+          "eventDateBasis": "Publication date of a report of the completed round; the closing date is not stated."
+        },
+        {
+          "claim": "strategy_stage_cheque_geography_office",
+          "url": "https://tilia.vc/",
+          "title": "Tilia Impact Ventures",
+          "publisher": "Tilia Impact Ventures",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Official homepage states early-stage, impact-driven, CEE+, with a €0.3m–€1.2m initial ticket; contact address is Drtinova 557/10, Prague.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked official Tilia website screenshots."
+          }
+        },
+        {
+          "claim": "operating_office",
+          "url": "https://tilia.vc/",
+          "title": "Tilia Impact Ventures",
+          "publisher": "Tilia Impact Ventures",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Official homepage states early-stage, impact-driven, CEE+, with a €0.3m–€1.2m initial ticket; contact address is Drtinova 557/10, Prague.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked official Tilia website screenshots."
+          }
+        }
+      ]
+    },
+    {
+      "id": "rec-purple-ventures",
+      "candidateId": "candidate-purple-ventures",
+      "name": "Purple Ventures",
+      "decision": "included",
+      "activityStatus": "active",
+      "reason": "VC (official strategy), described on its own site as Brno-based with a Brno address, named in the recipient's announcement of a completed investment dated 2024-05-27. The office evidence combines a legal-identity footer with a \"Brno-based\" statement.",
+      "operatingOffice": {
+        "city": "Brno",
+        "country": "Czech Republic",
+        "address": "Masarykova 26"
+      },
+      "registeredOffice": {
+        "city": "Brno",
+        "country": "Czech Republic",
+        "address": "Masarykova 409/26"
+      },
+      "evidence": [
+        {
+          "claim": "direct_investment",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "eventDate": "2024-05-27",
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Purple Ventures.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the recipient company announcement screenshot showing the completed EUR 2.2m investment and naming this investor; announcement date and event date were cross-checked against the page header."
+          }
+        },
+        {
+          "claim": "strategy_stage_cheque_geography",
+          "url": "https://www.purple-ventures.com/",
+          "title": "Purple Ventures",
+          "publisher": "Purple Ventures",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Official website describes a venture capital fund investing in CEE+ purpose-driven technology startups at pre-seed and seed, with €250k–€400k initial tickets and later follow-ons.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the official Purple Ventures investment strategy screenshot."
+          }
+        },
+        {
+          "claim": "registered_office",
+          "url": "https://www.purple-ventures.com/privacy_policy_cz/",
+          "title": "Zásady ochrany osobních údajů — Purple Ventures",
+          "publisher": "Purple Ventures",
+          "eventDate": null,
+          "publishedDate": "2023-01-01",
+          "accessDate": "2026-10-22",
+          "excerpt": "Official privacy policy identifies Purple Ventures s.r.o. and gives registered office at Masarykova 409/26, Brno."
+        },
+        {
+          "claim": "operating_office",
+          "url": "https://www.purple-ventures.com/",
+          "title": "Purple Ventures",
+          "publisher": "Purple Ventures (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Homepage footer: \"© 2025 Purple Ventures s.r.o., Masarykova 26, 602 00 Brno, ID no: 05775574, member of Purple Holding\". A news summary on the same page refers to \"Brno-based Purple Ventures\". The footer is the legal-identity line; the \"Brno-based\" statement is the operating-location evidence."
+        }
+      ]
+    },
+    {
+      "id": "rec-up271",
+      "candidateId": "candidate-up271",
+      "name": "UP271",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "Czech office is supported, but the investor type and a dated completed direct investment are not established.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Zapova 18, Praha 5, 150 00"
+      },
+      "evidence": [
+        {
+          "claim": "strategy_and_aggregate_investment",
+          "url": "https://up271.com/en/home/",
+          "title": "Investments with an impact — UP271",
+          "publisher": "UP271 (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We invest in companies and start-ups from various industries\"; \"We manage a portfolio of more than 21 projects in which we have invested almost EUR 40 million.\" Page metadata shows 2022-10-20."
+        },
+        {
+          "claim": "operating_office",
+          "url": "https://up271.com/en/contact/",
+          "title": "Contact — UP271",
+          "publisher": "UP271 (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Contact page lists \"Office UP271 s.r.o. Zapova 18, Praha 5, 150 00 Česká republika\", IČ 06816339."
+        }
+      ]
+    },
+    {
+      "id": "rec-lighthouseventure",
+      "candidateId": "candidate-lighthouseventure",
+      "name": "Lighthouse venture",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "The official site linked from the directory shows only a US address (Mercer Island, WA); no Czech operating office. Identity rests on the directory's link.",
+      "operatingOffice": {
+        "city": "Mercer Island",
+        "country": "United States",
+        "address": "P.O Box 668, Mercer Island, WA 98040"
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "url": "https://lighthouse.ventures/",
+          "title": "Lighthouse Ventures - Making Principal Investments / Providing Financial Leadership",
+          "publisher": "Lighthouse Ventures (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Firm engaged in \"principal investments and executive financial leadership\". The directory listing links to lighthouseventuresllc.com, which redirects to this site."
+        },
+        {
+          "claim": "operating_office",
+          "url": "https://lighthouse.ventures/contact-us/",
+          "title": "Contact Us — Lighthouse Ventures",
+          "publisher": "Lighthouse Ventures (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Contact page: \"Lighthouse Ventures P.O Box 668 Mercer Island, WA 98040\". No Czech address is shown."
+        }
+      ]
+    },
+    {
+      "id": "rec-enern",
+      "candidateId": "candidate-enern",
+      "name": "Enern",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "Prague office is listed, but the investor type, its relationship to KAYA VC, and a dated direct investment are unresolved.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Prague Gate, fl.11, Türkova 2319/5b, 149 00 Prague"
+      },
+      "evidence": [
+        {
+          "claim": "operating_office",
+          "url": "https://enern.eu/contact/",
+          "title": "Contact – ENERN",
+          "publisher": "Enern (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Lists \"ENERN Investments SICAV Prague Gate, fl.11 Türkova 2319/5b 149 00 Prague\" (IČO 017 90 765) and a Warsaw office at Al. Jerozolimskie 142A."
+        },
+        {
+          "claim": "investor_type",
+          "url": "https://enern.eu/",
+          "title": "enern",
+          "publisher": "Enern (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Homepage describes Enern as \"A family of investment vehicles\"."
+        },
+        {
+          "claim": "related_entity",
+          "url": "https://www.privateequityinternational.com/kaya-vc-rolls-out-80m-fund",
+          "title": "KAYA VC rolls out $80m fund",
+          "publisher": "Private Equity International (news media)",
+          "eventDate": null,
+          "publishedDate": "2021-03-31",
+          "accessDate": "2026-10-22",
+          "excerpt": "Article dated 31 March 2021 describes Kaya as a new venture firm launched by Enern."
+        }
+      ]
+    },
+    {
+      "id": "rec-innovacapital",
+      "candidateId": "candidate-innovacapital",
+      "name": "Innova Capital",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "Private equity investing in controlling stakes of mid-sized companies, which is outside the VC pilot; the only address found (CVCA profile) is in Warsaw.",
+      "operatingOffice": {
+        "city": "Warsaw",
+        "country": "Poland",
+        "address": "Rondo ONZ1 35th floor, 00-124 Warsaw"
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "url": "https://www.innovacap.com",
+          "title": "Innova Capital",
+          "publisher": "Innova Capital (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"independent private equity firm established in 1994 in Poland with the objective of investing in controlling stakes of mid-sized companies in the CEE region\"."
+        }
+      ]
+    },
+    {
+      "id": "rec-orbitcapital",
+      "candidateId": "candidate-orbitcapital",
+      "name": "Orbit Capital",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "Growth equity/debt is borderline for VC, the operating office is supported only by a directory profile, and no dated direct investment was found.",
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "url": "https://www.orbitcapital.com",
+          "title": "Orbit Capital",
+          "publisher": "Orbit Capital (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Homepage lists \"Growth Equity\" and \"Growth Debt\" with the line \"We are here to grow innovative scale‑ups\"."
+        }
+      ]
+    },
+    {
+      "id": "rec-rsjinvestments",
+      "candidateId": "candidate-rsjinvestments",
+      "name": "RSJ Investments",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "Diversified group (real estate, agriculture, fund commitments). Whether it acts as a VC manager making direct equity investments is not established.",
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "url": "https://www.rsj.com/en/investments",
+          "title": "RSJ Investments",
+          "publisher": "RSJ (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Primary focus is \"investments in the construction of residential and office buildings\"; \"As part of our Venture Capital strategy, our portfolio now includes two companies, ElevenLabs and Pigment\"; \"We have successfully raised our Tech III fund\"."
+        }
+      ]
+    },
+    {
+      "id": "rec-macceleratorvc",
+      "candidateId": "candidate-macceleratorvc",
+      "name": "mAccelerator.vc",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "Official sources were not accessible; the office and investment activity could not be checked.",
+      "operatingOffice": null,
+      "evidence": []
+    },
+    {
+      "id": "rec-limerockventures",
+      "candidateId": "candidate-limerockventures",
+      "name": "Limerock Ventures",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "Official site places the office in Bratislava, Slovakia; outside the pilot geography.",
+      "operatingOffice": {
+        "city": "Bratislava",
+        "country": "Slovakia",
+        "address": "Paulinyho 8, 811 02 Bratislava - Staré Mesto"
+      },
+      "evidence": [
+        {
+          "claim": "operating_office",
+          "url": "https://www.limerock.sk/main",
+          "title": "Limerock",
+          "publisher": "Limerock Advisory, s.r.o. (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Limerock Advisory, s.r.o. Paulinyho 8 811 02 Bratislava - Staré Mesto Slovakia\"; manages \"JEREMIE Co-Investment Fund based on the mandate from European Investment Fund\"; looks for \"Late Seed & Series A rounds in revenue-generating firms\"."
+        }
+      ]
+    },
+    {
+      "id": "rec-impulseventures",
+      "candidateId": "candidate-impulseventures",
+      "name": "Impulse Ventures",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "Official site not accessible; the only dated investment source names Impulse Capital, which may or may not be the same organization.",
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "possible_direct_investment",
+          "url": "https://safetica.com/resources/press/safetica-secures-4musd-investment-to-accelerate-u-s-expansion-ai-innovation",
+          "title": "Safetica Secures $4M USD Investment to Accelerate U.S. Expansion & AI Innovation",
+          "publisher": "Safetica (investment recipient)",
+          "eventDate": null,
+          "publishedDate": "2025-03-17",
+          "accessDate": "2026-10-22",
+          "excerpt": "Release dated Mar 17, 2025: \"The investment comes from existing investors, led by Ondřej Tomek (Impulse Capital) and Jakub Mahdal\". It names Impulse Capital, not Impulse Ventures."
+        }
+      ]
+    },
+    {
+      "id": "rec-kayavc",
+      "candidateId": "candidate-kayavc",
+      "name": "Kaya VC",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "Principal office among four listed offices is not identified, the investment source does not confirm completion, and the relationship to Enern is unresolved.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Thámova 183/11, 186 00"
+      },
+      "evidence": [
+        {
+          "claim": "strategy_offices_capital",
+          "url": "https://www.kaya.vc/",
+          "title": "KAYA",
+          "publisher": "KAYA (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We invest in ambitious & gritty founders from CEE; pre-seed through to meaningful scale.\" Figures: \"$500M AUM Total\", \"$1–3M Ticket\", \"Pre+Seed Round\", \"$85M Current Fund\". Offices: Warszawa Rondo ONZ 1; Prague Thámova 183/11; San Francisco; London."
+        },
+        {
+          "claim": "possible_direct_investment",
+          "url": "https://www.pillsburylaw.com/en/news-and-insights/pillsbury-advises-kaya-investment-e2b.html",
+          "title": "Pillsbury Advises Kaya on Investment in E2B",
+          "publisher": "Pillsbury Winthrop Shaw Pittman (Kaya's legal counsel)",
+          "eventDate": null,
+          "publishedDate": "2025-07-31",
+          "accessDate": "2026-10-22",
+          "excerpt": "Dated 07.31.25: Pillsbury advised Kaya \"in connection with its participation as one of several investors in the $21 million Series A funding round for E2B\". It does not state that the round closed. $21m is the round total, not Kaya's cheque."
+        }
+      ]
+    },
+    {
+      "id": "rec-sandbergcapital",
+      "candidateId": "candidate-sandbergcapital",
+      "name": "Sandberg Capital",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "Private equity fund manager, outside the VC pilot.",
+      "operatingOffice": {
+        "city": "Bratislava",
+        "country": "Slovakia",
+        "address": "Dvořákovo nábrežie 8, 811 02 Bratislava"
+      },
+      "evidence": [
+        {
+          "claim": "investor_type_and_offices",
+          "url": "https://sandbergcapital.com/",
+          "title": "Sandberg Capital",
+          "publisher": "Sandberg Capital (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Manages \"alternatívnych investičných fondov, ktoré sú zamerané na investovanie do private equity\"; offices: Bratislava, Dvořákovo nábrežie 8, and Praha, Italská 2581/67."
+        }
+      ]
+    },
+    {
+      "id": "rec-everitacapital",
+      "candidateId": "candidate-everitacapital",
+      "name": "EVERITA Capital",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "Growth private equity for businesses beyond the startup phase with at least €3m revenue, outside the VC pilot.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Evropská 11/2758, 160 00 Praha 6 / Na Florenci 2116/15, 110 00 Praha 1"
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "url": "https://everitacap.com/",
+          "title": "EVERITA Capital",
+          "publisher": "EVERITA Capital (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We partner with SMEs ready to scale, investing €2m–5m in minority or majority stakes\"; \"We partner with businesses beyond the startup phase that have already achieved at least €3m in revenue.\""
+        }
+      ]
+    },
+    {
+      "id": "rec-purposetech",
+      "candidateId": "candidate-purposetech",
+      "name": "PurposeTech",
+      "decision": "included",
+      "activityStatus": "active",
+      "reason": "VC pre-seed fund with a Prague address on its official site, named in a dated report (2025-07-01) of a completed Lifeyear round within the 36-month window. The investment source is news media, not the investor or recipient.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Drtinova 557/10, 150 00 Prague"
+      },
+      "evidence": [
+        {
+          "claim": "strategy_stage",
+          "url": "https://www.purposetech.vc",
+          "title": "PurposeTech",
+          "publisher": "PurposeTech (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"PurposeTech is a pre-seed fund that backs founders reshaping Health, Climate, and the Future of Work.\" \"13 investments made\"."
+        },
+        {
+          "claim": "operating_office",
+          "url": "https://www.purposetech.vc",
+          "title": "PurposeTech",
+          "publisher": "PurposeTech (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Mailing address PurposeTech, s.r.o. Drtinova 557/10, 150 00 Prague Czech Republic\"."
+        },
+        {
+          "claim": "direct_investment",
+          "url": "https://en.ain.ua/2025/07/01/lifeyear-raises-eur28m/",
+          "title": "UK-Estonian healthtech startup Lifeyear raises €2.8M to launch digital cardiovascular care platform",
+          "publisher": "AIN.Capital (news media)",
+          "eventDate": "2025-07-01",
+          "publishedDate": "2025-07-01",
+          "accessDate": "2026-10-22",
+          "excerpt": "Article dated 01 July 2025: Lifeyear \"has raised €2.8 million\"; \"The round was baked by deep tech grant funding from the Estonian government and Verge HealthTech Fund, Tilia Impact Ventures, PurposeTech, and Estonian angel investors.\" The €2.8m total includes grant funding; PurposeTech's individual amount is not disclosed.",
+          "eventDateBasis": "Publication date of a report of the completed round; the closing date is not stated."
+        }
+      ]
+    },
+    {
+      "id": "rec-i-and-i-biotech-investments",
+      "candidateId": "candidate-i-and-i-biotech-investments",
+      "name": "i&i Biotech Investments",
+      "decision": "needs_review",
+      "activityStatus": null,
+      "reason": "A dated completed investment by the fund vehicle exists, but the manager and its principal operating office (Luxembourg fund vs Prague adviser) are unresolved.",
+      "operatingOffice": null,
+      "registeredOffice": {
+        "city": "Luxembourg",
+        "country": "Luxembourg",
+        "address": "42, rue de la Vallée, L-2661 Luxembourg"
+      },
+      "evidence": [
+        {
+          "claim": "fund_and_adviser",
+          "url": "https://www.inibio.eu",
+          "title": "i&i Biotech Fund",
+          "publisher": "i&i Biotech Fund (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Headquarters \"i&i Biotech Fund I SCSp 42, rue de la Vallée, L-2661 Luxembourg\"; \"Investment Adviser Biotech Investments, s. r. o. Pobřežní 394/12, 186 00 Praha 8 Czech Republic\". \"We can start at €150k\"; \"Our sweet spot lies between €0.5M and €2M\"."
+        },
+        {
+          "claim": "direct_investment",
+          "url": "https://www.inibio.eu/news/captain-t-cell-closes-financing-round-to-advance-its-proprietary%2C-next-generation-tcr-t-pipeline-into-the-clinic-",
+          "title": "Captain T Cell closes financing round to advance its proprietary, next-generation TCR-T pipeline into the clinic",
+          "publisher": "i&i Biotech Fund (official website, news)",
+          "eventDate": "2025-11-17",
+          "publishedDate": "2025-11-17",
+          "accessDate": "2026-10-22",
+          "excerpt": "Dated 17. 11. 2025: Captain T Cell \"announced the successful closing of an equity financing round\"; \"Existing investors i&i Biotech Fund I SCSp, HIL-INVENT and Brandenburg Kapital also participated in the round.\" The EUR 20m figure is total funding including grants, not i&i's cheque.",
+          "eventDateBasis": "Date of the closing announcement."
+        }
+      ]
+    },
+    {
+      "id": "rec-mamprivateequityfund",
+      "candidateId": "candidate-mamprivateequityfund",
+      "name": "MAM Private Equity Fund SICAV a.s.",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "Private equity buying established trading and manufacturing companies (succession deals), outside the VC pilot.",
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "url": "https://www.mam-equity.cz/",
+          "title": "MAM Private Equity Fund",
+          "publisher": "MAM Private Equity Fund (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Investujeme do obchodních a výrobních firem na českém a slovenském trhu\"; \"Cílíme na společnosti, které nemají vyřešené nástupnictví\"; \"Aktiva pod správou (AUM) fondu k 30.06.2026 činily 724 mil. Kč.\""
+        }
+      ]
+    },
+    {
+      "id": "rec-heartcorecapital",
+      "candidateId": "candidate-heartcorecapital",
+      "name": "Heartcore Capital",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "VC with offices in Copenhagen and Paris; no Czech operating office.",
+      "operatingOffice": {
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "address": "Frederiksgade 7, 3, 1265 Copenhagen"
+      },
+      "evidence": [
+        {
+          "claim": "operating_office",
+          "url": "https://www.heartcore.com/about",
+          "title": "About — Heartcore",
+          "publisher": "Heartcore Capital (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Denmark — Frederiksgade, 7, 3, 1265 Copenhagen France — 5 Parvis Alan Turing, Station F, Paris 75013\". No Czech office listed."
+        },
+        {
+          "claim": "strategy_stage",
+          "url": "https://www.heartcore.com/",
+          "title": "Heartcore",
+          "publisher": "Heartcore Capital (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We invest in early-stage companies from inception to Series A.\""
+        }
+      ]
+    },
+    {
+      "id": "rec-hithit",
+      "candidateId": "candidate-hithit",
+      "name": "HitHit",
+      "decision": "excluded",
+      "activityStatus": null,
+      "reason": "Reward-based crowdfunding platform, not an investor making direct equity investments.",
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Karolinská 654/2, 186 00 Praha 8 - Karlín"
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "url": "https://www.hithit.com/cs/home",
+          "title": "Hithit",
+          "publisher": "Hithit s.r.o. (official website)",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "The site refers to \"odměnového crowdfundingu\" (reward-based crowdfunding); footer: \"Hithit s.r.o., Karolinská 654/2, 186 00 Praha 8 - Karlín\". No statement that Hithit itself invests in companies."
+        }
+      ]
+    }
+  ],
+  "status": "Preliminary predictions for the unfrozen 2026-10-22 discovery frame. Not human-reviewed; human labels belong only in data/reviews.json."
 }

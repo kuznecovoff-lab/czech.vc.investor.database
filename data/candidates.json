@@ -1,6 +1,6 @@
 {
   "discoveryDate": "2026-10-22",
-  "scope": "Czech VC organizations; candidate list is not the final reviewed pilot dataset.",
+  "scope": "Pilot discovery frame of Czech VC candidates (20 organizations). Not frozen; decisions here are research status, not inclusion decisions. Preliminary predictions are in data/investors.json.",
   "candidates": [
     {
       "id": "candidate-credo-ventures",
@@ -90,6 +90,26 @@
       },
       "unverifiedFields": [
         "firm-wide aggregate capital or AUM and measurement date"
+      ],
+      "discoverySources": [
+        {
+          "source": "Delta Green press release (original discovery)",
+          "sourceUrl": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "listingUrl": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "directoryCategory": null
+        },
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/credo-ventures/",
+          "directoryCategory": "#VentureCapital"
+        },
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/credo-ventures-2/",
+          "directoryCategory": null
+        }
       ]
     },
     {
@@ -172,6 +192,17 @@
             "date": "2026-10-22",
             "method": "User visually checked official Tilia application form screenshot."
           }
+        },
+        {
+          "claim": "direct_investment",
+          "sourceTitle": "UK-Estonian healthtech startup Lifeyear raises €2.8M to launch digital cardiovascular care platform",
+          "publisher": "AIN.Capital (news media)",
+          "url": "https://en.ain.ua/2025/07/01/lifeyear-raises-eur28m/",
+          "eventDate": "2025-07-01",
+          "publishedDate": "2025-07-01",
+          "accessDate": "2026-10-22",
+          "excerpt": "Article dated 01 July 2025: Lifeyear \"has raised €2.8 million\"; \"The round was baked by deep tech grant funding from the Estonian government and Verge HealthTech Fund, Tilia Impact Ventures, PurposeTech, and Estonian angel investors.\" The €2.8m total includes grant funding; Tilia's individual amount is not disclosed.",
+          "eventDateBasis": "Publication date of a report of the completed round; the closing date is not stated."
         }
       ],
       "unverifiedFields": [
@@ -212,7 +243,27 @@
           "sourceText": "max 4–5m EUR",
           "note": "Maximum total round size, not the fund’s individual cheque."
         }
-      }
+      },
+      "discoverySources": [
+        {
+          "source": "Delta Green press release (original discovery)",
+          "sourceUrl": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "listingUrl": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "directoryCategory": null
+        },
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/tilia-impact-ventures/",
+          "directoryCategory": null
+        },
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/tilia-impact-ventures-honorary-member/",
+          "directoryCategory": null
+        }
+      ]
     },
     {
       "id": "candidate-purple-ventures",
@@ -284,6 +335,16 @@
             "date": "2026-10-22",
             "method": "User visually checked the About Purple Ventures section in the Delta Green press release screenshot."
           }
+        },
+        {
+          "claim": "operating_office",
+          "sourceTitle": "Purple Ventures",
+          "publisher": "Purple Ventures (official website)",
+          "url": "https://www.purple-ventures.com/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Homepage footer: \"© 2025 Purple Ventures s.r.o., Masarykova 26, 602 00 Brno, ID no: 05775574, member of Purple Holding\". A news summary on the same page refers to \"Brno-based Purple Ventures\". The footer is the legal-identity line; the \"Brno-based\" statement is the operating-location evidence."
         }
       ],
       "unverifiedFields": [
@@ -326,7 +387,1122 @@
             "sourceDate": "2026-03-12"
           }
         ]
-      }
+      },
+      "discoverySources": [
+        {
+          "source": "Delta Green press release (original discovery)",
+          "sourceUrl": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "listingUrl": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "directoryCategory": null
+        },
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/purple-ventures/",
+          "directoryCategory": null
+        }
+      ]
+    },
+    {
+      "id": "candidate-up271",
+      "name": "UP271",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/up-271/",
+          "directoryCategory": "#VentureCapital"
+        }
+      ],
+      "investorType": {
+        "value": "unclear",
+        "basis": "Official homepage says it invests in companies and start-ups; it does not state equity terms or a VC fund structure."
+      },
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Zapova 18, Praha 5, 150 00",
+        "basis": "Official contact page, labelled Office."
+      },
+      "evidence": [
+        {
+          "claim": "strategy_and_aggregate_investment",
+          "sourceTitle": "Investments with an impact — UP271",
+          "publisher": "UP271 (official website)",
+          "url": "https://up271.com/en/home/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We invest in companies and start-ups from various industries\"; \"We manage a portfolio of more than 21 projects in which we have invested almost EUR 40 million.\" Page metadata shows 2022-10-20."
+        },
+        {
+          "claim": "operating_office",
+          "sourceTitle": "Contact — UP271",
+          "publisher": "UP271 (official website)",
+          "url": "https://up271.com/en/contact/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Contact page lists \"Office UP271 s.r.o. Zapova 18, Praha 5, 150 00 Česká republika\", IČ 06816339."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Various industries (no formal sector mandate stated)",
+          "source": "https://up271.com/en/home/"
+        },
+        "stages": {
+          "value": null,
+          "unknownReason": "Not stated on the official site."
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not stated on the official site."
+        },
+        "capitalMetrics": [
+          {
+            "amount": 40000000,
+            "currency": "EUR",
+            "operator": "approximately",
+            "metricType": "aggregate historical investment across 21+ projects",
+            "sourceDate": "2022-10-20",
+            "note": "Not fund size or AUM."
+          }
+        ]
+      },
+      "unknownFields": [
+        {
+          "field": "direct_investment",
+          "reason": "No dated completed investment found in an investor, recipient, or news source; only aggregator listings were found."
+        }
+      ]
+    },
+    {
+      "id": "candidate-lighthouseventure",
+      "name": "Lighthouse venture",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/lighthouse-venture/",
+          "directoryCategory": "#VentureCapital"
+        }
+      ],
+      "investorType": {
+        "value": "principal investor and financial leadership firm",
+        "basis": "Official homepage: principal investments and executive financial leadership."
+      },
+      "operatingOffice": {
+        "city": "Mercer Island",
+        "country": "United States",
+        "address": "P.O Box 668, Mercer Island, WA 98040",
+        "basis": "Official contact page; a P.O. box. Country inferred from the WA state code."
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "sourceTitle": "Lighthouse Ventures - Making Principal Investments / Providing Financial Leadership",
+          "publisher": "Lighthouse Ventures (official website)",
+          "url": "https://lighthouse.ventures/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Firm engaged in \"principal investments and executive financial leadership\". The directory listing links to lighthouseventuresllc.com, which redirects to this site."
+        },
+        {
+          "claim": "operating_office",
+          "sourceTitle": "Contact Us — Lighthouse Ventures",
+          "publisher": "Lighthouse Ventures (official website)",
+          "url": "https://lighthouse.ventures/contact-us/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Contact page: \"Lighthouse Ventures P.O Box 668 Mercer Island, WA 98040\". No Czech address is shown."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Not stated."
+        },
+        "stages": {
+          "value": null,
+          "unknownReason": "Not stated."
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not stated."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "direct_investment",
+          "reason": "Not searched further after the official contact page showed only a US address."
+        }
+      ]
+    },
+    {
+      "id": "candidate-enern",
+      "name": "Enern",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/enern/",
+          "directoryCategory": "#VentureCapital"
+        }
+      ],
+      "investorType": {
+        "value": "investment holding / multiple vehicles",
+        "basis": "Official homepage: \"A family of investment vehicles\". The directory describes PE and VC."
+      },
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Prague Gate, fl.11, Türkova 2319/5b, 149 00 Prague",
+        "basis": "Official contact page lists Prague and Warsaw offices; which is principal is not stated."
+      },
+      "evidence": [
+        {
+          "claim": "operating_office",
+          "sourceTitle": "Contact – ENERN",
+          "publisher": "Enern (official website)",
+          "url": "https://enern.eu/contact/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Lists \"ENERN Investments SICAV Prague Gate, fl.11 Türkova 2319/5b 149 00 Prague\" (IČO 017 90 765) and a Warsaw office at Al. Jerozolimskie 142A."
+        },
+        {
+          "claim": "investor_type",
+          "sourceTitle": "enern",
+          "publisher": "Enern (official website)",
+          "url": "https://enern.eu/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Homepage describes Enern as \"A family of investment vehicles\"."
+        },
+        {
+          "claim": "related_entity",
+          "sourceTitle": "KAYA VC rolls out $80m fund",
+          "publisher": "Private Equity International (news media)",
+          "url": "https://www.privateequityinternational.com/kaya-vc-rolls-out-80m-fund",
+          "eventDate": null,
+          "publishedDate": "2021-03-31",
+          "accessDate": "2026-10-22",
+          "excerpt": "Article dated 31 March 2021 describes Kaya as a new venture firm launched by Enern."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Not stated on the official site; the directory mentions renewable energy and internet services."
+        },
+        "stages": {
+          "value": null,
+          "unknownReason": "Not stated on the official site."
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not stated on the official site."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "direct_investment",
+          "reason": "Only aggregator listings (e.g. Caplight) were found; no investor or recipient announcement."
+        },
+        {
+          "field": "relationship_to_kaya",
+          "reason": "Sources describe Kaya as launched by Enern or as its successor; whether these are one manager or separate managers is unresolved."
+        }
+      ]
+    },
+    {
+      "id": "candidate-innovacapital",
+      "name": "Innova Capital",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/innova-capital-2/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "private equity (controlling stakes)",
+        "basis": "Official homepage."
+      },
+      "operatingOffice": {
+        "city": "Warsaw",
+        "country": "Poland",
+        "address": "Rondo ONZ1 35th floor, 00-124 Warsaw",
+        "basis": "CVCA member profile only (directory); the official homepage gives no address."
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "sourceTitle": "Innova Capital",
+          "publisher": "Innova Capital (official website)",
+          "url": "https://www.innovacap.com",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"independent private equity firm established in 1994 in Poland with the objective of investing in controlling stakes of mid-sized companies in the CEE region\"."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Not stated on the official homepage."
+        },
+        "stages": {
+          "value": "Controlling stakes in mid-sized companies",
+          "source": "https://www.innovacap.com"
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Official homepage does not state it; the CVCA profile lists EUR 20–50m, which is directory-stated and undated."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": []
+    },
+    {
+      "id": "candidate-orbitcapital",
+      "name": "Orbit Capital",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/orbit-capital-2/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "growth equity and growth debt",
+        "basis": "Official homepage lists Growth Equity and Growth Debt for scale-ups."
+      },
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "sourceTitle": "Orbit Capital",
+          "publisher": "Orbit Capital (official website)",
+          "url": "https://www.orbitcapital.com",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Homepage lists \"Growth Equity\" and \"Growth Debt\" with the line \"We are here to grow innovative scale‑ups\"."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Official site does not state it; the CVCA profile lists technology and technology-enabled scale-ups."
+        },
+        "stages": {
+          "value": "Scale-ups (growth stage)",
+          "source": "https://www.orbitcapital.com"
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Official site does not state it; the CVCA profile lists growth equity EUR 6–15m and venture debt EUR 2–6m (directory-stated, undated)."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "operating_office",
+          "reason": "Official homepage shows no address; a Prague address (Türkova 2319/5B) appears only in the CVCA member profile."
+        },
+        {
+          "field": "direct_investment",
+          "reason": "Only aggregator listings were found; no investor or recipient announcement."
+        }
+      ]
+    },
+    {
+      "id": "candidate-rsjinvestments",
+      "name": "RSJ Investments",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/rsj-investments-2/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "diversified investment group",
+        "basis": "Official investments page: real estate, agriculture, fund commitments, and a venture capital strategy."
+      },
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "sourceTitle": "RSJ Investments",
+          "publisher": "RSJ (official website)",
+          "url": "https://www.rsj.com/en/investments",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Primary focus is \"investments in the construction of residential and office buildings\"; \"As part of our Venture Capital strategy, our portfolio now includes two companies, ElevenLabs and Pigment\"; \"We have successfully raised our Tech III fund\"."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Real estate, agriculture, healthcare, IT, venture funds",
+          "source": "https://www.rsj.com/en/investments"
+        },
+        "stages": {
+          "value": null,
+          "unknownReason": "Not stated."
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not stated."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "operating_office",
+          "reason": "Not stated on the investments page; not checked further."
+        },
+        {
+          "field": "direct_investment",
+          "reason": "Company names are listed by year without dated announcements; whether VC holdings are direct or via funds is unclear."
+        }
+      ]
+    },
+    {
+      "id": "candidate-macceleratorvc",
+      "name": "mAccelerator.vc",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/maccelerator-vc/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "corporate VC (bank-sponsored)",
+        "basis": "Directory listing only: a venture-capital fund under the auspices of mBank."
+      },
+      "operatingOffice": null,
+      "evidence": [],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "No accessible official source."
+        },
+        "stages": {
+          "value": null,
+          "unknownReason": "No accessible official source."
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "No accessible official source."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "operating_office",
+          "reason": "maccelerator.vc failed TLS verification (certificate expired) on 2026-10-22, and the mBank group page about the fund now redirects. Aggregators mention Warsaw; unverified."
+        },
+        {
+          "field": "direct_investment",
+          "reason": "No accessible primary source."
+        }
+      ]
+    },
+    {
+      "id": "candidate-limerockventures",
+      "name": "Limerock Ventures",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/limerock-ventures/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "transaction advisory firm with a VC arm",
+        "basis": "Official site."
+      },
+      "operatingOffice": {
+        "city": "Bratislava",
+        "country": "Slovakia",
+        "address": "Paulinyho 8, 811 02 Bratislava - Staré Mesto",
+        "basis": "Official contact section."
+      },
+      "evidence": [
+        {
+          "claim": "operating_office",
+          "sourceTitle": "Limerock",
+          "publisher": "Limerock Advisory, s.r.o. (official website)",
+          "url": "https://www.limerock.sk/main",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Limerock Advisory, s.r.o. Paulinyho 8 811 02 Bratislava - Staré Mesto Slovakia\"; manages \"JEREMIE Co-Investment Fund based on the mandate from European Investment Fund\"; looks for \"Late Seed & Series A rounds in revenue-generating firms\"."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Industrial tech and other B2B, primarily Czech and Slovak region",
+          "source": "https://www.limerock.sk/main"
+        },
+        "stages": {
+          "value": "Late Seed & Series A",
+          "source": "https://www.limerock.sk/main"
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not stated."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": []
+    },
+    {
+      "id": "candidate-impulseventures",
+      "name": "Impulse Ventures",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/impulse-ventures/",
+          "directoryCategory": "#VentureCapital"
+        }
+      ],
+      "investorType": {
+        "value": "venture capital (per directory)",
+        "basis": "Directory listing only; the official site could not be accessed."
+      },
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "possible_direct_investment",
+          "sourceTitle": "Safetica Secures $4M USD Investment to Accelerate U.S. Expansion & AI Innovation",
+          "publisher": "Safetica (investment recipient)",
+          "url": "https://safetica.com/resources/press/safetica-secures-4musd-investment-to-accelerate-u-s-expansion-ai-innovation",
+          "eventDate": null,
+          "publishedDate": "2025-03-17",
+          "accessDate": "2026-10-22",
+          "excerpt": "Release dated Mar 17, 2025: \"The investment comes from existing investors, led by Ondřej Tomek (Impulse Capital) and Jakub Mahdal\". It names Impulse Capital, not Impulse Ventures."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Official site not accessible."
+        },
+        "stages": {
+          "value": null,
+          "unknownReason": "Official site not accessible."
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Official site not accessible."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "operating_office",
+          "reason": "impulseventures.com failed TLS verification (certificate hostname mismatch) on 2026-10-22."
+        },
+        {
+          "field": "direct_investment",
+          "reason": "The recipient release names \"Impulse Capital\" through an individual; whether that is this organization is unresolved."
+        }
+      ]
+    },
+    {
+      "id": "candidate-kayavc",
+      "name": "Kaya VC",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/kaya-vc/",
+          "directoryCategory": null
+        },
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/kaya-vc-2/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "venture capital",
+        "basis": "Official homepage: invests in CEE founders from pre-seed; ticket and fund figures."
+      },
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Thámova 183/11, 186 00",
+        "basis": "One of four offices on the official homepage (Warszawa, Prague, San Francisco, London); principal office not identified."
+      },
+      "evidence": [
+        {
+          "claim": "strategy_offices_capital",
+          "sourceTitle": "KAYA",
+          "publisher": "KAYA (official website)",
+          "url": "https://www.kaya.vc/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We invest in ambitious & gritty founders from CEE; pre-seed through to meaningful scale.\" Figures: \"$500M AUM Total\", \"$1–3M Ticket\", \"Pre+Seed Round\", \"$85M Current Fund\". Offices: Warszawa Rondo ONZ 1; Prague Thámova 183/11; San Francisco; London."
+        },
+        {
+          "claim": "possible_direct_investment",
+          "sourceTitle": "Pillsbury Advises Kaya on Investment in E2B",
+          "publisher": "Pillsbury Winthrop Shaw Pittman (Kaya's legal counsel)",
+          "url": "https://www.pillsburylaw.com/en/news-and-insights/pillsbury-advises-kaya-investment-e2b.html",
+          "eventDate": null,
+          "publishedDate": "2025-07-31",
+          "accessDate": "2026-10-22",
+          "excerpt": "Dated 07.31.25: Pillsbury advised Kaya \"in connection with its participation as one of several investors in the $21 million Series A funding round for E2B\". It does not state that the round closed. $21m is the round total, not Kaya's cheque."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Digital, physical and consumer economies (no narrow sector mandate)",
+          "source": "https://www.kaya.vc/"
+        },
+        "stages": {
+          "value": "Pre-seed and seed initial rounds, follow-on to scale",
+          "source": "https://www.kaya.vc/"
+        },
+        "typicalCheque": {
+          "value": {
+            "min": 1000000,
+            "max": 3000000,
+            "currency": "USD"
+          },
+          "source": "https://www.kaya.vc/"
+        },
+        "capitalMetrics": [
+          {
+            "amount": 85000000,
+            "currency": "USD",
+            "metricType": "current fund size as labelled on the homepage",
+            "sourceDate": null
+          },
+          {
+            "amount": 500000000,
+            "currency": "USD",
+            "metricType": "total AUM as labelled on the homepage",
+            "sourceDate": null,
+            "note": "Undated page; measurement date unknown."
+          }
+        ]
+      },
+      "unknownFields": [
+        {
+          "field": "principal_operating_office",
+          "reason": "Four offices are listed with no principal office; Warsaw is listed first."
+        }
+      ]
+    },
+    {
+      "id": "candidate-sandbergcapital",
+      "name": "Sandberg Capital",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/sandberg-capital/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "private equity",
+        "basis": "Official site: manages alternative investment funds focused on private equity."
+      },
+      "operatingOffice": {
+        "city": "Bratislava",
+        "country": "Slovakia",
+        "address": "Dvořákovo nábrežie 8, 811 02 Bratislava",
+        "basis": "Official site lists Bratislava and Prague offices; principal not stated."
+      },
+      "evidence": [
+        {
+          "claim": "investor_type_and_offices",
+          "sourceTitle": "Sandberg Capital",
+          "publisher": "Sandberg Capital (official website)",
+          "url": "https://sandbergcapital.com/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Manages \"alternatívnych investičných fondov, ktoré sú zamerané na investovanie do private equity\"; offices: Bratislava, Dvořákovo nábrežie 8, and Praha, Italská 2581/67."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Not stated on the homepage; the CVCA profile lists IT, education, retail, agriculture."
+        },
+        "stages": {
+          "value": "Smaller and medium-sized companies with growth potential",
+          "source": "https://sandbergcapital.com/"
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not stated on the official site; the CVCA profile lists EUR 5–20m (directory-stated)."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": []
+    },
+    {
+      "id": "candidate-everitacapital",
+      "name": "EVERITA Capital",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/everita-capital-en/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "private equity – growth capital for established SMEs",
+        "basis": "Official site."
+      },
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Evropská 11/2758, 160 00 Praha 6 / Na Florenci 2116/15, 110 00 Praha 1",
+        "basis": "Official site lists two Prague addresses without labels."
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "sourceTitle": "EVERITA Capital",
+          "publisher": "EVERITA Capital (official website)",
+          "url": "https://everitacap.com/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We partner with SMEs ready to scale, investing €2m–5m in minority or majority stakes\"; \"We partner with businesses beyond the startup phase that have already achieved at least €3m in revenue.\""
+        },
+        {
+          "claim": "direct_investment",
+          "sourceTitle": "EVERITA Capital Invests in CLINTRIAL to Support the Growth of Clinical Trials",
+          "publisher": "EVERITA Capital (official website)",
+          "url": "https://everitacap.com/",
+          "eventDate": null,
+          "publishedDate": "2026-08-31",
+          "accessDate": "2026-10-22",
+          "excerpt": "News item dated August 31, 2026 on the official homepage. Portfolio card: Clintrial, Czech Republic, Healthcare, \"Date of investment: 2026\", Fund I."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Healthcare, education, specialty manufacturing, consumer goods, business services",
+          "source": "https://everitacap.com/"
+        },
+        "stages": {
+          "value": "Established SMEs with at least €3m revenue",
+          "source": "https://everitacap.com/"
+        },
+        "typicalCheque": {
+          "value": {
+            "min": 2000000,
+            "max": 5000000,
+            "currency": "EUR"
+          },
+          "source": "https://everitacap.com/"
+        },
+        "capitalMetrics": [
+          {
+            "amount": 20000000,
+            "currency": "EUR",
+            "metricType": "EIF commitment approved for EVERITA Fund (LP commitment, not fund size)",
+            "sourceDate": "2024-12-27"
+          }
+        ]
+      },
+      "unknownFields": []
+    },
+    {
+      "id": "candidate-purposetech",
+      "name": "PurposeTech",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/purposetech/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "venture capital (pre-seed fund)",
+        "basis": "Official homepage."
+      },
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Drtinova 557/10, 150 00 Prague",
+        "basis": "Official homepage, labelled Mailing address (PurposeTech, s.r.o.)."
+      },
+      "evidence": [
+        {
+          "claim": "strategy_stage",
+          "sourceTitle": "PurposeTech",
+          "publisher": "PurposeTech (official website)",
+          "url": "https://www.purposetech.vc",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"PurposeTech is a pre-seed fund that backs founders reshaping Health, Climate, and the Future of Work.\" \"13 investments made\"."
+        },
+        {
+          "claim": "operating_office",
+          "sourceTitle": "PurposeTech",
+          "publisher": "PurposeTech (official website)",
+          "url": "https://www.purposetech.vc",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Mailing address PurposeTech, s.r.o. Drtinova 557/10, 150 00 Prague Czech Republic\"."
+        },
+        {
+          "claim": "direct_investment",
+          "sourceTitle": "UK-Estonian healthtech startup Lifeyear raises €2.8M to launch digital cardiovascular care platform",
+          "publisher": "AIN.Capital (news media)",
+          "url": "https://en.ain.ua/2025/07/01/lifeyear-raises-eur28m/",
+          "eventDate": "2025-07-01",
+          "publishedDate": "2025-07-01",
+          "accessDate": "2026-10-22",
+          "excerpt": "Article dated 01 July 2025: Lifeyear \"has raised €2.8 million\"; \"The round was baked by deep tech grant funding from the Estonian government and Verge HealthTech Fund, Tilia Impact Ventures, PurposeTech, and Estonian angel investors.\" The €2.8m total includes grant funding; PurposeTech's individual amount is not disclosed.",
+          "eventDateBasis": "Publication date of a report of the completed round; the closing date is not stated."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Health, Climate, Future of Work",
+          "source": "https://www.purposetech.vc"
+        },
+        "stages": {
+          "value": "Pre-seed",
+          "source": "https://www.purposetech.vc"
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "The official FAQ answer is placeholder text; aggregator figures were not used."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "capital_metrics",
+          "reason": "No fund size on the official site."
+        }
+      ]
+    },
+    {
+      "id": "candidate-i-and-i-biotech-investments",
+      "name": "i&i Biotech Investments",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/biotech-investments/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "venture capital (biotech)",
+        "basis": "Official site: seed and growth investments in drug discovery, medtech, diagnostics."
+      },
+      "operatingOffice": null,
+      "registeredOffice": {
+        "city": "Luxembourg",
+        "country": "Luxembourg",
+        "address": "42, rue de la Vallée, L-2661 Luxembourg",
+        "basis": "Official site labels this the headquarters of i&i Biotech Fund I SCSp."
+      },
+      "evidence": [
+        {
+          "claim": "fund_and_adviser",
+          "sourceTitle": "i&i Biotech Fund",
+          "publisher": "i&i Biotech Fund (official website)",
+          "url": "https://www.inibio.eu",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Headquarters \"i&i Biotech Fund I SCSp 42, rue de la Vallée, L-2661 Luxembourg\"; \"Investment Adviser Biotech Investments, s. r. o. Pobřežní 394/12, 186 00 Praha 8 Czech Republic\". \"We can start at €150k\"; \"Our sweet spot lies between €0.5M and €2M\"."
+        },
+        {
+          "claim": "direct_investment",
+          "sourceTitle": "Captain T Cell closes financing round to advance its proprietary, next-generation TCR-T pipeline into the clinic",
+          "publisher": "i&i Biotech Fund (official website, news)",
+          "url": "https://www.inibio.eu/news/captain-t-cell-closes-financing-round-to-advance-its-proprietary%2C-next-generation-tcr-t-pipeline-into-the-clinic-",
+          "eventDate": "2025-11-17",
+          "publishedDate": "2025-11-17",
+          "accessDate": "2026-10-22",
+          "excerpt": "Dated 17. 11. 2025: Captain T Cell \"announced the successful closing of an equity financing round\"; \"Existing investors i&i Biotech Fund I SCSp, HIL-INVENT and Brandenburg Kapital also participated in the round.\" The EUR 20m figure is total funding including grants, not i&i's cheque.",
+          "eventDateBasis": "Date of the closing announcement."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Drug discovery, medtech, diagnostics, AI",
+          "source": "https://www.inibio.eu"
+        },
+        "stages": {
+          "value": "Seed and growth",
+          "source": "https://www.inibio.eu"
+        },
+        "typicalCheque": {
+          "value": {
+            "min": 500000,
+            "max": 2000000,
+            "currency": "EUR",
+            "note": "\"sweet spot\"; seed can start at €150k"
+          },
+          "source": "https://www.inibio.eu"
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": [
+        {
+          "field": "manager_identity",
+          "reason": "The investing vehicle is a Luxembourg SCSp; the Prague company is named as investment adviser. The manager (GP) is not named."
+        },
+        {
+          "field": "principal_operating_office",
+          "reason": "Depends on the unresolved manager identity."
+        },
+        {
+          "field": "capital_metrics",
+          "reason": "Fund size not stated on the official site."
+        }
+      ]
+    },
+    {
+      "id": "candidate-mamprivateequityfund",
+      "name": "MAM Private Equity Fund SICAV a.s.",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CVCA full members",
+          "sourceUrl": "https://cvca.cz/en/category/full-members/",
+          "listingUrl": "https://cvca.cz/en/mam-private-equity-fund-sicav-a-s/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "private equity (acquisitions, succession)",
+        "basis": "Official site."
+      },
+      "operatingOffice": null,
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "sourceTitle": "MAM Private Equity Fund",
+          "publisher": "MAM Private Equity Fund (official website)",
+          "url": "https://www.mam-equity.cz/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Investujeme do obchodních a výrobních firem na českém a slovenském trhu\"; \"Cílíme na společnosti, které nemají vyřešené nástupnictví\"; \"Aktiva pod správou (AUM) fondu k 30.06.2026 činily 724 mil. Kč.\""
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": "Trading and manufacturing companies",
+          "source": "https://www.mam-equity.cz/"
+        },
+        "stages": {
+          "value": "Established companies without resolved succession",
+          "source": "https://www.mam-equity.cz/"
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not verified on the official site; the CVCA profile lists EUR 2–8m equity (directory-stated)."
+        },
+        "capitalMetrics": [
+          {
+            "amount": 724000000,
+            "currency": "CZK",
+            "metricType": "fund AUM",
+            "sourceDate": "2026-06-30"
+          }
+        ]
+      },
+      "unknownFields": [
+        {
+          "field": "operating_office",
+          "reason": "Not shown on the official homepage; the CVCA profile lists Klimentská 1216/46, Praha 1."
+        }
+      ]
+    },
+    {
+      "id": "candidate-heartcorecapital",
+      "name": "Heartcore Capital",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/heartcore-capital/",
+          "directoryCategory": null
+        }
+      ],
+      "investorType": {
+        "value": "venture capital",
+        "basis": "Official homepage."
+      },
+      "operatingOffice": {
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "address": "Frederiksgade 7, 3, 1265 Copenhagen",
+        "basis": "Official about page lists Copenhagen and Paris; no Czech office."
+      },
+      "evidence": [
+        {
+          "claim": "operating_office",
+          "sourceTitle": "About — Heartcore",
+          "publisher": "Heartcore Capital (official website)",
+          "url": "https://www.heartcore.com/about",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"Denmark — Frederiksgade, 7, 3, 1265 Copenhagen France — 5 Parvis Alan Turing, Station F, Paris 75013\". No Czech office listed."
+        },
+        {
+          "claim": "strategy_stage",
+          "sourceTitle": "Heartcore",
+          "publisher": "Heartcore Capital (official website)",
+          "url": "https://www.heartcore.com/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "\"We invest in early-stage companies from inception to Series A.\""
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Not stated as a mandate on the homepage."
+        },
+        "stages": {
+          "value": "Inception to Series A",
+          "source": "https://www.heartcore.com/"
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not stated."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": []
+    },
+    {
+      "id": "candidate-hithit",
+      "name": "HitHit",
+      "status": "candidate",
+      "decision": "pending_manual_review",
+      "discoverySources": [
+        {
+          "source": "CzechStartups.gov.cz investor directory",
+          "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+          "listingUrl": "https://czechstartups.gov.cz/investori_en/hithit/",
+          "directoryCategory": "#Crowdfunding"
+        }
+      ],
+      "investorType": {
+        "value": "reward-based crowdfunding platform",
+        "basis": "Official site."
+      },
+      "operatingOffice": {
+        "city": "Prague",
+        "country": "Czech Republic",
+        "address": "Karolinská 654/2, 186 00 Praha 8 - Karlín",
+        "basis": "Operator address in the site footer."
+      },
+      "evidence": [
+        {
+          "claim": "investor_type",
+          "sourceTitle": "Hithit",
+          "publisher": "Hithit s.r.o. (official website)",
+          "url": "https://www.hithit.com/cs/home",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "The site refers to \"odměnového crowdfundingu\" (reward-based crowdfunding); footer: \"Hithit s.r.o., Karolinská 654/2, 186 00 Praha 8 - Karlín\". No statement that Hithit itself invests in companies."
+        }
+      ],
+      "profileFindings": {
+        "sectors": {
+          "value": null,
+          "unknownReason": "Not applicable: platform, not an investor."
+        },
+        "stages": {
+          "value": null,
+          "unknownReason": "Not applicable."
+        },
+        "typicalCheque": {
+          "value": null,
+          "unknownReason": "Not applicable."
+        },
+        "capitalMetrics": []
+      },
+      "unknownFields": []
     }
-  ]
+  ],
+  "frame": {
+    "method": "docs/discovery.md",
+    "snapshots": [
+      "data/discovery/czechstartups-investors-2026-10-22.json",
+      "data/discovery/cvca-full-members-2026-10-22.json"
+    ],
+    "selection": "Existing 3 candidates preserved; 17 more taken in seeded SHA-256 order from the deduplicated union of both directory snapshots (src/frame.js, seed assignment-a-frame-2026-10-22).",
+    "seed": "assignment-a-frame-2026-10-22",
+    "size": 20,
+    "frozen": false
+  }
 }

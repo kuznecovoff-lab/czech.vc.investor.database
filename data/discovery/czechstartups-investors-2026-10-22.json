@@ -1,0 +1,403 @@
+{
+  "source": "CzechStartups.gov.cz investor directory",
+  "sourceUrl": "https://czechstartups.gov.cz/en/startup-ecosystem/investors/",
+  "accessDate": "2026-10-22",
+  "pageDate": null,
+  "note": "Discovery only. Listing order as shown on the page (50 entries, no total shown). directoryCategory is the filter label attached to the entry in the page HTML (vc_grid-term class) when that term has a visible filter button; directoryTermIds lists term IDs that have no visible label on the page, so their meaning is unknown. Neither is a verified investor type. Listing is not evidence of investment activity.",
+  "entries": [
+    {
+      "position": 1,
+      "name": "Heartcore Capital",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/heartcore-capital/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 2,
+      "name": "Tachles VC",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/tachles-vc/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 3,
+      "name": "QQ Capital",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/qq-capital/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 4,
+      "name": "Limerock Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/limerock-ventures/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 5,
+      "name": "AgriBoom Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/agriboom-ventures/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "874",
+        "808"
+      ]
+    },
+    {
+      "position": 6,
+      "name": "Flying Founders",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/flying-founders/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 7,
+      "name": "Kaya VC",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/kaya-vc/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 8,
+      "name": "The Seeders",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/the-seeders/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "810"
+      ]
+    },
+    {
+      "position": 9,
+      "name": "Taiwania Capital",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/taiwania-capital/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 10,
+      "name": "PurposeTech",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/purposetech/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 11,
+      "name": "NEWTON University Angel Fund",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/newton-university-angel-fund/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 12,
+      "name": "Czech Founders VC",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/czech-founders-vc/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 13,
+      "name": "KB SmartSolutions",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/kb-smartsolutions/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "874",
+        "808"
+      ]
+    },
+    {
+      "position": 14,
+      "name": "Purple Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/purple-ventures/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 15,
+      "name": "Lumus Investment",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/lumus-investment/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "810"
+      ]
+    },
+    {
+      "position": 16,
+      "name": "Tensor Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/tensor-ventures/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 17,
+      "name": "J&T Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/jt-ventures/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 18,
+      "name": "RSJ Investments",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/rsj-investments-2/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 19,
+      "name": "Fazole Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/fazole-ventures/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 20,
+      "name": "Tilia Impact Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/tilia-impact-ventures/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "808"
+      ]
+    },
+    {
+      "position": 21,
+      "name": "Startupstart.cz",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/startupstart-cz/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "884"
+      ]
+    },
+    {
+      "position": 22,
+      "name": "Startovač",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/startovac/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "884"
+      ]
+    },
+    {
+      "position": 23,
+      "name": "Penězdroj",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/penezdroj/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "884"
+      ]
+    },
+    {
+      "position": 24,
+      "name": "mAccelerator.vc",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/maccelerator-vc/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "874"
+      ]
+    },
+    {
+      "position": 25,
+      "name": "Seed Starter ČS",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/seed-starter/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "874"
+      ]
+    },
+    {
+      "position": 26,
+      "name": "Czech Business Angel Association (CBAA)",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/czech-business-angel-association-cbaa/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "810"
+      ]
+    },
+    {
+      "position": 27,
+      "name": "Busyman",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/busyman/",
+      "directoryCategory": null,
+      "directoryTermIds": [
+        "810"
+      ]
+    },
+    {
+      "position": 28,
+      "name": "Impulse Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/impulse-ventures/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 29,
+      "name": "Garage Angels",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/garage-angels/",
+      "directoryCategory": "#BusinessAngel",
+      "directoryTermIds": []
+    },
+    {
+      "position": 30,
+      "name": "UP271",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/up-271/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 31,
+      "name": "HitHit",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/hithit/",
+      "directoryCategory": "#Crowdfunding",
+      "directoryTermIds": []
+    },
+    {
+      "position": 32,
+      "name": "Startup Yard",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/startup-yard/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 33,
+      "name": "Palefire capital",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/palefire-capital/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 34,
+      "name": "Fundlift",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/fundlift/",
+      "directoryCategory": "#Crowdfunding",
+      "directoryTermIds": []
+    },
+    {
+      "position": 35,
+      "name": "N1",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/nation-1/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 36,
+      "name": "Lighthouse venture",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/lighthouse-venture/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 37,
+      "name": "Genesis Capital",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/genesis-capital/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 38,
+      "name": "Reflex Capital",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/reflex-capital/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 39,
+      "name": "Soulmates Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/soulmates/",
+      "directoryCategory": null,
+      "directoryTermIds": []
+    },
+    {
+      "position": 40,
+      "name": "Credo Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/credo-ventures/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 41,
+      "name": "Czech Private Equity and Venture Capital Association",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/czech-private-equity-and-venture-capital-association/",
+      "directoryCategory": "#VentureCapital #EuropeanVentureNetworks",
+      "directoryTermIds": []
+    },
+    {
+      "position": 42,
+      "name": "EBAN",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/eban/",
+      "directoryCategory": "#EuropeanVentureNetworks",
+      "directoryTermIds": []
+    },
+    {
+      "position": 43,
+      "name": "Enern",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/enern/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 44,
+      "name": "INVEN Capital",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/inven-capital/",
+      "directoryCategory": "#CorporateVC",
+      "directoryTermIds": []
+    },
+    {
+      "position": 45,
+      "name": "Miton",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/miton/",
+      "directoryCategory": "#BusinessAngel",
+      "directoryTermIds": []
+    },
+    {
+      "position": 46,
+      "name": "Opifer Investments",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/opifer-investments/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 47,
+      "name": "Rockaway Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/rockaway-ventures/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 48,
+      "name": "Springtide Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/springtide-ventures/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 49,
+      "name": "Y Soft Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/y-soft-ventures/",
+      "directoryCategory": "#VentureCapital",
+      "directoryTermIds": []
+    },
+    {
+      "position": 50,
+      "name": "DEPO Ventures",
+      "listingUrl": "https://czechstartups.gov.cz/investori_en/depo-ventures/",
+      "directoryCategory": "#BusinessAngel",
+      "directoryTermIds": []
+    }
+  ]
+}
