@@ -141,7 +141,12 @@
           "eventDate": null,
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
-          "excerpt": "The recipient release says Tilia had announced its second fund with €30m; it does not clarify whether this is target, final close, or aggregate firm capital."
+          "excerpt": "The recipient release says Tilia had announced its second fund with €30m; it does not clarify whether this is target, final close, or aggregate firm capital.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the About Tilia section in the Delta Green press release screenshot."
+          }
         },
         {
           "claim": "investment_criteria_and_round_size",
@@ -244,6 +249,21 @@
           "publishedDate": "2026-03-12",
           "accessDate": "2026-10-22",
           "excerpt": "Fund II had raised more than CZK 700m from 52 investors, deployed CZK 250m, and was targeting a final size of €40m; this is Fund II fundraising, not aggregate firm-wide AUM."
+        },
+        {
+          "claim": "fund_II_target_at_launch",
+          "sourceTitle": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "eventDate": null,
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "The About Purple Ventures section says its second fund had a €40m target; this is a launch target, not a final close or firm-wide total.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the About Purple Ventures section in the Delta Green press release screenshot."
+          }
         }
       ],
       "unverifiedFields": [
@@ -269,6 +289,13 @@
           "address": "Masarykova 409/26"
         },
         "capitalMetrics": [
+          {
+            "amount": 40000000,
+            "currency": "EUR",
+            "metricType": "Fund II target at launch",
+            "sourceDate": "2024-10-22",
+            "note": "Later public update reported over CZK 700m raised by 2026-03-12."
+          },
           {
             "amount": 700000000,
             "currency": "CZK",
