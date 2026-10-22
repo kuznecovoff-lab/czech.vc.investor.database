@@ -17,9 +17,28 @@
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
           "excerpt": "Delta Green says it finalized the investment with three VC funds, including Credo Ventures."
+        },
+        {
+          "claim": "strategy_stage_ticket",
+          "sourceTitle": "Credo Ventures",
+          "publisher": "Credo Ventures",
+          "url": "https://www.credoventures.com/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Pre-seed; $1M–$5M checks; CEE founders; not thesis-driven."
         }
       ],
-      "unverifiedFields": ["current strategy", "sectors", "typical cheque", "capital metric and date", "main office"]
+      "profileFindings": {
+        "investmentStage": ["Pre-Seed and onward"],
+        "typicalCheque": {
+          "min": 1000000,
+          "max": 5000000,
+          "currency": "USD"
+        },
+        "sectorApproach": "Not thesis-driven; backs technical founders from CEE and its diaspora."
+      },
+      "unverifiedFields": ["main office", "total capital metric and date"]
     },
     {
       "id": "candidate-tilia-impact-ventures",
