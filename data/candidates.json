@@ -243,7 +243,12 @@
           "eventDate": null,
           "publishedDate": null,
           "accessDate": "2026-10-22",
-          "excerpt": "Official website describes a venture capital fund investing in CEE+ purpose-driven technology startups at pre-seed and seed, with €250k–€400k initial tickets and later follow-ons."
+          "excerpt": "Official website describes a venture capital fund investing in CEE+ purpose-driven technology startups at pre-seed and seed, with €250k–€400k initial tickets and later follow-ons.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the official Purple Ventures investment strategy screenshot."
+          }
         },
         {
           "claim": "main_office_and_legal_identity",
