@@ -111,7 +111,12 @@
           "eventDate": null,
           "publishedDate": null,
           "accessDate": "2026-10-22",
-          "excerpt": "Official homepage states early-stage, impact-driven, CEE+, with a €0.3m–€1.2m initial ticket; contact address is Drtinova 557/10, Prague."
+          "excerpt": "Official homepage states early-stage, impact-driven, CEE+, with a €0.3m–€1.2m initial ticket; contact address is Drtinova 557/10, Prague.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked official Tilia website screenshots."
+          }
         },
         {
           "claim": "sector_strategy_and_stage",
@@ -121,7 +126,12 @@
           "eventDate": null,
           "publishedDate": null,
           "accessDate": "2026-10-22",
-          "excerpt": "Fund II states a venture capital strategy, typically seed/startup or Series A; impact themes are Planet (climate/sustainability transition) and People (education, empowerment, health and wellbeing/social equity)."
+          "excerpt": "Fund II states a venture capital strategy, typically seed/startup or Series A; impact themes are Planet (climate/sustainability transition) and People (education, empowerment, health and wellbeing/social equity).",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked official Tilia website screenshots."
+          }
         },
         {
           "claim": "fund_size_at_launch",
@@ -132,6 +142,21 @@
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
           "excerpt": "The recipient release says Tilia had announced its second fund with €30m; it does not clarify whether this is target, final close, or aggregate firm capital."
+        },
+        {
+          "claim": "investment_criteria_and_round_size",
+          "sourceTitle": "Website application — Tilia Impact Ventures",
+          "publisher": "Tilia Impact Ventures (official application form)",
+          "url": "https://airtable.com/app46VdGR14F1M9El/pagMoUEzfoGE1q8YS/form",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Application criteria: CEE connection; impact in climate, education, healthcare or social inclusion; pre-seed/seed/Series A; investment round maximum €4–5m. The round cap is not an individual Tilia cheque.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked official Tilia application form screenshot."
+          }
         }
       ],
       "unverifiedFields": [
@@ -140,15 +165,16 @@
       ],
       "profileFindings": {
         "investmentStage": [
-          "Early stage",
-          "Seed/startup",
-          "Series A (Fund II disclosure)"
+          "Pre-Seed",
+          "Seed",
+          "Series A"
         ],
         "typicalCheque": {
           "min": 300000,
           "max": 1200000,
           "currency": "EUR",
-          "basis": "initial ticket"
+          "basis": "initial ticket",
+          "note": "Official homepage initial ticket: €0.3m–€1.2m; separate application form says rounds may be up to €4–5m."
         },
         "sectorApproach": "Sector-agnostic but impact-driven; focus themes are environmental sustainability/climate transition and social equity including education, empowerment, health and wellbeing.",
         "investmentGeography": "Czech Republic, CEE+",
@@ -164,7 +190,13 @@
             "metricType": "Fund II size stated at launch; exact target/close status not specified",
             "sourceDate": "2024-10-22"
           }
-        ]
+        ],
+        "maxRoundSize": {
+          "max": 5000000,
+          "currency": "EUR",
+          "sourceText": "max 4–5m EUR",
+          "note": "Maximum total round size, not the fund’s individual cheque."
+        }
       }
     },
     {

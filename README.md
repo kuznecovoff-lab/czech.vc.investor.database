@@ -4,7 +4,7 @@ An auditable pilot for identifying venture capital investors whose main operatin
 
 ## Current status
 
-The project scaffold, quality-check scripts, and first-pass profiles for three Czech VC candidates are in place. All three are named by Delta Green as investors in a dated 2024 financing. Profile sources have been collected for Credo Ventures, Tilia Impact Ventures, and Purple Ventures; the human review is still in progress. They are not yet final included records, and no precision result or global scale estimate is claimed. Because the three candidates were discovered through one recipient announcement, this is a demonstration sample rather than a representative estimate of the Czech VC market.
+The project scaffold, quality-check scripts, and first-pass profiles for three Czech VC candidates are in place. All three are named by Delta Green as investors in a dated 2024 financing. Profile sources have been collected for Credo Ventures, Tilia Impact Ventures, and Purple Ventures. The user has manually checked selected Credo and Tilia profile claims; consistent review of investment evidence and the broader candidate list remains in progress. They are not yet final included records, and no precision result or global scale estimate is claimed. Because the three were discovered through one recipient announcement, this is a demonstration sample rather than a representative estimate of the Czech VC market.
 
 ## Scope
 
