@@ -42,6 +42,16 @@
             "date": "2026-10-22",
             "method": "User visually checked the official website address in browser."
           }
+        },
+        {
+          "claim": "latest_fund_size",
+          "sourceTitle": "Credo Ventures | LinkedIn: Credo Stage V announcement",
+          "publisher": "Credo Ventures (official LinkedIn company page)",
+          "url": "https://www.linkedin.com/company/credo-ventures",
+          "eventDate": "2026-03-23",
+          "publishedDate": "2026-03-23",
+          "accessDate": "2026-10-22",
+          "excerpt": "Credo announced Credo Stage V, a new $88M fund. This is the size of Fund V only, not a disclosed firm-wide aggregate capital figure."
         }
       ],
       "profileFindings": {
@@ -56,9 +66,17 @@
           "city": "Prague",
           "country": "Czech Republic",
           "address": "Karlovo Náměstí 10"
+        },
+        "latestFundSize": {
+          "fund": "Credo Stage V",
+          "amount": 88000000,
+          "currency": "USD",
+          "announcedDate": "2026-03-23",
+          "metricType": "individual_fund_size",
+          "note": "Not the firm's aggregate capital or AUM."
         }
       },
-      "unverifiedFields": ["total capital metric and date"]
+      "unverifiedFields": ["firm-wide aggregate capital or AUM and measurement date"]
     },
     {
       "id": "candidate-tilia-impact-ventures",
