@@ -60,7 +60,9 @@
         }
       ],
       "profileFindings": {
-        "investmentStage": ["Pre-Seed and onward"],
+        "investmentStage": [
+          "Pre-Seed and onward"
+        ],
         "typicalCheque": {
           "min": 1000000,
           "max": 5000000,
@@ -81,7 +83,9 @@
           "note": "Not the firm's aggregate capital or AUM."
         }
       },
-      "unverifiedFields": ["firm-wide aggregate capital or AUM and measurement date"]
+      "unverifiedFields": [
+        "firm-wide aggregate capital or AUM and measurement date"
+      ]
     },
     {
       "id": "candidate-tilia-impact-ventures",
@@ -98,9 +102,70 @@
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
           "excerpt": "Delta Green says it finalized the investment with three VC funds and names Tilia Impact Ventures as the lead investor."
+        },
+        {
+          "claim": "strategy_stage_cheque_geography_office",
+          "sourceTitle": "Tilia Impact Ventures",
+          "publisher": "Tilia Impact Ventures",
+          "url": "https://tilia.vc/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Official homepage states early-stage, impact-driven, CEE+, with a €0.3m–€1.2m initial ticket; contact address is Drtinova 557/10, Prague."
+        },
+        {
+          "claim": "sector_strategy_and_stage",
+          "sourceTitle": "Sustainability-related disclosures — Tilia Impact Ventures Fund II",
+          "publisher": "Tilia Impact Ventures",
+          "url": "https://tilia.vc/sfdr/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Fund II states a venture capital strategy, typically seed/startup or Series A; impact themes are Planet (climate/sustainability transition) and People (education, empowerment, health and wellbeing/social equity)."
+        },
+        {
+          "claim": "fund_size_at_launch",
+          "sourceTitle": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "eventDate": null,
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "The recipient release says Tilia had announced its second fund with €30m; it does not clarify whether this is target, final close, or aggregate firm capital."
         }
       ],
-      "unverifiedFields": ["current strategy", "sectors", "typical cheque", "capital metric and date", "main office"]
+      "unverifiedFields": [
+        "firm-wide aggregate capital or AUM and measurement date",
+        "exact Fund II final close"
+      ],
+      "profileFindings": {
+        "investmentStage": [
+          "Early stage",
+          "Seed/startup",
+          "Series A (Fund II disclosure)"
+        ],
+        "typicalCheque": {
+          "min": 300000,
+          "max": 1200000,
+          "currency": "EUR",
+          "basis": "initial ticket"
+        },
+        "sectorApproach": "Sector-agnostic but impact-driven; focus themes are environmental sustainability/climate transition and social equity including education, empowerment, health and wellbeing.",
+        "investmentGeography": "Czech Republic, CEE+",
+        "mainOffice": {
+          "city": "Prague",
+          "country": "Czech Republic",
+          "address": "Drtinova 557/10"
+        },
+        "capitalMetrics": [
+          {
+            "amount": 30000000,
+            "currency": "EUR",
+            "metricType": "Fund II size stated at launch; exact target/close status not specified",
+            "sourceDate": "2024-10-22"
+          }
+        ]
+      }
     },
     {
       "id": "candidate-purple-ventures",
@@ -117,9 +182,72 @@
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
           "excerpt": "Delta Green says it finalized the investment with three VC funds, including Purple Ventures."
+        },
+        {
+          "claim": "strategy_stage_cheque_geography",
+          "sourceTitle": "Purple Ventures",
+          "publisher": "Purple Ventures",
+          "url": "https://www.purple-ventures.com/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Official website describes a venture capital fund investing in CEE+ purpose-driven technology startups at pre-seed and seed, with €250k–€400k initial tickets and later follow-ons."
+        },
+        {
+          "claim": "main_office_and_legal_identity",
+          "sourceTitle": "Zásady ochrany osobních údajů — Purple Ventures",
+          "publisher": "Purple Ventures",
+          "url": "https://www.purple-ventures.com/privacy_policy_cz/",
+          "eventDate": null,
+          "publishedDate": "2023-01-01",
+          "accessDate": "2026-10-22",
+          "excerpt": "Official privacy policy identifies Purple Ventures s.r.o. and gives registered office at Masarykova 409/26, Brno."
+        },
+        {
+          "claim": "fundraising_status",
+          "sourceTitle": "Druhý fond Purple Ventures již získal přes 700 milionů korun a proinvestoval čtvrt miliardy",
+          "publisher": "Finance.cz (Purple Ventures press release)",
+          "url": "https://www.finance.cz/aktuality/druhy-fond-purple-ventures-jiz-ziskal-pres-700-milionu-korun-a-proinvestoval-ctvrt-miliardy-miri-k-portfoliu-50-firem/",
+          "eventDate": "2026-03-12",
+          "publishedDate": "2026-03-12",
+          "accessDate": "2026-10-22",
+          "excerpt": "Fund II had raised more than CZK 700m from 52 investors, deployed CZK 250m, and was targeting a final size of €40m; this is Fund II fundraising, not aggregate firm-wide AUM."
         }
       ],
-      "unverifiedFields": ["current strategy", "sectors", "typical cheque", "capital metric and date", "main office"]
+      "unverifiedFields": [
+        "firm-wide aggregate capital or AUM and measurement date",
+        "independent manual review of office and profile claims"
+      ],
+      "profileFindings": {
+        "investmentStage": [
+          "Pre-seed",
+          "Seed"
+        ],
+        "typicalCheque": {
+          "min": 250000,
+          "max": 400000,
+          "currency": "EUR",
+          "basis": "initial ticket; follow-ons possible"
+        },
+        "sectorApproach": "Purpose-driven technology startups; official criteria emphasize team, market, product, timing and return potential. Individual portfolio examples span AI, SaaS, health, energy and deep tech; these examples are not a formal sector mandate.",
+        "investmentGeography": "CEE+",
+        "mainOffice": {
+          "city": "Brno",
+          "country": "Czech Republic",
+          "address": "Masarykova 409/26"
+        },
+        "capitalMetrics": [
+          {
+            "amount": 700000000,
+            "currency": "CZK",
+            "operator": "greater_than",
+            "metricType": "Fund II capital raised by 2026-03-12",
+            "targetAmount": 40000000,
+            "targetCurrency": "EUR",
+            "sourceDate": "2026-03-12"
+          }
+        ]
+      }
     }
   ]
 }

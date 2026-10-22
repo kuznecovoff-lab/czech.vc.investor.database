@@ -70,4 +70,4 @@ Measure pilot time per candidate, review share, pages checked, unresolved share,
 - src/ and tests/: repeatable validation and metric calculation.
 - ai-log/: authentic AI conversation exports, with secrets removed.
 
-Current status (2026-10-22): scaffold created. Three candidates have direct-investment evidence from one official recipient announcement, but their full profiles and manual review are still pending. No precision or global count is claimed.
+Current status (2026-10-22): first-pass public profiles and dated investment evidence are collected for Credo Ventures, Tilia Impact Ventures, and Purple Ventures. The direct-investment evidence is the same recipient announcement, so candidate discovery is not independent and the sample is not representative. The user has manually checked Credo's Prague address and its Stage V announcement; Tilia and Purple profile claims still require manual review. No precision or global count is claimed. Next, broaden discovery beyond investors in the Delta Green round, freeze the candidate list, manually label inclusions/exclusions/unresolved cases, then calculate precision.
