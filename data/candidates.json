@@ -1,0 +1,63 @@
+{
+  "discoveryDate": "2026-10-22",
+  "scope": "Czech VC organizations; candidate list is not the final reviewed pilot dataset.",
+  "candidates": [
+    {
+      "id": "candidate-credo-ventures",
+      "name": "Credo Ventures",
+      "status": "candidate",
+      "decision": "pending_profile_and_manual_review",
+      "evidence": [
+        {
+          "claim": "direct_investment",
+          "sourceTitle": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "eventDate": "2024-05-27",
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Credo Ventures."
+        }
+      ],
+      "unverifiedFields": ["current strategy", "sectors", "typical cheque", "capital metric and date", "main office"]
+    },
+    {
+      "id": "candidate-tilia-impact-ventures",
+      "name": "Tilia Impact Ventures",
+      "status": "candidate",
+      "decision": "pending_profile_and_manual_review",
+      "evidence": [
+        {
+          "claim": "direct_investment",
+          "sourceTitle": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "eventDate": "2024-05-27",
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "Delta Green says it finalized the investment with three VC funds and names Tilia Impact Ventures as the lead investor."
+        }
+      ],
+      "unverifiedFields": ["current strategy", "sectors", "typical cheque", "capital metric and date", "main office"]
+    },
+    {
+      "id": "candidate-purple-ventures",
+      "name": "Purple Ventures",
+      "status": "candidate",
+      "decision": "pending_profile_and_manual_review",
+      "evidence": [
+        {
+          "claim": "direct_investment",
+          "sourceTitle": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures",
+          "publisher": "Delta Green (investment recipient)",
+          "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+          "eventDate": "2024-05-27",
+          "publishedDate": "2024-10-22",
+          "accessDate": "2026-10-22",
+          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Purple Ventures."
+        }
+      ],
+      "unverifiedFields": ["current strategy", "sectors", "typical cheque", "capital metric and date", "main office"]
+    }
+  ]
+}

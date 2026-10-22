@@ -4,7 +4,7 @@ An auditable pilot for identifying venture capital investors whose main operatin
 
 ## Current status
 
-The project scaffold and quality-check scripts are in place. The verified pilot dataset, manual review, precision result, and global scale estimate are still in progress. No investor is marked as included until its evidence has been checked.
+The project scaffold and quality-check scripts are in place. Three candidate organizations have dated direct-investment evidence from the same recipient announcement; their full profiles and independent manual review are still in progress. They are not yet final included records, and no precision result or global scale estimate is claimed.
 
 ## Scope
 

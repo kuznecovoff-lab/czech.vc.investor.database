@@ -70,4 +70,4 @@ Measure pilot time per candidate, review share, pages checked, unresolved share,
 - src/ and tests/: repeatable validation and metric calculation.
 - ai-log/: authentic AI conversation exports, with secrets removed.
 
-Current status: scaffold created; no pilot records have yet passed evidence review, so no precision or global count is claimed.
+Current status (2026-10-22): scaffold created. Three candidates have direct-investment evidence from one official recipient announcement, but their full profiles and manual review are still pending. No precision or global count is claimed.
