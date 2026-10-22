@@ -38,7 +38,7 @@ Use association and ecosystem directories only to discover candidates. Membershi
 
 ## Candidate discovery and verification workflow
 
-1. Freeze and save candidate lists from public discovery sources.
+1. Freeze and save candidate lists from public discovery sources. For the Czech pilot, start with the [CzechStartups investor directory](https://czechstartups.gov.cz/en/startup-ecosystem/investors/), its [venture capital overview](https://czechstartups.gov.cz/en/startup-ecosystem/capital/venture-capital/), and the [CVCA member directory](https://cvca.cz/en/membership/). These are discovery frames only: the government directory spans multiple investor types, while CVCA also has associated members and PE firms. Neither directory entry nor membership proves an organization's direct investments.
 2. Normalize names and domains; manually resolve duplicates and related funds.
 3. Inspect official strategy and portfolio pages.
 4. Find a dated completed investment announcement from the investor or recipient.
