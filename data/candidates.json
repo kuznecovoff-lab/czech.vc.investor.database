@@ -16,7 +16,12 @@
           "eventDate": "2024-05-27",
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
-          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Credo Ventures."
+          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Credo Ventures.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the recipient company announcement screenshot showing the completed EUR 2.2m investment and naming this investor; announcement date and event date were cross-checked against the page header."
+          }
         },
         {
           "claim": "strategy_stage_ticket",
@@ -101,7 +106,12 @@
           "eventDate": "2024-05-27",
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
-          "excerpt": "Delta Green says it finalized the investment with three VC funds and names Tilia Impact Ventures as the lead investor."
+          "excerpt": "Delta Green says it finalized the investment with three VC funds and names Tilia Impact Ventures as the lead investor.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the recipient company announcement screenshot showing the completed EUR 2.2m investment and naming this investor; announcement date and event date were cross-checked against the page header."
+          }
         },
         {
           "claim": "strategy_stage_cheque_geography_office",
@@ -218,7 +228,12 @@
           "eventDate": "2024-05-27",
           "publishedDate": "2024-10-22",
           "accessDate": "2026-10-22",
-          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Purple Ventures."
+          "excerpt": "Delta Green says it finalized the investment with three VC funds, including Purple Ventures.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the recipient company announcement screenshot showing the completed EUR 2.2m investment and naming this investor; announcement date and event date were cross-checked against the page header."
+          }
         },
         {
           "claim": "strategy_stage_cheque_geography",
