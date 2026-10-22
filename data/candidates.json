@@ -51,7 +51,12 @@
           "eventDate": "2026-03-23",
           "publishedDate": "2026-03-23",
           "accessDate": "2026-10-22",
-          "excerpt": "Credo announced Credo Stage V, a new $88M fund. This is the size of Fund V only, not a disclosed firm-wide aggregate capital figure."
+          "excerpt": "Credo announced Credo Stage V, a new $88M fund. This is the size of Fund V only, not a disclosed firm-wide aggregate capital figure.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the official Credo Ventures LinkedIn post and attached a screenshot."
+          }
         }
       ],
       "profileFindings": {
