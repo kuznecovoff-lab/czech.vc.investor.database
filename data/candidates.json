@@ -27,6 +27,21 @@
           "publishedDate": null,
           "accessDate": "2026-10-22",
           "excerpt": "Pre-seed; $1M–$5M checks; CEE founders; not thesis-driven."
+        },
+        {
+          "claim": "main_office",
+          "sourceTitle": "Credo Ventures",
+          "publisher": "Credo Ventures",
+          "url": "https://www.credoventures.com/",
+          "eventDate": null,
+          "publishedDate": null,
+          "accessDate": "2026-10-22",
+          "excerpt": "Prague, Karlovo Náměstí 10, Czech Republic.",
+          "manualVerification": {
+            "reviewer": "user",
+            "date": "2026-10-22",
+            "method": "User visually checked the official website address in browser."
+          }
         }
       ],
       "profileFindings": {
@@ -36,9 +51,14 @@
           "max": 5000000,
           "currency": "USD"
         },
-        "sectorApproach": "Not thesis-driven; backs technical founders from CEE and its diaspora."
+        "sectorApproach": "Not thesis-driven; backs technical founders from CEE and its diaspora.",
+        "mainOffice": {
+          "city": "Prague",
+          "country": "Czech Republic",
+          "address": "Karlovo Náměstí 10"
+        }
       },
-      "unverifiedFields": ["main office", "total capital metric and date"]
+      "unverifiedFields": ["total capital metric and date"]
     },
     {
       "id": "candidate-tilia-impact-ventures",
