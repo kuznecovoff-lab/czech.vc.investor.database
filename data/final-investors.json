@@ -1,0 +1,319 @@
+{
+  "datasetDate": "2026-10-22",
+  "scope": "Final investor records for the frozen candidates that the human reviewer labelled eligible in data/reviews.json. Unit of record: the VC manager organization; funds are listed under capital, not as separate investors. Every fact names its own source items; facts not established from checked public sources have value null and an unavailableReason.",
+  "activeRule": "activityStatus is active only when at least one completed direct investment has an eventDate between 2023-10-22 and the frozen datasetDate 2026-10-22 (36 months).",
+  "sourceCheckNote": "userChecked is true only where data/candidates.json records the user's own manual check of that source. Other sources were opened and read with Claude Code (WebFetch) on the access date and support a candidate the user labelled eligible, but the individual field was not separately recorded as user-checked.",
+  "records": [
+    {
+      "id": "investor-credo-ventures",
+      "candidateId": "candidate-credo-ventures",
+      "name": "Credo Ventures",
+      "officialWebsite": "https://www.credoventures.com/",
+      "humanLabel": "eligible",
+      "activityStatus": "active",
+      "investorType": { "value": "Venture capital manager (early-stage)", "sources": ["credo-type"] },
+      "operatingOffice": {
+        "value": { "city": "Prague", "country": "Czech Republic", "address": "Karlovo Náměstí 10, 120 00 Prague" },
+        "sources": ["credo-office"],
+        "note": "The official site also lists an office in Kraków, Poland. It does not label either as headquarters; the reviewer accepted Prague as the principal operating base."
+      },
+      "registeredOffice": { "value": null, "unavailableReason": "Not checked in a public registry for this pilot; not needed because the operating office is evidenced separately." },
+      "sectorFocus": { "value": "No fixed sector thesis; backs CEE founders and the CEE diaspora", "sources": ["credo-sector"] },
+      "stage": { "value": "Pre-seed onwards; leads pre-seed rounds", "sources": ["credo-stage"] },
+      "ticket": { "value": { "min": 1000000, "max": 5000000, "currency": "USD", "basis": "stated check size" }, "sources": ["credo-ticket"] },
+      "capital": [
+        {
+          "metricType": "individual fund size (Credo Stage V)",
+          "value": { "amount": 88000000, "currency": "USD", "asOf": "2026-03-23" },
+          "sources": ["credo-fund-v"],
+          "note": "Size of Fund V only. Not firm-wide capital or AUM."
+        }
+      ],
+      "aum": { "value": null, "unavailableReason": "No firm-wide AUM figure with a measurement date was found in checked public sources. Fund sizes are not added together to infer AUM." },
+      "investments": [
+        {
+          "company": "Delta Green",
+          "eventDate": "2024-05-27",
+          "role": "co-investor (Tilia Impact Ventures led)",
+          "roundTotal": { "amount": 2200000, "currency": "EUR" },
+          "investorAmount": null,
+          "investorAmountReason": "Not disclosed; the recipient says financial terms are confidential.",
+          "sources": ["deltagreen-release", "czechcrunch-purple-fund2"],
+          "note": "The recipient release (page dated 2024-10-22) has the dateline \"May 27, Prague\" without a year; CzechCrunch (2024-06-27) places the investment in May 2024."
+        },
+        {
+          "company": "Axoflow",
+          "eventDate": "2025-01-17",
+          "role": "existing investor increasing its stake in the seed round (EBRD Venture Capital led)",
+          "roundTotal": { "amount": 7000000, "currency": "USD" },
+          "investorAmount": null,
+          "investorAmountReason": "Not disclosed.",
+          "sources": ["credo-axoflow"],
+          "note": "eventDate is the press-release dateline (17/01/2025); the blog post is dated 2025-01-21. A formal closing date is not stated; the company says it \"has raised\" the round."
+        }
+      ],
+      "sourceItems": [
+        { "id": "credo-type", "claim": "investor_type", "url": "https://www.credoventures.com/", "title": "Credo Ventures", "publisher": "Credo Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"The fund of choice for CEE founders around the world building generational companies.\" Lists \"5 Funds\".", "userChecked": false },
+        { "id": "credo-office", "claim": "operating_office", "url": "https://www.credoventures.com/", "title": "Credo Ventures", "publisher": "Credo Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "\"Karlovo Náměstí 10, 120 00, Prague, Czech Republic\"; also \"Lubomirskiego 20, 31-509 Kraków, Poland\".", "userChecked": true },
+        { "id": "credo-sector", "claim": "sector_focus", "url": "https://www.credoventures.com/", "title": "Credo Ventures", "publisher": "Credo Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"Backing exceptional people, not thesis-driven.\" \"From CEE, for CEE and its global diaspora.\"", "userChecked": false },
+        { "id": "credo-stage", "claim": "stage", "url": "https://www.credoventures.com/", "title": "Credo Ventures", "publisher": "Credo Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"Pre-seed — Onwards\"; \"Leading Pre-Seed rounds.\"", "userChecked": false },
+        { "id": "credo-ticket", "claim": "ticket", "url": "https://www.credoventures.com/", "title": "Credo Ventures", "publisher": "Credo Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"$1M - $5M checks.\"", "userChecked": false },
+        { "id": "credo-fund-v", "claim": "fund_size", "url": "https://www.linkedin.com/company/credo-ventures", "title": "Credo Ventures | LinkedIn: Credo Stage V announcement", "publisher": "Credo Ventures (official LinkedIn company page)", "sourceType": "official_investor", "publishedDate": "2026-03-23", "eventDate": "2026-03-23", "accessDate": "2026-10-22", "excerpt": "Credo announced Credo Stage V, a new $88M fund.", "userChecked": true },
+        { "id": "deltagreen-release", "claim": "direct_investment", "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures", "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures", "publisher": "Delta Green (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-10-22", "eventDate": "2024-05-27", "accessDate": "2026-10-22", "excerpt": "Delta Green says it finalized the EUR 2.2 million investment with three VC funds: Tilia Impact Ventures (lead), Credo Ventures and Purple Ventures. Financial terms are confidential.", "userChecked": true },
+        { "id": "czechcrunch-purple-fund2", "claim": "direct_investment_date", "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/", "title": "Brněnští Purple Ventures rozbíhají druhý fond, třem startupům poslali desítky milionů korun", "publisher": "CzechCrunch (news media)", "sourceType": "news_media", "publishedDate": "2024-06-27", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Partners \"nyní již hlásí uzavřené investice\"; Delta Green was the fund's first investment, made in May together with Tilia Impact Ventures and Credo Ventures.", "userChecked": false },
+        { "id": "credo-axoflow", "claim": "direct_investment", "url": "https://axoflow.com/7m-seed-round-for-high-quality-security-data/", "title": "$7M Seed Round for High Quality Security Data", "publisher": "Axoflow (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2025-01-21", "eventDate": "2025-01-17", "accessDate": "2026-10-26", "excerpt": "\"All existing major investors, Credo Ventures and e2vc, have significantly increased their stakes in the company.\" Round led by EBRD Venture Capital.", "userChecked": false }
+      ]
+    },
+    {
+      "id": "investor-tilia-impact-ventures",
+      "candidateId": "candidate-tilia-impact-ventures",
+      "name": "Tilia Impact Ventures",
+      "officialWebsite": "https://tilia.vc/",
+      "humanLabel": "eligible",
+      "activityStatus": "active",
+      "investorType": { "value": "Impact venture capital manager (early-stage)", "sources": ["tilia-type"] },
+      "operatingOffice": {
+        "value": { "city": "Prague", "country": "Czech Republic", "address": "Drtinova 557/10, 150 00 Prague" },
+        "sources": ["tilia-office", "tilia-office-recipient"],
+        "note": "The same building is given as PurposeTech's mailing address; for Tilia it is the official contact address, and the recipient release describes Tilia as based in Prague."
+      },
+      "registeredOffice": { "value": null, "unavailableReason": "Not checked in a public registry for this pilot." },
+      "sectorFocus": { "value": "Sector-agnostic, impact-driven: climate and sustainability transition (Planet) and education, empowerment, health and wellbeing, social equity (People); Czech and CEE+ founders", "sources": ["tilia-sector", "tilia-sfdr"] },
+      "stage": { "value": "Early stage: pre-seed/seed to Series A", "sources": ["tilia-sfdr"] },
+      "ticket": { "value": { "min": 300000, "max": 1200000, "currency": "EUR", "basis": "initial ticket; equity or convertible debt" }, "sources": ["tilia-ticket"] },
+      "capital": [
+        {
+          "metricType": "Fund II size as stated at launch",
+          "value": { "amount": 30000000, "currency": "EUR", "asOf": "2024-10-22" },
+          "sources": ["tilia-fund2"],
+          "note": "The source says Tilia recently launched a second fund of EUR 30m; it does not say whether this is a target, first close, or final close."
+        }
+      ],
+      "aum": { "value": null, "unavailableReason": "No firm-wide AUM with a measurement date found in checked public sources." },
+      "investments": [
+        {
+          "company": "Delta Green",
+          "eventDate": "2024-05-27",
+          "role": "lead investor",
+          "roundTotal": { "amount": 2200000, "currency": "EUR" },
+          "investorAmount": null,
+          "investorAmountReason": "Not disclosed; the recipient says financial terms are confidential.",
+          "sources": ["deltagreen-release", "czechcrunch-purple-fund2"],
+          "note": "See the Credo Ventures record for the dateline and year evidence."
+        },
+        {
+          "company": "FaceUp Technology",
+          "eventDate": null,
+          "eventPeriod": "2026-05",
+          "role": "participating investor (Fil Rouge Capital led)",
+          "roundTotal": { "amount": 5000000, "currency": "USD" },
+          "investorAmount": null,
+          "investorAmountReason": "Not disclosed.",
+          "sources": ["tilia-faceup"],
+          "note": "The article (2026-05-26) says the round was completed in May 2026; the exact day is not stated, so eventDate is null."
+        }
+      ],
+      "sourceItems": [
+        { "id": "tilia-type", "claim": "investor_type", "url": "https://tilia.vc/sfdr/", "title": "Sustainability-related disclosures — Tilia Impact Ventures Fund II", "publisher": "Tilia Impact Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "Fund II states a venture capital strategy, typically seed/startup or Series A.", "userChecked": true },
+        { "id": "tilia-office", "claim": "operating_office", "url": "https://tilia.vc/", "title": "Tilia Impact Ventures", "publisher": "Tilia Impact Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "Contact: \"Drtinova 557/10, 150 00 Prague, Czech Republic\".", "userChecked": true },
+        { "id": "tilia-office-recipient", "claim": "operating_office", "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures", "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures", "publisher": "Delta Green (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-10-22", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "About section describes Tilia Impact Ventures as a seed-stage venture capital fund based in Prague.", "userChecked": false },
+        { "id": "tilia-sector", "claim": "sector_focus", "url": "https://tilia.vc/", "title": "Tilia Impact Ventures", "publisher": "Tilia Impact Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"Tilia Impact Ventures backs Czech and CEE region founders to make systemic environmental and social change\"; \"Sector-agnostic, impact-driven, CEE+\".", "userChecked": false },
+        { "id": "tilia-sfdr", "claim": "sector_focus_and_stage", "url": "https://tilia.vc/sfdr/", "title": "Sustainability-related disclosures — Tilia Impact Ventures Fund II", "publisher": "Tilia Impact Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "Typically seed/startup or Series A; impact themes are Planet (climate/sustainability transition) and People (education, empowerment, health and wellbeing/social equity).", "userChecked": true },
+        { "id": "tilia-ticket", "claim": "ticket", "url": "https://tilia.vc/", "title": "Tilia Impact Ventures", "publisher": "Tilia Impact Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "\"0.3 - 1.2m EUR initial ticket\"; instruments: Equity / Convertible debt.", "userChecked": true },
+        { "id": "tilia-fund2", "claim": "fund_size", "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures", "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures", "publisher": "Delta Green (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-10-22", "eventDate": null, "accessDate": "2026-10-22", "excerpt": "The release says Tilia had recently launched its second fund with EUR 30m.", "userChecked": true },
+        { "id": "deltagreen-release", "claim": "direct_investment", "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures", "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures", "publisher": "Delta Green (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-10-22", "eventDate": "2024-05-27", "accessDate": "2026-10-22", "excerpt": "Delta Green says it finalized the EUR 2.2 million investment with three VC funds and names Tilia Impact Ventures as the lead investor.", "userChecked": true },
+        { "id": "czechcrunch-purple-fund2", "claim": "direct_investment_date", "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/", "title": "Brněnští Purple Ventures rozbíhají druhý fond, třem startupům poslali desítky milionů korun", "publisher": "CzechCrunch (news media)", "sourceType": "news_media", "publishedDate": "2024-06-27", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Delta Green was the first investment of Purple's second fund, made in May together with Tilia Impact Ventures and Credo Ventures.", "userChecked": false },
+        { "id": "tilia-faceup", "claim": "direct_investment", "url": "https://www.jic.cz/en/magazin/pribehy-uspesnych-firem/faceup-technology-prvni-volba-noveho-fondu-jic-ven", "title": "FaceUp Technology: the first investment by the new JIC Ventures fund", "publisher": "JIC (South Moravian Innovation Centre; parent of co-investor JIC Ventures)", "sourceType": "co_investor", "publishedDate": "2026-05-26", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"In May, it completed another investment round, raising $5 million.\" Lead investor Fil Rouge Capital; Tilia Impact Ventures named among the funds that invested.", "userChecked": false }
+      ]
+    },
+    {
+      "id": "investor-purple-ventures",
+      "candidateId": "candidate-purple-ventures",
+      "name": "Purple Ventures",
+      "officialWebsite": "https://www.purple-ventures.com/",
+      "humanLabel": "eligible",
+      "activityStatus": "active",
+      "investorType": { "value": "Venture capital manager (pre-seed and seed)", "sources": ["purple-type"] },
+      "operatingOffice": {
+        "value": { "city": "Brno", "country": "Czech Republic", "address": null },
+        "sources": ["purple-office", "purple-office-recipient"],
+        "note": "Operating location rests on \"Brno-based\" statements, not on the legal footer. No separate operating street address was found; the Masarykova address is recorded as the registered/legal address. Some team bios say Prague or Utrecht. The reviewer accepted Brno."
+      },
+      "registeredOffice": { "value": { "city": "Brno", "country": "Czech Republic", "address": "Masarykova 409/26, 602 00 Brno", "legalName": "Purple Ventures s.r.o.", "companyId": "05775574" }, "sources": ["purple-legal"] },
+      "sectorFocus": { "value": "CEE+ tech-enabled innovation; no formal sector mandate stated", "sources": ["purple-sector"] },
+      "stage": { "value": "Pre-seed and seed", "sources": ["purple-stage"] },
+      "ticket": { "value": { "min": 250000, "max": 400000, "currency": "EUR", "basis": "initial ticket; later follow-ons" }, "sources": ["purple-ticket"] },
+      "capital": [
+        {
+          "metricType": "Fund II target at launch",
+          "value": { "amount": 40000000, "currency": "EUR", "asOf": "2024-10-22" },
+          "sources": ["purple-fund2-target"],
+          "note": "A target, not a final close."
+        },
+        {
+          "metricType": "Fund II commitments raised to date",
+          "value": { "amount": 700000000, "currency": "CZK", "operator": "greater_than", "asOf": "2026-03-12" },
+          "sources": ["purple-fund2-raised"],
+          "note": "More than CZK 700m from 52 investors, CZK 250m deployed, final size targeted at EUR 40m. Fund II only, not firm-wide AUM."
+        }
+      ],
+      "aum": { "value": null, "unavailableReason": "No firm-wide AUM with a measurement date found in checked public sources." },
+      "investments": [
+        {
+          "company": "Delta Green",
+          "eventDate": "2024-05-27",
+          "role": "co-investor (Tilia Impact Ventures led)",
+          "roundTotal": { "amount": 2200000, "currency": "EUR" },
+          "investorAmount": null,
+          "investorAmountReason": "Not disclosed; the recipient says financial terms are confidential.",
+          "sources": ["deltagreen-release", "czechcrunch-purple-fund2"],
+          "note": "First investment of Purple's second fund, per CzechCrunch."
+        }
+      ],
+      "sourceItems": [
+        { "id": "purple-type", "claim": "investor_type", "url": "https://www.purple-ventures.com/", "title": "Purple Ventures", "publisher": "Purple Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "\"We are a venture capital fund investing into CEE+ tech-enabled innovations in pre-seed and seed stages.\"", "userChecked": true },
+        { "id": "purple-office", "claim": "operating_office", "url": "https://www.purple-ventures.com/", "title": "Purple Ventures", "publisher": "Purple Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "News item on the official site (e15 article about ArtMaster's Artie): \"Brno-based Purple Ventures has newly entered the project.\"", "userChecked": false },
+        { "id": "purple-office-recipient", "claim": "operating_office", "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures", "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures", "publisher": "Delta Green (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-10-22", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "About section describes Purple Ventures as based in Brno, Czech Republic, investing mainly in Central European technology startups with a Czech focus.", "userChecked": false },
+        { "id": "purple-legal", "claim": "registered_office", "url": "https://www.purple-ventures.com/", "title": "Purple Ventures", "publisher": "Purple Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "Footer: \"© 2025 Purple Ventures s.r.o., Masarykova 26, 602 00 Brno, ID no: 05775574, member of Purple Holding\". The privacy policy gives the registered office as Masarykova 409/26, Brno.", "userChecked": false },
+        { "id": "purple-sector", "claim": "sector_focus", "url": "https://www.purple-ventures.com/", "title": "Purple Ventures", "publisher": "Purple Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"investing into CEE+ tech-enabled innovations\"; no sector mandate is stated.", "userChecked": false },
+        { "id": "purple-stage", "claim": "stage", "url": "https://www.purple-ventures.com/", "title": "Purple Ventures", "publisher": "Purple Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Investment rounds: \"Pre-seed & Seed\".", "userChecked": false },
+        { "id": "purple-ticket", "claim": "ticket", "url": "https://www.purple-ventures.com/", "title": "Purple Ventures", "publisher": "Purple Ventures (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-22", "excerpt": "\"€250k to €400k\" initial ticket size, later follow-ons.", "userChecked": true },
+        { "id": "purple-fund2-target", "claim": "fund_target", "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures", "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures", "publisher": "Delta Green (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-10-22", "eventDate": null, "accessDate": "2026-10-22", "excerpt": "The About Purple Ventures section says its second fund had a EUR 40m target.", "userChecked": true },
+        { "id": "purple-fund2-raised", "claim": "fund_amount_raised", "url": "https://www.finance.cz/aktuality/druhy-fond-purple-ventures-jiz-ziskal-pres-700-milionu-korun-a-proinvestoval-ctvrt-miliardy-miri-k-portfoliu-50-firem/", "title": "Druhý fond Purple Ventures již získal přes 700 milionů korun a proinvestoval čtvrt miliardy", "publisher": "Finance.cz (Purple Ventures press release)", "sourceType": "news_media", "publishedDate": "2026-03-12", "eventDate": "2026-03-12", "accessDate": "2026-10-26", "excerpt": "Fund II has raised \"přes 700 milionů korun\" from 52 investors, has invested CZK 250m in 22 startups, and targets a final size of EUR 40m.", "userChecked": false },
+        { "id": "deltagreen-release", "claim": "direct_investment", "url": "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures", "title": "Czech energy innovators in the spotlight: Delta Green secures €2.2 million from Tilia Impact Ventures, Credo Ventures and Purple Ventures", "publisher": "Delta Green (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-10-22", "eventDate": "2024-05-27", "accessDate": "2026-10-22", "excerpt": "Delta Green says it finalized the EUR 2.2 million investment with three VC funds, including Purple Ventures.", "userChecked": true },
+        { "id": "czechcrunch-purple-fund2", "claim": "direct_investment_date", "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/", "title": "Brněnští Purple Ventures rozbíhají druhý fond, třem startupům poslali desítky milionů korun", "publisher": "CzechCrunch (news media)", "sourceType": "news_media", "publishedDate": "2024-06-27", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Partners \"nyní již hlásí uzavřené investice\"; Delta Green was the second fund's first investment, made in May.", "userChecked": false }
+      ]
+    },
+    {
+      "id": "investor-orbit-capital",
+      "candidateId": "candidate-orbitcapital",
+      "name": "Orbit Capital",
+      "officialWebsite": "https://www.orbitcapital.com",
+      "humanLabel": "eligible",
+      "activityStatus": "active",
+      "investorType": { "value": "Growth equity and venture-debt manager for technology scale-ups", "sources": ["orbit-type", "orbit-type-directory"] },
+      "operatingOffice": {
+        "value": { "city": "Prague", "country": "Czech Republic", "address": "Türkova 2319/5B, 149 00 Praha 4" },
+        "sources": ["orbit-office-eif", "orbit-office-directory"],
+        "note": "The EIF describes Orbit as Prague & Warsaw-based. The street address comes only from the CVCA member profile (directory-stated); the official site shows no address. The same building is listed by Enern. The reviewer accepted Prague as the principal operating base."
+      },
+      "registeredOffice": { "value": null, "unavailableReason": "Not checked in a public registry for this pilot." },
+      "sectorFocus": { "value": "Technology and technology-enabled scale-ups", "sources": ["orbit-sector-directory"] },
+      "stage": { "value": "Growth stage (scale-ups)", "sources": ["orbit-type"] },
+      "ticket": {
+        "value": { "growthDebtII": { "min": 3000000, "max": 10000000, "currency": "EUR" }, "growthEquityDirectoryStated": { "min": 6000000, "max": 15000000, "currency": "EUR" }, "ventureDebtDirectoryStated": { "min": 2000000, "max": 6000000, "currency": "EUR" } },
+        "sources": ["orbit-ticket-debt2", "orbit-ticket-directory"],
+        "note": "The Growth Debt II range is from news coverage of the fund launch; the equity and venture-debt ranges are self-reported in the CVCA directory (undated). The official site states no ticket."
+      },
+      "capital": [
+        {
+          "metricType": "Growth Debt II target fund size",
+          "value": { "amount": 100000000, "currency": "EUR", "asOf": "2025-06-17" },
+          "sources": ["orbit-office-eif"],
+          "note": "Target. First closing held on 27 May (2025, per the EIF release date)."
+        },
+        {
+          "metricType": "Growth Debt II first close",
+          "value": { "amount": 70000000, "currency": "EUR", "asOf": "2025-06-17" },
+          "sources": ["orbit-ticket-debt2"],
+          "note": "First close only, from news coverage."
+        },
+        {
+          "metricType": "Growth Debt I fund size",
+          "value": { "amount": 40000000, "currency": "EUR", "asOf": "2025-06-17" },
+          "sources": ["orbit-office-eif"],
+          "note": "Predecessor debt fund that started operations in 2019."
+        }
+      ],
+      "aum": { "value": null, "unavailableReason": "No firm-wide AUM with a measurement date found. The CVCA profile's self-reported figures (growth equity \"Scaling to EUR 200 million\", venture debt EUR 30 million) are undated and not used as AUM." },
+      "investments": [
+        {
+          "company": "CloudTalk",
+          "eventDate": "2024-01-17",
+          "role": "existing investor supporting the Series B (KPN Ventures and Lead Ventures co-led)",
+          "roundTotal": { "amount": 28000000, "currency": "USD" },
+          "investorAmount": null,
+          "investorAmountReason": "Not disclosed.",
+          "sources": ["orbit-cloudtalk", "orbit-cloudtalk-news"],
+          "note": "eventDate is the announcement date; the recipient says it raised the round, \"closing its Series B funding\". The instrument Orbit used is not stated. The EIF lists CloudTalk among Orbit Growth Debt I's investments, so Orbit's exposure may be venture debt rather than equity."
+        }
+      ],
+      "sourceItems": [
+        { "id": "orbit-type", "claim": "investor_type_and_stage", "url": "https://www.orbitcapital.com", "title": "Orbit Capital", "publisher": "Orbit Capital (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Homepage lists \"Growth Equity\" and \"Growth Debt\" with the line \"We are here to grow innovative scale-ups\".", "userChecked": false },
+        { "id": "orbit-type-directory", "claim": "investor_type", "url": "https://cvca.cz/en/orbit-capital-2/", "title": "Orbit Capital — CVCA member profile", "publisher": "Czech Private Equity and Venture Capital Association (CVCA)", "sourceType": "association_directory", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Type: \"Growth equity and venture debt\".", "userChecked": false },
+        { "id": "orbit-office-eif", "claim": "operating_office_and_fund", "url": "https://www.eif.org/press/all/eif-pledges-eur20-million-to-fuel-expansion-of-cee-based-innovative-smes-via-orbit-growth-debt-ii-fund", "title": "EIF Pledges €20 Million to Fuel Expansion of CEE-Based Innovative SMEs via Orbit Growth Debt II Fund", "publisher": "European Investment Fund (LP in the fund)", "sourceType": "public_institution", "publishedDate": "2025-06-17", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Fund \"managed by Prague & Warsaw-based Orbit Capital\"; \"aims for a total size of €100 million\"; first closing on May 27th; predecessor is \"a €40 million fund which started operations in 2019\" and backed CloudTalk.", "userChecked": false },
+        { "id": "orbit-office-directory", "claim": "operating_office", "url": "https://cvca.cz/en/orbit-capital-2/", "title": "Orbit Capital — CVCA member profile", "publisher": "Czech Private Equity and Venture Capital Association (CVCA)", "sourceType": "association_directory", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Address: \"Türkova 2319/5B 149 00 Praha 4\"; contact Radovan Nesrsta, Partner.", "userChecked": false },
+        { "id": "orbit-sector-directory", "claim": "sector_focus", "url": "https://cvca.cz/en/orbit-capital-2/", "title": "Orbit Capital — CVCA member profile", "publisher": "Czech Private Equity and Venture Capital Association (CVCA)", "sourceType": "association_directory", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Sectors: \"Technology and technology-enabled scale-ups\".", "userChecked": false },
+        { "id": "orbit-ticket-debt2", "claim": "ticket_and_fund_close", "url": "https://vestbee.com/insights/articles/orbit-capital-launches-100-m-fund", "title": "Orbit Capital launches €100M fund to support CEE tech firms", "publisher": "Vestbee (news media)", "sourceType": "news_media", "publishedDate": "2025-06-17", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"completed a €70 million first close of its Growth Debt II fund, aiming for a total of €100 million\"; \"offering ticket sizes ranging from €3 million to €10 million\".", "userChecked": false },
+        { "id": "orbit-ticket-directory", "claim": "ticket", "url": "https://cvca.cz/en/orbit-capital-2/", "title": "Orbit Capital — CVCA member profile", "publisher": "Czech Private Equity and Venture Capital Association (CVCA)", "sourceType": "association_directory", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"Growth Equity: EUR 6 – 15 million\"; \"Venture Debt: EUR 2 – 6 million\".", "userChecked": false },
+        { "id": "orbit-cloudtalk", "claim": "direct_investment", "url": "https://www.cloudtalk.io/blog/cloudtalk-raised-28-million-funding-to-lead-the-new-era-of-ai-powered-voice-communication/", "title": "CloudTalk Raised $28 Million Funding to Lead the New Era of AI-Powered Voice Communication", "publisher": "CloudTalk (investment recipient)", "sourceType": "recipient_company", "publishedDate": "2024-01-17", "eventDate": "2024-01-17", "accessDate": "2026-10-26", "excerpt": "\"successfully raised a $28 million round, closing its Series B funding\"; \"supported by existing investors Point Nine Capital, henQ, Presto Ventures, and Orbit Capital.\" The page shows \"Updated on January 17, 2024\".", "userChecked": false },
+        { "id": "orbit-cloudtalk-news", "claim": "direct_investment", "url": "https://en.ain.ua/2024/01/17/cloudtalk-raises-28m-series-b-round", "title": "Slovak call center software CloudTalk raises $28M Series B round", "publisher": "AIN.Capital (news media)", "sourceType": "news_media", "publishedDate": "2024-01-17", "eventDate": "2024-01-17", "accessDate": "2026-10-26", "excerpt": "Funding \"co-led by KPN Ventures and Lead Ventures\" and \"supported by existing investors Point Nine Capital, henQ, Presto Ventures, and Orbit Capital.\"", "userChecked": false }
+      ]
+    },
+    {
+      "id": "investor-kaya-vc",
+      "candidateId": "candidate-kayavc",
+      "name": "KAYA VC",
+      "officialWebsite": "https://www.kaya.vc/",
+      "humanLabel": "eligible",
+      "activityStatus": "active",
+      "investorType": { "value": "Venture capital manager (pre-seed onwards)", "sources": ["kaya-type", "kaya-history"] },
+      "operatingOffice": {
+        "value": { "city": "Prague", "country": "Czech Republic", "address": "Thámova 183/11, 186 00 Prague 8 – Karlín" },
+        "sources": ["kaya-office", "kaya-office-directory", "kaya-history"],
+        "note": "The official site lists Warsaw, Prague, San Francisco and London without naming a headquarters. CVCA lists only the Prague address, and TechCrunch (2021) calls KAYA Prague-based. The reviewer accepted Prague."
+      },
+      "registeredOffice": { "value": null, "unavailableReason": "Not checked in a public registry for this pilot." },
+      "relatedEntities": {
+        "value": "Enern (separate frozen candidate, labelled unresolved). Sources describe KAYA as the renamed Enern VC business or as Enern's VC successor; the records may overlap.",
+        "sources": ["kaya-history", "kaya-enern-pei"]
+      },
+      "sectorFocus": { "value": "Generalist: digital, physical and consumer economies; CEE founders", "sources": ["kaya-sector"] },
+      "stage": { "value": "Pre-seed and seed initial rounds, following on to scale", "sources": ["kaya-type"] },
+      "ticket": { "value": { "min": 1000000, "max": 3000000, "currency": "USD", "basis": "pre-seed/seed round ticket" }, "sources": ["kaya-ticket"] },
+      "capital": [
+        {
+          "metricType": "current fund size as labelled on the homepage",
+          "value": { "amount": 85000000, "currency": "USD", "asOf": null },
+          "sources": ["kaya-capital"],
+          "note": "Undated page; the fund name and close status are not stated."
+        },
+        {
+          "metricType": "fund size at launch (first KAYA fund)",
+          "value": { "amount": 72000000, "currency": "EUR", "asOf": "2021-03-31" },
+          "sources": ["kaya-history"],
+          "note": "Launch figure (about USD 80M); close status not stated."
+        }
+      ],
+      "aum": {
+        "value": { "amount": 500000000, "currency": "USD", "asOf": null, "label": "AUM Total (as labelled on the homepage)" },
+        "sources": ["kaya-capital"],
+        "note": "Self-reported, undated, and its scope (for example whether it includes Enern-era vehicles) is not explained."
+      },
+      "investments": [
+        {
+          "company": "E2B",
+          "eventDate": "2025-07-28",
+          "role": "participating investor in the Series A (Insight Partners led)",
+          "roundTotal": { "amount": 21000000, "currency": "USD" },
+          "investorAmount": null,
+          "investorAmountReason": "Not disclosed.",
+          "sources": ["kaya-e2b", "kaya-e2b-counsel"],
+          "note": "eventDate is the lead investor's announcement date; the release says E2B \"has raised\" the round and does not use the word \"closed\"."
+        }
+      ],
+      "sourceItems": [
+        { "id": "kaya-type", "claim": "investor_type_and_stage", "url": "https://www.kaya.vc/", "title": "KAYA", "publisher": "KAYA (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"We invest in ambitious & gritty founders from CEE; pre-seed through to meaningful scale.\"", "userChecked": false },
+        { "id": "kaya-office", "claim": "operating_office", "url": "https://www.kaya.vc/", "title": "KAYA", "publisher": "KAYA (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Offices: Warszawa \"Rondo ONZ 1, 00-124\"; Prague \"Thámova 183/11, 186 00\"; San Francisco; London. No headquarters is named.", "userChecked": false },
+        { "id": "kaya-office-directory", "claim": "operating_office", "url": "https://cvca.cz/en/kaya-vc-2/", "title": "KAYA VC — CVCA member profile", "publisher": "Czech Private Equity and Venture Capital Association (CVCA)", "sourceType": "association_directory", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Address: \"Thámova 183/11 186 00 Prague 8 – Karlín\"; contact Tomáš Pačinda, Partner.", "userChecked": false },
+        { "id": "kaya-history", "claim": "investor_type_location_and_history", "url": "https://techcrunch.com/?p=2132469", "title": "Kaya VC launches its new $80M fund, focusing on Prague, Warsaw and the CEE region", "publisher": "TechCrunch (news media)", "sourceType": "news_media", "publishedDate": "2021-03-31", "eventDate": null, "accessDate": "2026-10-26", "excerpt": "Describes a \"Prague-based VC\", previously named Enern, which \"has changed its name to better reflect its modern focus\"; fund of €72 million ($80 million).", "userChecked": false },
+        { "id": "kaya-enern-pei", "claim": "related_entity", "url": "https://www.privateequityinternational.com/kaya-vc-rolls-out-80m-fund", "title": "KAYA VC rolls out $80m fund", "publisher": "Private Equity International (news media)", "sourceType": "news_media", "publishedDate": "2021-03-31", "eventDate": null, "accessDate": "2026-10-22", "excerpt": "Article dated 31 March 2021 describes Kaya as a new venture firm launched by Enern.", "userChecked": false },
+        { "id": "kaya-sector", "claim": "sector_focus", "url": "https://www.kaya.vc/", "title": "KAYA", "publisher": "KAYA (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"We support 60+ teams building at the frontier of digital, physical, and consumer economies.\"", "userChecked": false },
+        { "id": "kaya-ticket", "claim": "ticket", "url": "https://www.kaya.vc/", "title": "KAYA", "publisher": "KAYA (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"$1–3M\" ticket, listed with \"Pre+Seed\" round.", "userChecked": false },
+        { "id": "kaya-capital", "claim": "fund_size_and_aum", "url": "https://www.kaya.vc/", "title": "KAYA", "publisher": "KAYA (official website)", "sourceType": "official_investor", "publishedDate": null, "eventDate": null, "accessDate": "2026-10-26", "excerpt": "\"$85M\" labelled \"Current Fund\"; \"$500M\" labelled \"AUM Total\".", "userChecked": false },
+        { "id": "kaya-e2b", "claim": "direct_investment", "url": "https://www.insightpartners.com/ideas/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100/", "title": "E2B Raises a $21M Series A to Offer Cloud for AI Agents to Fortune 100", "publisher": "Insight Partners (lead investor)", "sourceType": "co_investor", "publishedDate": "2025-07-28", "eventDate": "2025-07-28", "accessDate": "2026-10-26", "excerpt": "E2B has raised a $21 million Series A led by Insight Partners, \"with participation from Decibel, Sunflower Capital, and Kaya.\"", "userChecked": false },
+        { "id": "kaya-e2b-counsel", "claim": "direct_investment", "url": "https://www.pillsburylaw.com/en/news-and-insights/pillsbury-advises-kaya-investment-e2b.html", "title": "Pillsbury Advises Kaya on Investment in E2B", "publisher": "Pillsbury Winthrop Shaw Pittman (Kaya's legal counsel)", "sourceType": "advisor", "publishedDate": "2025-07-31", "eventDate": null, "accessDate": "2026-10-22", "excerpt": "Pillsbury advised Kaya \"in connection with its participation as one of several investors in the $21 million Series A funding round for E2B\".", "userChecked": false }
+      ]
+    }
+  ]
+}

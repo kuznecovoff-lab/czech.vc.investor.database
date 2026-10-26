@@ -1,5 +1,5 @@
 import { readFile } from "node:fs/promises";
-import { validateDataset, validateCandidates, validateReviews } from "./validate.js";
+import { validateDataset, validateCandidates, validateReviews, validateFinalInvestors } from "./validate.js";
 import { evaluate, fingerprint } from "./evaluate.js";
 
 async function readJson(path) {
@@ -20,12 +20,15 @@ const command = process.argv[2];
 const candidateData = await readJson("../data/candidates.json");
 const dataset = await readJson("../data/investors.json");
 const reviewData = await readJson("../data/reviews.json");
+const finalData = await readJson("../data/final-investors.json");
 const candidateIds = new Set((candidateData.candidates ?? []).map((candidate) => candidate.id));
+const labelByCandidate = new Map((reviewData.reviews ?? []).map((review) => [review.candidateId, review.label]));
 
 if (command === "validate") {
   report("Candidates (data/candidates.json)", validateCandidates(candidateData), candidateData.candidates?.length ?? 0);
   report("Investors (data/investors.json)", validateDataset(dataset), dataset.records?.length ?? 0);
   report("Human reviews (data/reviews.json)", validateReviews(reviewData, candidateIds), reviewData.reviews?.length ?? 0);
+  report("Final investors (data/final-investors.json)", validateFinalInvestors(finalData, labelByCandidate), finalData.records?.length ?? 0);
 } else if (command === "evaluate") {
   const reviewErrors = validateReviews(reviewData, candidateIds);
   if (reviewErrors.length) {

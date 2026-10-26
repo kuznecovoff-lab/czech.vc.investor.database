@@ -164,6 +164,140 @@ export function validateReviews(data, candidateIds) {
   return errors;
 }
 
+const FACT_FIELDS = ["investorType", "operatingOffice", "registeredOffice", "sectorFocus", "stage", "ticket", "aum"];
+const OPTIONAL_FACT_FIELDS = ["relatedEntities"];
+const YEAR_MONTH = /^\d{4}-\d{2}$/;
+
+// A fact either has a value backed by source items, or no value and a reason.
+function checkFact(fact, where, sourceIds, errors) {
+  if (!fact || typeof fact !== "object") {
+    errors.push(where + " must be an object.");
+    return;
+  }
+  if (fact.value == null) {
+    if (!isText(fact.unavailableReason)) errors.push(where + " has no value and needs an unavailableReason.");
+    return;
+  }
+  if (!Array.isArray(fact.sources) || !fact.sources.length) {
+    errors.push(where + " has a value but no sources.");
+    return;
+  }
+  for (const id of fact.sources) {
+    if (!sourceIds.has(id)) errors.push(where + " cites unknown source item " + id + ".");
+  }
+}
+
+// Final investor records: only candidates a human labelled eligible, each fact sourced.
+// labelByCandidate maps candidateId to the human label from data/reviews.json.
+export function validateFinalInvestors(data, labelByCandidate) {
+  const errors = [];
+  if (!data || typeof data !== "object" || !Array.isArray(data.records)) {
+    return ["Final investor file must be an object with a records array."];
+  }
+  const datasetDateValid = isDate(data.datasetDate);
+  if (!datasetDateValid) errors.push("datasetDate must use YYYY-MM-DD.");
+  const windowStart = datasetDateValid ? activeWindowStart(data.datasetDate) : null;
+
+  const ids = new Set();
+  const covered = new Set();
+  for (const [index, record] of data.records.entries()) {
+    const where = "records[" + index + "]";
+    if (!record || typeof record !== "object") {
+      errors.push(where + " must be an object.");
+      continue;
+    }
+    if (!isText(record.id)) errors.push(where + ".id is required.");
+    else if (ids.has(record.id)) errors.push(where + ".id duplicates " + record.id + ".");
+    else ids.add(record.id);
+    if (!isText(record.name)) errors.push(where + ".name is required.");
+    if (record.humanLabel !== "eligible") errors.push(where + ".humanLabel must be eligible.");
+    if (labelByCandidate.get(record.candidateId) !== "eligible") {
+      errors.push(where + ".candidateId " + record.candidateId + " has no eligible human label in data/reviews.json.");
+    } else if (covered.has(record.candidateId)) {
+      errors.push(where + ".candidateId duplicates " + record.candidateId + ".");
+    } else {
+      covered.add(record.candidateId);
+    }
+
+    const sourceIds = new Set();
+    if (!Array.isArray(record.sourceItems) || !record.sourceItems.length) {
+      errors.push(where + ".sourceItems must be a non-empty array.");
+    } else {
+      for (const [itemIndex, item] of record.sourceItems.entries()) {
+        const itemWhere = where + ".sourceItems[" + itemIndex + "]";
+        if (!item || typeof item !== "object") {
+          errors.push(itemWhere + " must be an object.");
+          continue;
+        }
+        if (!isText(item.id)) errors.push(itemWhere + ".id is required.");
+        else if (sourceIds.has(item.id)) errors.push(itemWhere + ".id duplicates " + item.id + ".");
+        else sourceIds.add(item.id);
+        for (const field of ["claim", "title", "publisher", "sourceType", "excerpt"]) {
+          if (!isText(item[field])) errors.push(itemWhere + "." + field + " is required.");
+        }
+        if (!isHttps(item.url)) errors.push(itemWhere + ".url must be an HTTPS URL.");
+        if (!isDate(item.accessDate)) errors.push(itemWhere + ".accessDate must use YYYY-MM-DD.");
+        for (const field of ["publishedDate", "eventDate"]) {
+          if (item[field] != null && !isDate(item[field])) errors.push(itemWhere + "." + field + " must use YYYY-MM-DD or null.");
+        }
+        if (typeof item.userChecked !== "boolean") errors.push(itemWhere + ".userChecked must be true or false.");
+      }
+    }
+
+    for (const field of FACT_FIELDS) checkFact(record[field], where + "." + field, sourceIds, errors);
+    for (const field of OPTIONAL_FACT_FIELDS) {
+      if (record[field] != null) checkFact(record[field], where + "." + field, sourceIds, errors);
+    }
+    const office = record.operatingOffice?.value;
+    if (!office || !CZECH_COUNTRIES.has(office.country)) errors.push(where + ".operatingOffice.value.country must be the Czech Republic.");
+
+    if (!Array.isArray(record.capital)) errors.push(where + ".capital must be an array.");
+    else {
+      for (const [capitalIndex, item] of record.capital.entries()) {
+        const capitalWhere = where + ".capital[" + capitalIndex + "]";
+        if (!isText(item?.metricType)) errors.push(capitalWhere + ".metricType is required.");
+        checkFact(item, capitalWhere, sourceIds, errors);
+      }
+    }
+
+    if (!Array.isArray(record.investments) || !record.investments.length) {
+      errors.push(where + ".investments must list at least one completed direct investment.");
+      continue;
+    }
+    for (const [investmentIndex, item] of record.investments.entries()) {
+      const investmentWhere = where + ".investments[" + investmentIndex + "]";
+      if (!item || typeof item !== "object") {
+        errors.push(investmentWhere + " must be an object.");
+        continue;
+      }
+      if (!isText(item.company)) errors.push(investmentWhere + ".company is required.");
+      if (item.eventDate == null) {
+        if (!YEAR_MONTH.test(item.eventPeriod ?? "")) errors.push(investmentWhere + " needs an eventDate or an eventPeriod (YYYY-MM).");
+      } else if (!isDate(item.eventDate)) {
+        errors.push(investmentWhere + ".eventDate must use YYYY-MM-DD or null.");
+      } else if (datasetDateValid && item.eventDate > data.datasetDate) {
+        errors.push(investmentWhere + ".eventDate is after datasetDate.");
+      }
+      // A round total is not the investor's cheque; an unknown cheque needs a reason.
+      if (item.investorAmount == null && !isText(item.investorAmountReason)) {
+        errors.push(investmentWhere + ".investorAmount is null and needs an investorAmountReason.");
+      }
+      checkFact({ value: item.company, sources: item.sources }, investmentWhere, sourceIds, errors);
+    }
+
+    if (record.activityStatus === "active" && windowStart) {
+      const inWindow = record.investments.some((item) => isDate(item?.eventDate) &&
+        item.eventDate >= windowStart && item.eventDate <= data.datasetDate);
+      if (!inWindow) errors.push(where + " is labelled active but has no investment dated between " + windowStart + " and " + data.datasetDate + ".");
+    }
+  }
+
+  for (const [candidateId, label] of labelByCandidate) {
+    if (label === "eligible" && !covered.has(candidateId)) errors.push("Eligible candidate " + candidateId + " has no final investor record.");
+  }
+  return errors;
+}
+
 export function validateCandidates(data) {
   const errors = [];
   if (!data || typeof data !== "object" || !Array.isArray(data.candidates)) {
