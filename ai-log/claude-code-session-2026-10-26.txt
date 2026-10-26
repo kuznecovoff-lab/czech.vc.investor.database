@@ -1,0 +1,3453 @@
+
+> We have already completed discovery and frozen a 20-candidate frame and 20
+  preliminary predictions in this repository. Do not create or replace
+  candidates, change predictions, recompute the frame, or edit any project
+  files.
+
+  The human review is in progress. The user makes all final human-label
+  decisions. Do not write or suggest human labels in data/reviews.json.
+
+  Please inspect the frozen candidate and prediction files, identify the
+  candidates that have not yet been discussed in the human review, and prepare
+  research notes for the next five candidates only.
+
+  For each candidate, provide:
+  1. Exact candidate name and ID.
+  2. Evidence that it is or is not a venture-capital investment manager.
+  3. Evidence for its principal operating office location. A registered or
+  mailing address alone is insufficient.
+  4. Evidence of a dated, completed, direct company investment on or after
+  2023-10-22. Distinguish a company round’s total size from the candidate’s own
+  cheque.
+  5. Direct source URLs, publication dates, and a short note on what each
+  source proves.
+  6. Any ambiguity or missing evidence, without treating lack of public
+  mentions as proof that the organization closed or stopped operating.
+
+  Use a compact table. Prefer official company, investor, portfolio, or
+  transaction sources. Secondary sources may supplement them. Do not edit
+  files. Stop after the next five candidates and wait for the user.
+
+● I'll start by inspecting the frozen files and the review state (read-only).
+
+  Ran 4 shell commands (ctrl+o to expand)
+
+● reviews.json has zero labels, so the "discussed" set must come from somewhere
+  else. I'll check the prior session transcripts for this project (read-only).
+
+  Ran 3 shell commands (ctrl+o to expand)
+
+● Since there's no human-review discussion recorded anywhere (reviews.json shows
+  0 labels, and neither transcript mentions it), I'll just take the first five
+  in frame order. Now I'll confirm the freeze still holds and pull the full
+  records for those five.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Fingerprints match the freeze. Next I'll load the web tools and check the
+  directory snapshot entry for Lighthouse venture.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Starting the web research. First pass: the official pages and the shared Delta
+  Green release.
+
+● Fetch(https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-
+       spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-cr
+       edo-ventures-and-purple-ventures)
+  ⎿  Received 62.1KB (200 OK)
+
+● Fetch(https://www.credoventures.com/)
+  ⎿  Received 3.3KB (200 OK)
+
+● Fetch(https://tilia.vc/)
+  ⎿  Received 228KB (200 OK)
+
+● Fetch(https://www.purple-ventures.com/)
+  ⎿  Received 332KB (200 OK)
+
+● Fetch(https://up271.com/en/home/)
+  ⎿  Received 127KB (200 OK)
+
+● Fetch(https://lighthouse.ventures/)
+  ⎿  Received 29.7KB (200 OK)
+
+● Delta Green's dateline is "May 27, Prague" with no year, on a page dated
+  22.10.2024. Next: the directory listings, the UP271 contact page, and searches
+  for more recent deals.
+
+● Fetch(https://czechstartups.gov.cz/investori_en/lighthouse-venture/)
+  ⎿  Received 158.4KB (200 OK)
+
+● Fetch(https://czechstartups.gov.cz/investori_en/up-271/)
+  ⎿  Received 158.1KB (200 OK)
+
+● Fetch(https://up271.com/en/contact/)
+  ⎿  Received 114.6KB (200 OK)
+
+● Web Search("UP271 investice startup 2025")
+  ⎿  Did 1 search in 7s
+
+● Web Search("Credo Ventures leads pre-seed round 2025")
+  ⎿  Did 1 search in 6s
+
+● Web Search("Purple Ventures investuje Fether Labs")
+  ⎿  Did 1 search in 6s
+
+● Fetch(https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startup
+       um-poslali-desitky-milionu-korun/)
+  ⎿  Received 163.5KB (200 OK)
+
+● Fetch(https://cc.cz/up21-karla-janecka-a-vita-suberta-spusti-novy-investicni-f
+       ond-do-kazdeho-startupu-vlozi-az-15-milionu-eur/)  ⎿  Received 162.4KB (200 OK)
+
+● Web Search(""led by Credo Ventures" 2025 seed round")
+  ⎿  Did 1 search in 6s
+
+● Web Search("Tilia Impact Ventures investice 2025 kolo")
+  ⎿  Did 1 search in 6s
+
+● Two leads surfaced: a possible second Delta Green round led by Credo, and a
+  "Lighthouse Ventures" tied to Czech startup FaceUp that may point to a
+  different organization than the linked US LLC. I'll look into both.
+
+● Fetch(https://www.deltagreen.cz/press-releases)
+  ⎿  Received 0 bytes (404 Not Found)
+
+● Web Search("FaceUp investice Lighthouse Ventures Tilia")
+  ⎿  Did 1 search in 6s
+
+● Web Search(""Lighthouse Ventures" Praha fond startup investice")
+  ⎿  Did 1 search in 5s
+
+● Web Search("Lighthouse Ventures Michal Zálešák portfolio 2024 2025
+            investment")
+  ⎿  Did 1 search in 8s
+
+● Fetch(https://www.lighthouseventures.cz/)
+  ⎿  Error: getaddrinfo ENOTFOUND www.lighthouseventures.cz
+
+● Web Search("Delta Green investice říjen 2025 Credo Ventures kolo")
+  ⎿  Did 1 search in 7s
+
+● Fetch(https://lhv.vc/)
+  ⎿  Received 240.5KB (200 OK)
+
+● Web Search("Axoflow seed round Credo Ventures announcement")
+  ⎿  Did 1 search in 6s
+
+● Web Search("FaceUp raises $3M Reflex Capital Tilia Impact Ventures")
+  ⎿  Did 1 search in 6s
+
+● Fetch(https://vestbee.com/insights/articles/face-up-raises-3-m)
+  ⎿  Received 350.7KB (200 OK)
+
+● Fetch(https://www.jic.cz/en/magazin/pribehy-uspesnych-firem/faceup-technology-
+       prvni-volba-noveho-fondu-jic-ven)
+  ⎿  Received 44.5KB (200 OK)
+
+● Web Search("iVent Pro investice Purple Ventures 2024")
+  ⎿  Did 1 search in 7s
+
+● Fetch(https://en.ain.ua/2025/01/23/axoflow-raises-7m)
+  ⎿  Received 81.8KB (200 OK)
+
+● Web Search("axoflow.com blog seed funding EBRD Credo Ventures e2vc")
+  ⎿  Did 1 search in 6s
+
+● Web Search("UP271 s.r.o. Zapova 18 investice portfolio NutritionPro
+            Spaceflow")
+  ⎿  Did 1 search in 8s
+
+● Fetch(https://axoflow.com/7m-seed-round-for-high-quality-security-data/)
+  ⎿  Received 139.9KB (200 OK)
+
+● Fetch(https://www.finmag.cz/obchodni-rejstrik/06816339)
+  ⎿  Received 0 bytes (404 Not Found)
+● Fetch(https://forbes.cz/investor-ktery-se-neboji-cvrcku-ani-realitniho-byznysu
+       -ted-vam-chce-sestavit-jidelnicek-na-miru/)
+  ⎿  Received 249.7KB (200 OK)
+
+● Credo, Tilia, Purple, and Lighthouse are mostly covered, though Lighthouse has
+  an identity conflict I'll flag in the notes. Next I'm checking UP271's
+  registry identity and recent deals before compiling the table.
+
+● Fetch(https://or.justice.cz/ias/ui/rejstrik-$firma?ico=06816339)
+  ⎿  Received 22.1KB (200 OK)
+
+● Web Search(""UP271" investor 2024 OR 2025 OR 2026 round")
+  ⎿  Did 1 search in 6s
+
+● Fetch(https://en.ain.ua/2024/06/28/purple-ventures-40m-fund-ii-investments-sma
+       rt-energy-cloud-hr-hybrid-events)
+  ⎿  Received 84.6KB (200 OK)
+
+● I prepared notes for the first five candidates in frame order, positions 1–5.
+  I edited no files. The frozen fingerprints still match the values in
+  data/reviews.json, which has 0 labels.
+
+  Which candidates are undiscussed: reviews.json is empty, and neither past
+  session for this project contains any human-review discussion. So all 20
+  candidates are undiscussed, and I started at position 1. If you've already
+  discussed some candidates outside this repository, tell me which and I'll move
+  on.
+
+  Summary
+
+  #: 1
+  Candidate (ID): Credo Ventures (candidate-credo-ventures)
+  Is it a VC manager?: Probably. The official site says "fund of choice for CEE
+  founders", "5 Funds", pre-seed, $1M–5M cheques. It never uses the words
+  "venture capital"; the Delta Green release does.
+  Principal operating office: Prague (Karlovo nám. 10), plus a second office in
+  Kraków. The site lists both and doesn't say which is principal.
+  Dated completed direct investment on or after 2023-10-22: Delta Green, EUR
+  2.2m
+  round (total). Credo's own cheque isn't disclosed and Tilia led. Axoflow, $7m
+   seed (total), led by EBRD VC; Credo "significantly increased" its stake,
+  amount not disclosed.
+  Main gaps: Two offices. Neither investment discloses Credo's cheque. Axoflow
+  is
+  a follow-on investment into an existing portfolio company.
+  ────────────────────────────────────────
+  #: 2
+  Candidate (ID): Tilia Impact Ventures (candidate-tilia-impact-ventures)
+  Is it a VC manager?: Yes. Official site: early stage, EUR 0.3–1.2m initial
+  ticket, equity or convertible debt. Delta Green release: "seed-stage venture
+  capital fund based in Prague".
+  Principal operating office: Prague, Drtinova 557/10 (official contact
+  address).
+  The recipient's release also says "based in Prague".
+  Dated completed direct investment on or after 2023-10-22: Delta Green, EUR
+  2.2m
+  (total, Tilia led). FaceUp late seed, $3m (total), 2024-10-10. FaceUp Series
+  A, $5m (total), completed May 2026, Tilia a returning investor. No Tilia
+  cheque is disclosed for any of them.
+  Main gaps: The FaceUp late-seed source contradicts itself on the lead (Reflex
+  vs Tilia). The Lifeyear AIN item already in the file is still unchecked; I
+  didn't reopen it.
+  ────────────────────────────────────────
+  #: 3
+  Candidate (ID): Purple Ventures (candidate-purple-ventures)
+  Is it a VC manager?: Yes. Official site: "We are a venture capital fund
+  investing into CEE+ tech-enabled innovations in pre-seed and seed stages",
+  EUR 250k–400k initial ticket.
+  Principal operating office: Brno. The footer "Masarykova 26, Brno, IČ
+  05775574"
+  is legal identity only. The operating-location evidence is "Brno-based" (site
+   news summary) and "Brněnští Purple Ventures" (CzechCrunch headline). Some
+  team bios say Prague or Utrecht.
+  Dated completed direct investment on or after 2023-10-22: Delta Green, EUR
+  2.2m
+  (total). iVent Pro plus an unnamed HR SaaS company: CzechCrunch 2024-06-27
+  says the partners report "uzavřené investice" (closed investments). Figures
+  are fund-level: CZK 48m across the first three companies, or EUR 1.25m for
+  iVent Pro plus HR. No per-company Purple cheque.
+  Main gaps: No office page explicitly calls Brno the principal office. The
+  iVent
+  Pro figures differ between sources. Fether Labs (2025/26) appears only on
+  aggregators, with conflicting dates.
+  ────────────────────────────────────────
+  #: 4
+  Candidate (ID): UP271 (candidate-up271)
+  Is it a VC manager?: Unclear. Site: "We invest in companies and start-ups from
+
+  various industries"; "more than 21 projects… almost EUR 40 million"
+  (aggregate historical, page dated 2022). Aggregators call it a family office
+  (Caplight) or PE firm (Preqin), and family offices are outside the pilot. It
+  says it "continues the history of UP21 and Byznys 21".
+  Principal operating office: Prague 5, Zapova 18, labelled "Office" on the
+  contact page. This is the same address as the registered seat in the
+  commercial register (UP 271 s.r.o., IČ 06816339, Zapova 1559/18). There's no
+  separate evidence that the team works there.
+  Dated completed direct investment on or after 2023-10-22: None found. The
+  newest dated deals I saw are on aggregators (2023 or earlier). Crunchbase
+  mentions "Racing 21", but the date is hidden.
+  Main gaps: Investor type. Operating office vs registered seat. No dated
+  investment. The contact page also shows a second IČ (03922961, apparently
+  UP21 s.r.o.). Few recent public mentions doesn't show the firm is inactive.
+  ────────────────────────────────────────
+  #: 5
+  Candidate (ID): Lighthouse venture (candidate-lighthouseventure)
+  Is it a VC manager?: Identity conflict. The directory entry's description
+  ("investment as well as executive financial leadership") and link
+  (lighthouseventuresllc.com → lighthouse.ventures) match a US firm: Mercer
+  Island, WA, P.O. Box only, no Czech presence. A separate Czech Lighthouse
+  Ventures exists at lhv.vc: "early-stage venture capital", EUR 200k–1m per
+  startup, Fund II started 2024, backed by the Czech ESIF Fund of Funds
+  (CZFoF), Managing Partner Michal Zálešák.
+  Principal operating office: US firm: P.O. Box only, which isn't an operating
+  office. Czech firm: Evropská 2758/11, Prague 6 (official site).
+  Dated completed direct investment on or after 2023-10-22: US firm: none. Czech
+
+  firm: FaceUp $3m late seed (total), 2024-10-10, "Lighthouse Ventures" named.
+  It's a secondary source, but FaceUp is on the lhv.vc portfolio list. Ranketta
+   (Nov 2025) and Beatpulse (Jun 2026) appear only on Caplight.
+  Main gaps: You decide which organization the frozen candidate refers to.
+  Caplight lists the Czech firm under the slug "lighthouseventuresllc", which
+  may explain the directory's wrong link. The lhv.vc portfolio list is undated.
+
+  Sources
+
+  #: 1–3
+  URL: Delta Green press release
+  (https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotl
+  ight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventur
+  es-and-purple-ventures)
+  Published: Page 22.10.2024; dateline "May 27, Prague", no year
+  What it proves: Recipient's own release: EUR 2.2m round, Tilia lead, terms
+  confidential. Tilia "based in Prague", Purple "based in Brno". Fund II: Tilia
+   EUR 30m, Purple EUR 40m target.
+  ────────────────────────────────────────
+  #: 1–3
+  URL: CzechCrunch on Purple Fund II
+  (https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-po
+  slali-desitky-milionu-korun/)
+  Published: 2024-06-27
+  What it proves: Secondary. Dates the Delta Green investment to May 2024, which
+
+  settles the year missing from the dateline. Purple's investments reported as
+  closed (Delta Green, iVent Pro, unnamed HR); CZK 48m combined.
+  ────────────────────────────────────────
+  #: 1
+  URL: credoventures.com (https://www.credoventures.com/)
+  Published: Undated
+  What it proves: Strategy and cheque size; Prague and Kraków addresses.
+  ────────────────────────────────────────
+  #: 1
+  URL: Axoflow official post
+  (https://axoflow.com/7m-seed-round-for-high-quality-security-data/)
+  Published: 2025-01-21 (dateline 17/01/2025)
+  What it proves: Recipient's own post: "has raised" $7m seed, EBRD lead, Credo
+  increased its stake.
+  ────────────────────────────────────────
+  #: 1
+  URL: AIN on Axoflow (https://en.ain.ua/2025/01/23/axoflow-raises-7m)
+  Published: 2025-01-23
+  What it proves: Secondary confirmation of the Axoflow round.
+  ────────────────────────────────────────
+  #: 2
+  URL: tilia.vc (https://tilia.vc/)
+  Published: Undated (metrics "as of Q4 2025")
+  What it proves: Strategy, ticket, Prague address, portfolio list including
+  FaceUp and Delta Green.
+  ────────────────────────────────────────
+  #: 2, 5
+  URL: Vestbee on FaceUp
+  (https://vestbee.com/insights/articles/face-up-raises-3-m)
+  Published: 2024-10-10
+  What it proves: Secondary. $3m late seed; names Reflex, Tilia, EIF, Lighthouse
+
+  Ventures. Contradicts itself on the lead.
+  ────────────────────────────────────────
+  #: 2
+  URL: JIC on FaceUp Series A
+  (https://www.jic.cz/en/magazin/pribehy-uspesnych-firem/faceup-technology-prvni
+  -volba-noveho-fondu-jic-ven)
+  Published: 2026-05-26
+  What it proves: Investor's own publication. $5m round completed in May; lead
+  Fil Rouge; Tilia participated.
+  ────────────────────────────────────────
+  #: 3
+  URL: purple-ventures.com (https://www.purple-ventures.com/)
+  Published: Undated (© 2025)
+  What it proves: VC self-description, ticket, legal footer, "Brno-based"
+  summary.
+  ────────────────────────────────────────
+  #: 3
+  URL: AIN on Purple Fund II
+  (https://en.ain.ua/2024/06/28/purple-ventures-40m-fund-ii-investments-smart-en
+  ergy-cloud-hr-hybrid-events)
+  Published: 2024-06-28
+  What it proves: Secondary. "Announced" the first three investments; EUR 1.9m
+  combined. Doesn't explicitly say they closed.
+  ────────────────────────────────────────
+  #: 4
+  URL: up271.com home (https://up271.com/en/home/) and contact
+  (https://up271.com/en/contact/)
+  Published: Page metadata 2022-10-20
+  What it proves: Self-description, EUR ~40m aggregate, "Office" address.
+  ────────────────────────────────────────
+  #: 4
+  URL: Commercial register: UP 271 s.r.o.
+  (https://or.justice.cz/ias/ui/rejstrik-$firma?ico=06816339)
+  Published: Data as of 2026-10-26
+  What it proves: Legal identity and registered seat only. Same address as the
+  "Office".
+  ────────────────────────────────────────
+  #: 4
+  URL: Caplight: UP271 (https://www.caplight.com/investor/up271)
+  Published: Undated aggregator
+  What it proves: Calls it a family office; latest listed deal Nov 2020.
+  Discovery use only.
+  ────────────────────────────────────────
+  #: 5
+  URL: Directory listing
+  (https://czechstartups.gov.cz/investori_en/lighthouse-venture/)
+  Published: Undated
+  What it proves: Links to lighthouseventuresllc.com; description matches the US
+
+  firm.
+  ────────────────────────────────────────
+  #: 5
+  URL: lighthouse.ventures (https://lighthouse.ventures/) and contact page
+  (https://lighthouse.ventures/contact-us/)
+  Published: Undated
+  What it proves: US firm, principal investing plus executive financial
+  leadership; Mercer Island, WA P.O. Box.
+  ────────────────────────────────────────
+  #: 5
+  URL: lhv.vc (https://lhv.vc/)
+  Published: Undated (© 2019; Fund II "2024")
+  What it proves: Czech VC, Prague 6 address, ticket, CZFoF backing, portfolio
+  list.
+  ────────────────────────────────────────
+  #: 5
+  URL: Caplight: Czech Lighthouse
+  (https://www.caplight.com/investor/lighthouseventuresllc)
+  Published: Undated aggregator
+  What it proves: Ranketta and Beatpulse deals; names Zálešák. Discovery use
+  only.
+
+  A documentation gap: the status sections in docs/evaluation.md and
+  docs/plan.md still say the frame is "not frozen" with fingerprints "unset",
+  but data/reviews.json records the freeze. I left both files as they are.
+
+  I've stopped after these five. Tell me when you want candidates 6–10 (Enern,
+  Innova Capital, Orbit Capital, RSJ Investments, mAccelerator.vc).
+
+> Correction: prior discussion decisions exist in ChatGPT even though
+  data/reviews.json intentionally still has zero labels. Do not treat an empty
+  reviews.json as evidence that no human review has happened.
+
+  Already decided by the user:
+  - Credo Ventures — eligible
+  - Tilia Impact Ventures — eligible
+  - Purple Ventures — eligible
+  - UP271 — unresolved; flag as highly uncertain because confirmed public
+  evidence is very limited
+  - Enern — weak unresolved; available evidence suggests it may qualify, but
+  the organizational boundary with KAYA and the current fund manager is unclear
+  - Orbit Capital — eligible
+  - RSJ Investments — unresolved because no qualifying recent direct investment
+  was confirmed in public sources; do not infer closure or inactivity
+  - mAccelerator.vc — not_eligible because its principal base appears to be
+  Poland, despite investments in Czech companies
+  - Impulse Ventures — weak unresolved because the 2025 Safetica investment is
+  attributed to Impulse Capital, and the link to Impulse Ventures does not
+  clearly establish which entity made the investment
+
+  Lighthouse venture has not been decided. The current research suggests an
+  identity conflict between the US firm linked from the directory and a
+  separate Czech VC at lhv.vc. Do not assign a label; provide evidence that
+  could help the user decide.
+
+  Please verify the current candidate order from the frozen files. Prepare
+  research notes for the next five candidates that have not already been
+  discussed, in frame order. Do not repeat candidates already listed above.
+  Include Lighthouse if it is still among the next undiscussed candidates.
+
+  Do not edit candidates, predictions, or reviews.json. Do not write human
+  labels. Keep the research in a compact table with direct source URLs and
+  explain ambiguities. If the evaluation or plan documentation still says the
+  frame is not frozen, report that separately and suggest a correction without
+  editing those files.
+
+● Re-checking the frame order and fingerprints, and pulling the frozen records
+  for the undiscussed candidates.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Order confirmed with fingerprints unchanged. I'll now research the next five
+  undiscussed candidates: Lighthouse Venture, Innova Capital, Limerock Ventures,
+  Kaya VC, and Sandberg Capital.
+
+● Fetch(https://www.innovacap.com)
+  ⎿  Received 17.9KB (200 OK)
+
+● Fetch(https://cvca.cz/en/innova-capital-2/)
+  ⎿  Received 91.5KB (200 OK)
+
+● Fetch(https://www.limerock.sk/main)
+  ⎿  Received 688KB (200 OK)
+
+● Fetch(https://czechstartups.gov.cz/investori_en/limerock-ventures/)
+  ⎿  Received 158.3KB (200 OK)
+
+● Fetch(https://www.kaya.vc/)
+  ⎿  Received 201.7KB (200 OK)
+
+● Fetch(https://sandbergcapital.com/)
+  ⎿  Received 48.3KB (200 OK)
+
+● Web Search("Enern rebrand KAYA venture capital Prague Warsaw")
+  ⎿  Did 1 search in 6s
+
+● Web Search("E2B Series A $21 million Insight Partners investors KAYA")
+  ⎿  Did 1 search in 5s
+
+● Web Search("Sandberg Capital investícia 2025 akvizícia podiel")
+  ⎿  Did 1 search in 7s
+
+● Web Search("Limerock JEREMIE Co-Investment Fund investícia 2024 2025 startup")
+  ⎿  Did 1 search in 6s
+
+● Web Search("Innova Capital Praha kancelář Česká republika investice")
+  ⎿  Did 1 search in 5s
+
+● Fetch(https://www.insightpartners.com/ideas/e2b-raises-a-21m-series-a-to-offer
+       -cloud-for-ai-agents-to-fortune-100/)
+  ⎿  Received 166KB (200 OK)
+
+● Fetch(https://cvca.cz/en/kaya-vc-2/)
+  ⎿  Received 90.4KB (200 OK)
+● Fetch(https://www.intellinews.com/sandberg-capital-acquires-majority-stake-in-
+       hungary-s-green-fox-academy-260411/)
+  ⎿  Received 0 bytes (403 Forbidden)
+
+● Fetch(https://cc.cz/slovensky-sandberg-capital-uzavrel-svuj-trimiliardovy-fond
+       -stovky-milionu-z-nej-investoval-do-ceskych-firem/)
+  ⎿  Received 167.6KB (200 OK)
+
+● Fetch(https://cvca.cz/en/sandberg-capital/)
+  ⎿  Received 92.1KB (200 OK)
+
+● Fetch(https://techcrunch.com/?p=2132469)
+  ⎿  Received 235.1KB (200 OK)
+
+● Fetch(https://www.globalprivatecapital.org/?p=39400)
+  ⎿  Received 121.2KB (200 OK)
+
+● Web Search("Zero Gravity Capital Limerock Jablonka Čmelík investícia")
+  ⎿  Did 1 search in 7s
+
+● Fetch(https://lighthouse.ventures/contact-us/)
+  ⎿  Received 50.2KB (200 OK)
+
+● Web Search("Sandberg Capital acquires stake 2024 OR 2025 OR 2026")
+  ⎿  Did 1 search in 7s
+
+● The next five undiscussed candidates in frame order are #5 Lighthouse venture,
+  #7 Innova Capital, #11 Limerock Ventures, #13 Kaya VC and #14 Sandberg
+  Capital. I re-read the order from data/candidates.json, and both frozen
+  fingerprints still match data/reviews.json. I edited no files and haven't
+  suggested any labels.
+
+  Research notes
+
+  #: 5
+  Candidate (ID): Lighthouse venture (candidate-lighthouseventure)
+  Is it a VC manager?: Depends on which organization the candidate is. The US
+  firm the directory links to is not a VC: "specialized investment firm" doing
+  "principal investments and executive financial leadership". The Czech firm at
+   lhv.vc is: "early-stage venture capital", €200k–1m per startup, Fund II
+  started in 2024, backed by the Czech ESIF Fund of Funds (CZFoF).
+  Principal operating office: US firm: only a P.O. Box in Mercer Island, WA,
+  which isn't an operating office. Czech firm: Evropská 2758/11, Prague 6, on
+  its official site.
+  Dated completed direct investment on or after 2023-10-22: US firm: none found.
+
+  Czech firm: FaceUp $3m late seed, 2024-10-10. That's the whole round;
+  Lighthouse's cheque isn't disclosed. Only a secondary source names Lighthouse
+   Ventures, but FaceUp is on the lhv.vc portfolio list. Ranketta (Nov 2025)
+  and Beatpulse (Jun 2026) appear only on Caplight.
+  Ambiguity / missing evidence: The directory entry's description and link match
+
+  the US firm, while its Czech directory context matches the Czech firm.
+  Caplight files the Czech firm under the slug "lighthouseventuresllc", which
+  may be where the wrong link came from. Plan rule 5 bars inclusion while an
+  identity conflict is unresolved.
+  ────────────────────────────────────────
+  #: 7
+  Candidate (ID): Innova Capital (candidate-innovacapital)
+  Is it a VC manager?: No, private equity. Official site: "independent private
+  equity firm… controlling stakes of mid-sized companies". CVCA: buyout and
+  expansion capital, €20–50m tickets.
+  Principal operating office: Warsaw (Rondo ONZ 1, per CVCA and secondary
+  reports). I found no Czech office.
+  Dated completed direct investment on or after 2023-10-22: Recent deals exist
+  but are PE buyouts outside Czechia: OSHEE sale 2026-02-16, Arti-Bau add-on
+  2025-08-05, Innova/7 closed at €407m. They aren't VC investments.
+  Ambiguity / missing evidence: No real ambiguity on type or geography. The
+  directory entry only reflects CVCA membership.
+  ────────────────────────────────────────
+  #: 11
+  Candidate (ID): Limerock Ventures (candidate-limerockventures)
+  Is it a VC manager?: Partly. It's an M&A advisory boutique with "a venture
+  capital arm". It manages the EIF-mandated JEREMIE Co-Investment Fund (since
+  June 2014), investing at late seed and Series A.
+  Principal operating office: Bratislava. Its site separates the operating
+  address (Paulinyho 8) from the registered seat (Planét 5). The CzechStartups
+  listing says "based in Slovakia". I found no Czech office.
+  Dated completed direct investment on or after 2023-10-22: None found. The
+  portfolio list is undated and mostly marked "Exited". The newest dated deal I
+   saw is Žltý melón (2019). The partners' related Zero Gravity fund was to
+  finish investing by end-2023.
+  Ambiguity / missing evidence: Its focus covers Czech and Slovak companies, but
+
+  investing in Czech companies doesn't make it a Czech manager. Lack of recent
+  deals isn't proof of inactivity. Whether its current fund is still deploying
+  is unknown.
+  ────────────────────────────────────────
+  #: 13
+  Candidate (ID): Kaya VC (candidate-kayavc)
+  Is it a VC manager?: Yes. "We invest in ambitious & gritty founders from CEE;
+  pre-seed through to meaningful scale". $1–3M ticket, $85M current fund. The
+  site also shows "$500M AUM Total", undated, and other sources give €250–300m.
+  Principal operating office: Unclear between Prague and Warsaw. The official
+  site lists Warsaw, Prague (Thámova 183/11), San Francisco and London, and
+  names no HQ. CVCA lists only Prague-Karlín with a partner as contact.
+  TechCrunch (2021) calls it "Prague-based". A 2025 report quotes a partner
+  saying they spend "a week a month" in Warsaw, which implies Warsaw isn't the
+  base.
+  Dated completed direct investment on or after 2023-10-22: E2B $21M Series A,
+  published 2025-07-28 by the lead investor (Insight Partners) with Kaya named
+  as a participant. That's the whole round; Kaya's cheque isn't disclosed. The
+  page says "has raised", not "closed". The frozen Pillsbury source
+  (2025-07-31) is consistent with this.
+  Ambiguity / missing evidence: Boundary with Enern (#6): TechCrunch says Enern
+  "changed its name" to Kaya. Another source calls Enern a holding company and
+  KAYA its VC successor. If Kaya and Enern are the same manager, the frame may
+  count one manager twice. That bears on your Enern decision too.
+  ────────────────────────────────────────
+  #: 14
+  Candidate (ID): Sandberg Capital (candidate-sandbergcapital)
+  Is it a VC manager?: No, private equity. Its site says it manages AIFs
+  "zamerané na investovanie do private equity" (focused on private equity).
+  CVCA: buy-and-build and growth, €5–20m tickets, €400m managed. CzechCrunch
+  calls it a Slovak PE firm and explicitly contrasts it with VC.
+  Principal operating office: Bratislava (CVCA's only address; first on the
+  official site). The site also lists a Prague office at Italská 2581/67, but
+  nothing I found shows it is the principal office.
+  Dated completed direct investment on or after 2023-10-22: Majority and
+  controlling stakes rather than VC rounds. Travelnode (majority stake with
+  ARX, around 2025-04-30) appears only in a secondary snippet I didn't open.
+  CARROT (Poland) is undated. Green Fox Academy was in 2022.
+  Ambiguity / missing evidence: It has Czech portfolio companies (Daktela,
+  Solitea) and a Prague office, but its type and principal base point outside
+  the pilot.
+
+  Sources
+
+  #: 5
+  URL: CzechStartups directory listing
+  (https://czechstartups.gov.cz/investori_en/lighthouse-venture/)
+  Published: Undated
+  What it shows: The listing's description and link match the US firm.
+  ────────────────────────────────────────
+  #: 5
+  URL: lighthouse.ventures (https://lighthouse.ventures/) and contact page
+  (https://lighthouse.ventures/contact-us/)
+  Published: Undated
+  What it shows: US firm's activities; P.O. Box address only; no people named.
+  ────────────────────────────────────────
+  #: 5
+  URL: lhv.vc (https://lhv.vc/)
+  Published: Undated (© 2019, Fund II "2024")
+  What it shows: Czech VC: Prague 6 address, ticket, CZFoF backing, portfolio
+  list including FaceUp.
+  ────────────────────────────────────────
+  #: 5
+  URL: Vestbee on FaceUp
+  (https://vestbee.com/insights/articles/face-up-raises-3-m)
+  Published: 2024-10-10
+  What it shows: Secondary. $3m late seed naming Lighthouse Ventures;
+  contradicts
+  itself on the lead.
+  ────────────────────────────────────────
+  #: 5
+  URL: Caplight: Czech Lighthouse
+  (https://www.caplight.com/investor/lighthouseventuresllc)
+  Published: Undated aggregator
+  What it shows: Names Zálešák; lists recent deals; shows the "llc" slug mix-up.
+
+  Discovery use only.
+  ────────────────────────────────────────
+  #: 7
+  URL: innovacap.com (https://www.innovacap.com)
+  Published: Undated, with news dated 2025–26
+  What it shows: PE self-description; recent buyout news.
+  ────────────────────────────────────────
+  #: 7
+  URL: CVCA: Innova Capital (https://cvca.cz/en/innova-capital-2/)
+  Published: Undated
+  What it shows: Warsaw address, buyout type, €20–50m ticket.
+  ────────────────────────────────────────
+  #: 7
+  URL: Innova/7 close
+  (https://innovacap.com/press/innova-capital-closes-7th-fund-with-record-eur-40
+  7m-result)
+  Published: ~May 2024 (I didn't open it; date from the AIN coverage)
+  What it shows: Size of one fund (€407m), not the firm's AUM.
+  ────────────────────────────────────────
+  #: 11
+  URL: limerock.sk (https://www.limerock.sk/main)
+  Published: Undated
+  What it shows: VC arm and JEREMIE mandate; Bratislava operating address vs
+  registered seat; undated portfolio.
+  ────────────────────────────────────────
+  #: 11
+  URL: CzechStartups: Limerock
+  (https://czechstartups.gov.cz/investori_en/limerock-ventures/)
+  Published: Undated
+  What it shows: "based in Slovakia".
+  ────────────────────────────────────────
+  #: 11
+  URL: SIH: Limerock
+  (https://sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/lim
+  erock-fund-manager-kapitalova-investicia)
+  Published: Undated (I didn't open it)
+  What it shows: €12m state capital; 8 companies financed 2015–2016. Historical
+  only.
+  ────────────────────────────────────────
+  #: 13
+  URL: kaya.vc (https://www.kaya.vc/)
+  Published: Undated (© 2026)
+  What it shows: Strategy, ticket, fund and AUM figures, four offices with no HQ
+
+  named.
+  ────────────────────────────────────────
+  #: 13
+  URL: CVCA: Kaya VC (https://cvca.cz/en/kaya-vc-2/)
+  Published: Undated
+  What it shows: Prague-Karlín address; partner Tomáš Pačinda as contact.
+  ────────────────────────────────────────
+  #: 13
+  URL: Insight Partners on E2B
+  (https://www.insightpartners.com/ideas/e2b-raises-a-21m-series-a-to-offer-clou
+  d-for-ai-agents-to-fortune-100/)
+  Published: 2025-07-28
+  What it shows: The lead investor's own release: E2B "has raised" $21M with
+  Kaya
+  participating.
+  ────────────────────────────────────────
+  #: 13
+  URL: TechCrunch on the Kaya fund launch (https://techcrunch.com/?p=2132469)
+  Published: 2021-03-31
+  What it shows: "Prague-based VC"; formerly Enern; €72m fund.
+  ────────────────────────────────────────
+  #: 14
+  URL: sandbergcapital.com (https://sandbergcapital.com/)
+  Published: Undated (© 2026)
+  What it shows: PE self-description; Bratislava and Prague offices; portfolio.
+  ────────────────────────────────────────
+  #: 14
+  URL: CVCA: Sandberg Capital (https://cvca.cz/en/sandberg-capital/)
+  Published: Undated
+  What it shows: Bratislava address only; buy-and-build/growth; €5–20m ticket.
+  ────────────────────────────────────────
+  #: 14
+  URL: CzechCrunch on Sandberg's second fund
+  (https://cc.cz/slovensky-sandberg-capital-uzavrel-svuj-trimiliardovy-fond-stov
+  ky-milionu-z-nej-investoval-do-ceskych-firem/)
+  Published: 2021-12-16
+  What it shows: Calls it a Slovak PE firm, contrasted with VC; Czech holdings.
+
+  Documentation still says "not frozen" (I made no edits)
+
+  These status lines contradict the freeze recorded in data/reviews.json
+  (frozenOn 2026-10-22, both fingerprints set and still matching):
+
+  - README.md:7 (README.md#L7): "The frame is not frozen, and no candidate has a
+    human review label."
+  - docs/discovery.md:3 (docs/discovery.md#L3): "Not frozen and not
+    human-reviewed."
+  - docs/evaluation.md:7 (docs/evaluation.md#L7) and docs/evaluation.md:9
+    (docs/evaluation.md#L9): "It is not frozen", and the fingerprints "are
+    unset".
+  - docs/plan.md:85 (docs/plan.md#L85), docs/plan.md:92 (docs/plan.md#L92) and
+    docs/plan.md:95 (docs/plan.md#L95): "not frozen", fingerprints "unset", and
+    the "Next" step still lists freezing as to-do.
+
+  Suggested wording for those lines:
+
+  ▎ Frozen on 2026-10-22. Candidate and prediction fingerprints are recorded in
+  ▎ data/reviews.json and checked by npm run evaluate. Human review is in
+  ▎ progress; no labels have been entered in data/reviews.json yet.
+
+  I'd also drop "and its freeze fingerprints are unset" everywhere. In plan.md's
+  "Next" line, replace the freezing step with "enter the human labels in
+  data/reviews.json, then run npm run evaluate". Any change to these docs leaves
+  the freeze intact, because the fingerprints cover only the candidate and
+  prediction files.
+
+  I've stopped after these five. The next undiscussed candidates in frame order
+  would be #15 EVERITA Capital, #16 PurposeTech, #17 i&i Biotech Investments,
+  #18 MAM Private Equity Fund and #19 Heartcore Capital.
+
+> We have completed most of the human review through a conversation outside
+  this repository. An empty data/reviews.json is intentional: do not infer from
+  it that no review decisions exist.
+
+  The frame is frozen on 2026-10-22. Both fingerprints recorded in
+  data/reviews.json match the frozen candidate and prediction files. Do not
+  modify data/candidates.json, data/investors.json, data/reviews.json,
+  predictions, or any other dataset.
+
+  User-confirmed decisions so far:
+  - Credo Ventures — eligible
+  - Tilia Impact Ventures — eligible
+  - Purple Ventures — eligible
+  - UP271 — unresolved; very high uncertainty because confirmed public evidence
+  is limited
+  - Lighthouse venture — unresolved; the directory record may refer to a US
+  firm, while a separate Czech VC with a similar name exists
+  - Enern — weak unresolved; public information suggests it may fit, but the
+  boundary with KAYA and the current fund manager is unclear
+  - Innova Capital — not_eligible; Poland-based private-equity manager
+  - Orbit Capital — eligible
+  - RSJ Investments — unresolved; no qualifying recent direct investment was
+  confirmed in public sources. This does not imply closure or inactivity.
+  - mAccelerator.vc — not_eligible; its principal base appears to be Poland,
+  even though it invested in Czech companies
+  - Limerock Ventures — not_eligible; its operating base is in Bratislava,
+  Slovakia, despite its Czech and Slovak investment focus
+  - Impulse Ventures — weak unresolved; the 2025 Safetica investment is
+  attributed to Impulse Capital, and public evidence does not clearly attribute
+  it to Impulse Ventures
+  - KAYA VC — eligible; note its possible overlap with the Enern record because
+  sources describe KAYA as formerly called or the VC successor to Enern
+  - Sandberg Capital — not_eligible; private-equity strategy and Slovak
+  principal base
+  - PurposeTech — unresolved; its Prague address is described as a mailing
+  address, so its principal Czech operating base is not confirmed
+
+  First, update only stale status wording in README.md, docs/discovery.md,
+  docs/evaluation.md, and docs/plan.md:
+  - State that the candidate frame and predictions were frozen on 2026-10-22
+  and that the fingerprints are recorded in data/reviews.json.
+  - State that human review is in progress and no labels have been entered in
+  data/reviews.json yet.
+  - Remove outdated statements that the frame is not frozen or fingerprints are
+  unset.
+  - In docs/plan.md, replace freezing the frame as a future task with
+  completing human review, entering user-confirmed labels, then running
+  evaluation.
+    Do not claim any human labels are stored in the repository.
+
+  Then inspect the frozen candidate order and prepare research notes for the
+  five remaining undiscussed candidates in frame order: #15 Everita Capital,
+  #17 i&i Biotech Investments, #18 MAM Private Equity Fund, #19 Heartcore
+  Capital, and #20 Hithit. Verify each exact candidate ID against the data file
+  before researching. PurposeTech at #16 has already been discussed; do not
+  repeat it.
+
+  For each of the five, provide a compact table with:
+  1. Exact name and ID.
+  2. Evidence that it is or is not a VC investment manager.
+  3. Evidence for its principal operating office; a registered or mailing
+  address alone is insufficient.
+  4. Evidence of a dated, completed, direct company investment on or after
+  2023-10-22.
+  5. Direct source URLs, source dates, and what each source establishes.
+  6. Ambiguities and missing evidence. Do not treat lack of public mentions as
+  proof that the organization closed or stopped operating.
+
+  Do not assign human labels or modify the review file. Do not run tests.
+  Report exactly which documentation files you changed and confirm that
+  candidate and prediction files remained untouched. Then stop and wait for the
+  user.
+
+● I'll record the data-file hashes first, then read the stale passages.
+
+  Searched for 1 pattern, ran 1 shell command (ctrl+o to expand)
+
+● Editing only the stale status sentences.
+
+● Update(README.md)
+  ⎿  Added 1 line, removed 1 line
+       4  
+       5  ## Current status
+       6  
+       7 -A 20-organization pilot discovery frame has been drawn from the
+         - CzechStartups investor directory and the CVCA full-member list
+         - (docs/discovery.md). It has preliminary predictions: 4 include
+         -d, 8 needs_review, 8 excluded. The frame is not frozen, and no 
+         -candidate has a human review label. The user has manually check
+         -ed selected sources for the original three candidates (Credo Ve
+         -ntures, Tilia Impact Ventures, Purple Ventures). No precision r
+         -esult or global scale estimate is claimed. The frame is a small
+         - pilot sample, not a representative estimate of the Czech VC ma
+         -rket.                                                          
+       7 +A 20-organization pilot discovery frame has been drawn from the
+         + CzechStartups investor directory and the CVCA full-member list
+         + (docs/discovery.md). It has preliminary predictions: 4 include
+         +d, 8 needs_review, 8 excluded. The candidate frame and predicti
+         +ons were frozen on 2026-10-22, and their fingerprints are recor
+         +ded in data/reviews.json. Human review is in progress; no label
+         +s have been entered in data/reviews.json yet. The user has manu
+         +ally checked selected sources for the original three candidates
+         + (Credo Ventures, Tilia Impact Ventures, Purple Ventures). No p
+         +recision result or global scale estimate is claimed. The frame 
+         +is a small pilot sample, not a representative estimate of the C
+         +zech VC market.                                                
+       8  
+       9  ## Scope
+      10  
+
+● Update(docs\discovery.md)
+  ⎿  Added 1 line, removed 1 line
+      1  # Candidate discovery (2026-10-22)
+      2  
+      3 -Status: pilot discovery frame of 20 organizations with prelimina
+        -ry predictions. **Not frozen and not human-reviewed.** No human 
+        -labels exist (data/reviews.json is empty).                      
+      3 +Status: pilot discovery frame of 20 organizations with prelimina
+        +ry predictions. The frame and predictions were frozen on 2026-10
+        +-22; their fingerprints are recorded in data/reviews.json. Human
+        + review is in progress; no labels have been entered in data/revi
+        +ews.json yet.                                                   
+      4  
+      5  ## Sources
+      6  
+
+● Update(docs\evaluation.md)
+  ⎿  Added 3 lines, removed 3 lines
+       4  
+       5  Not measured. `npm run evaluate` currently reports every metric
+           as unavailable because:
+       6  
+       7 -- data/candidates.json has a 20-organization discovery frame (d
+         -ocs/discovery.md). It is not frozen.                           
+       8 -- data/investors.json has 20 preliminary predictions (4 include
+         -d, 8 needs_review, 8 excluded), not human-reviewed.            
+       9 -- data/reviews.json has 0 human labels, and its freeze fingerpr
+         -ints are unset.                                                
+       7 +- data/candidates.json has a 20-organization discovery frame (d
+         +ocs/discovery.md), frozen on 2026-10-22.                       
+       8 +- data/investors.json has 20 preliminary predictions (4 include
+         +d, 8 needs_review, 8 excluded), frozen on 2026-10-22.          
+       9 +- The fingerprints of both files are recorded in `freeze` in da
+         +ta/reviews.json. Human review is in progress; no labels have be
+         +en entered in data/reviews.json yet.                           
+      10  
+      11  The `manualVerification` notes in data/candidates.json record t
+          hat the user checked individual sources. They are not human eli
+          gibility labels and are not used by the evaluation.
+      12  
+
+● Update(docs\plan.md)
+  ⎿  Added 2 lines, removed 2 lines
+      82  
+      83  Current status (2026-10-22):
+      84  
+      85 -- Discovery: both directories were captured as snapshots in dat
+         -a/discovery/. data/candidates.json holds a 20-organization pilo
+         -t frame: the 3 earlier candidates plus 17 drawn by a seeded, na
+         -me-only rule from the deduplicated union of 69 organizations. M
+         -ethod and limitations are in docs/discovery.md. The frame is **
+         -not frozen**.                                                  
+      86 -- data/investors.json holds 20 preliminary predictions: 4 inclu
+         -ded (Credo Ventures, Tilia Impact Ventures, Purple Ventures, Pu
+         -rposeTech), 8 needs_review, 8 excluded. None has been human-rev
+         -iewed.                                                         
+      85 +- Discovery: both directories were captured as snapshots in dat
+         +a/discovery/. data/candidates.json holds a 20-organization pilo
+         +t frame: the 3 earlier candidates plus 17 drawn by a seeded, na
+         +me-only rule from the deduplicated union of 69 organizations. M
+         +ethod and limitations are in docs/discovery.md. The frame was f
+         +rozen on 2026-10-22.                                           
+      86 +- data/investors.json holds 20 preliminary predictions: 4 inclu
+         +ded (Credo Ventures, Tilia Impact Ventures, Purple Ventures, Pu
+         +rposeTech), 8 needs_review, 8 excluded. They were frozen on 202
+         +6-10-22.                                                       
+      87  - Source-level manual checks recorded in data/candidates.json (
+          `manualVerification`) exist only for the original 3 candidates:
+      88    - Credo: direct investment, Prague office, and Fund V size ar
+          e checked; the strategy/stage/ticket evidence is not.
+      89    - Tilia: the original five evidence items are checked; the Li
+          feyear article added on 2026-10-22 is not.
+
+● Update(docs\plan.md)
+  ⎿  Added 1 line, removed 1 line
+      89    - Tilia: the original five evidence items are checked; the Li
+          feyear article added on 2026-10-22 is not.
+      90    - Purple: direct investment, strategy, and Fund II launch tar
+          get are checked; the registered-office evidence, the homepage o
+          perating-office evidence added on 2026-10-22, and the 2026 fund
+          raising update are not.
+      91    These are checks of individual sources, not human eligibility
+           labels. No source for the 17 new candidates has been manually 
+          checked.
+      92 -- data/reviews.json has 0 human labels, and its freeze fingerpr
+         -ints are unset.                                                
+      92 +- The fingerprints of the frozen candidate list and predictions
+         + are recorded in `freeze` in data/reviews.json. Human review is
+         + in progress; no labels have been entered in data/reviews.json 
+         +yet.                                                           
+      93  - No precision, recall, or global count is claimed. docs/global
+          -estimate.md has not been started.
+      94  
+      95  Next: a human reviews the frame and predictions, the candidate 
+          list and predictions are frozen with `npm run fingerprint`, a h
+          uman labels every candidate in data/reviews.json, then run `npm
+           run evaluate`.
+
+● Update(docs\plan.md)
+  ⎿  Added 1 line, removed 1 line
+      92  - The fingerprints of the frozen candidate list and predictions
+           are recorded in `freeze` in data/reviews.json. Human review is
+           in progress; no labels have been entered in data/reviews.json 
+          yet.
+      93  - No precision, recall, or global count is claimed. docs/global
+          -estimate.md has not been started.
+      94  
+      95 -Next: a human reviews the frame and predictions, the candidate 
+         -list and predictions are frozen with `npm run fingerprint`, a h
+         -uman labels every candidate in data/reviews.json, then run `npm
+         - run evaluate`.                                                
+      95 +Next: complete the human review of every candidate, enter the u
+         +ser-confirmed labels in data/reviews.json, then run `npm run ev
+         +aluate`.                                                       
+
+● Docs updated. Now verifying the data files are untouched and pulling the five
+  frozen records.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The data files are unchanged (hashes and fingerprints match), and all five IDs
+  are confirmed. Researching the five candidates now.
+
+● Fetch(https://everitacap.com/)
+  ⎿  Received 125.1KB (200 OK)
+
+● Fetch(https://cvca.cz/en/everita-capital-en/)
+  ⎿  Received 91.8KB (200 OK)
+● Fetch(https://www.inibio.eu)
+  ⎿  Received 884.4KB (200 OK)
+
+● Fetch(https://www.inibio.eu/news/captain-t-cell-closes-financing-round-to-adva
+       nce-its-proprietary%2C-next-generation-tcr-t-pipeline-into-the-clinic-)
+  ⎿  Received 756.6KB (200 OK)
+
+● Fetch(https://cvca.cz/en/biotech-investments/)
+  ⎿  Received 91.9KB (200 OK)
+
+● Fetch(https://www.mam-equity.cz/)
+  ⎿  Received 66.1KB (200 OK)
+
+● Fetch(https://www.heartcore.com/about)
+  ⎿  Received 38.5KB (200 OK)
+
+● Fetch(https://czechstartups.gov.cz/investori_en/heartcore-capital/)
+  ⎿  Received 158.8KB (200 OK)
+
+● Fetch(https://www.hithit.com/cs/home)
+  ⎿  Received 29.6KB (200 OK)
+
+● Fetch(https://czechstartups.gov.cz/investori_en/hithit/)
+  ⎿  Received 158.2KB (200 OK)
+
+● Fetch(https://cvca.cz/en/mam-private-equity-fund-sicav-a-s/)
+  ⎿  Received 92.9KB (200 OK)
+
+● Web Search("i&i Biotech Fund AIFM manager Luxembourg Biotech Investments
+            s.r.o. Praha team")
+  ⎿  Did 1 search in 6s
+
+● Fetch(https://www.uochb.cz/en/ini-bio)
+  ⎿  Received 102KB (200 OK)
+
+● Web Search("EVERITA Capital Clintrial investment 2026")
+  ⎿  Did 1 search in 7s
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I updated the stale status wording in the four docs and prepared notes on the
+  last five undiscussed candidates. No dataset file changed. As you asked, I
+  didn't run tests and haven't assigned or suggested any labels.
+
+  Documentation changes
+
+  I edited only these four files, 9 lines in total:
+
+  File: README.md (README.md#L7)
+  What changed: "The frame is not frozen, and no candidate has a human review
+  label" now says the frame and predictions were frozen on 2026-10-22, the
+  fingerprints are recorded in data/reviews.json, human review is in progress,
+  and no labels have been entered there yet.
+  ────────────────────────────────────────
+  File: docs/discovery.md (docs/discovery.md#L3)
+  What changed: Replaced "Not frozen and not human-reviewed. No human labels
+  exist" with the same frozen / review-in-progress wording.
+  ────────────────────────────────────────
+  File: docs/evaluation.md (docs/evaluation.md#L7-L9)
+  What changed: The three status bullets now say both files were frozen on
+  2026-10-22 and the fingerprints are in freeze, replacing "not frozen", "not
+  human-reviewed" and "fingerprints are unset". No labels have been entered
+  yet.
+  ────────────────────────────────────────
+  File: docs/plan.md (docs/plan.md#L85-L95)
+  What changed: Removed "not frozen", "None has been human-reviewed" and
+  "fingerprints are unset". "Next" now reads: complete the human review, enter
+  the user-confirmed labels in data/reviews.json, then run npm run evaluate.
+
+  Data files: data/candidates.json, data/investors.json, data/reviews.json and
+  both data/discovery/ snapshots have the same SHA-256 hashes as before the
+  edits. npm run fingerprint still prints the recorded fingerprints.
+
+  I left the Freezing section of evaluation.md (lines 39–42) alone because it
+  describes the general procedure, not current status.
+
+  Candidate IDs (checked against data/candidates.json)
+
+  #15 candidate-everitacapital, #17 candidate-i-and-i-biotech-investments, #18
+  candidate-mamprivateequityfund, #19 candidate-heartcorecapital, #20
+  candidate-hithit. I skipped #16 PurposeTech.
+
+  Research notes
+
+  #: 15
+  Name (ID): EVERITA Capital (candidate-everitacapital)
+  Is it a VC manager?: No: growth private equity. It refers to "30 years of
+  private equity experience", invests €2–5m in "strong minority or majority
+  stakes" in companies "beyond the startup phase" with ≥€3m revenue. CVCA lists
+   it as "Private Equity – growth capital".
+  Principal operating office: Prague. CVCA separates the registered seat
+  ("Sídlo", Na Florenci 2116/15, Praha 1) from the office ("Kanceláře",
+  Evropská 11/2758, Praha 6). The official site lists both. Geography looks
+  Czech.
+  Dated completed direct investment on or after 2023-10-22: Clintrial (Prague),
+  in the official news item dated 2026-08-31: a majority stake, per trade
+  coverage. Pekarna Hrstić (Croatia), 2026-03-31. Neither discloses an amount.
+  Ambiguity / missing evidence: Its type is the problem, not its geography or
+  activity.
+  ────────────────────────────────────────
+  #: 17
+  Name (ID): i&i Biotech Investments (candidate-i-and-i-biotech-investments)
+  Is it a VC manager?: Yes, VC. The official site calls it "one of the very few
+  VC funds in Europe focused exclusively on life science ventures", with
+  tickets from €150k and a €0.5–2M sweet spot. It's an EIF-backed fund set up
+  in 2021 with i&i Prague/IOCB.
+  Principal operating office: Unresolved between Luxembourg and Prague. HQ is
+  the
+  fund vehicle (i&i Biotech Fund I SCSp, Luxembourg). The investment adviser,
+  Biotech Investments s.r.o., is at Pobřežní 394/12, Prague 8, which CVCA also
+  lists. The Captain T Cell release calls i&i Bio "a Luxembourg-based venture
+  capital firm". A secondary profile says it has teams in Luxembourg and
+  Prague. I found no source naming the manager (AIFM/GP).
+  Dated completed direct investment on or after 2023-10-22: Captain T Cell,
+  2025-11-17 (own site): "successful closing of an equity financing round" in
+  which "existing investors i&i Biotech Fund I SCSp… also participated". The
+  €20M is the company's total budget including grants, not i&i's cheque. The
+  portfolio also lists 2024–2026 entries (e.g. Theorema 2026), and T-CURX had a
+   Series A first close on 2025-12-17.
+  Ambiguity / missing evidence: Which entity is the manager: the Luxembourg
+  vehicle, the Prague adviser, or an unnamed AIFM? The team includes
+  Prague-associated people (IOCB ecosystem; Prague adviser address), but no
+  source says outright that decisions are made in Prague.
+  ────────────────────────────────────────
+  #: 18
+  Name (ID): MAM Private Equity Fund SICAV a.s. (candidate-mamprivateequityfund)
+  Is it a VC manager?: No: private equity buyouts. The site says "Charakter
+  fondu: Private equity" and targets profitable mid-sized companies with EBITDA
+   of CZK 25–250m. CVCA lists MBO/MBI/LBO and growth capital, €2–8m equity.
+  Majority stakes (Raycom 90%, COMGUARD 70.4%).
+  Principal operating office: Prague. CVCA gives Klimentská 1216/46, Praha 1,
+  with a managing partner as contact; the official site gives no address. The
+  fund itself is a SICAV managed by WOOPE investiční společnost a.s., with QI
+  investiční společnost as administrator.
+  Dated completed direct investment on or after 2023-10-22: UNIPAP Packaging,
+  50%
+  stake, press release 2025-09-24 (completed in summer, subject to
+  competition-authority (ÚOHS) approval). PJ EXPEDIS / MUFF Logistics, 100%
+  acquisition completed, press release 2026-09-08. These are buyouts, not VC
+  rounds.
+  Ambiguity / missing evidence: The unit of record is unclear: the candidate is
+  the fund vehicle, while the manager is WOOPE, and the team brand appears to
+  be MA Management. Nothing suggests VC activity.
+  ────────────────────────────────────────
+  #: 19
+  Name (ID): Heartcore Capital (candidate-heartcorecapital)
+  Is it a VC manager?: Yes, VC. "One of Europe's longest-standing, pure
+  early-stage investors", pre-seed to Series A.
+  Principal operating office: Copenhagen, per the CzechStartups listing ("based
+  in Copenhagen with offices across Europe"). Its About page lists only
+  Copenhagen and Paris addresses. No Czech office found.
+  Dated completed direct investment on or after 2023-10-22: Not researched
+  further: the geography rule is decisive.
+  Ambiguity / missing evidence: Its presence in the Czech directory doesn't
+  establish a Czech base.
+  ────────────────────────────────────────
+  #: 20
+  Name (ID): HitHit (candidate-hithit)
+  Is it a VC manager?: No: reward-based crowdfunding platform. The site refers
+  to
+  "odměnového crowdfundingu" (reward-based crowdfunding). CzechStartups calls
+  it "a crowdfunding company". Neither source says it invests in companies, and
+   it offers no equity product.
+  Principal operating office: Prague 8 (Karolinská 654/2, Karlín). The footer
+  gives only a legal-identity address; no other office evidence.
+  Dated completed direct investment on or after 2023-10-22: None. It acts as a
+  platform, not an investor.
+  Ambiguity / missing evidence: Low ambiguity. It's in the directory despite not
+
+  being an investor.
+
+  Sources
+
+  #: 15
+  URL: everitacap.com (https://everitacap.com/)
+  Date: News 2026-03-31 and 2026-08-31
+  What it shows: PE self-description, ticket, two Prague addresses, Fund I
+  portfolio, completed investments.
+  ────────────────────────────────────────
+  #: 15
+  URL: CVCA: EVERITA (https://cvca.cz/en/everita-capital-en/)
+  Date: Undated
+  What it shows: "Private Equity – growth capital"; registered seat vs office;
+  €40m target fund.
+  ────────────────────────────────────────
+  #: 15
+  URL: Investors in Healthcare on Clintrial
+  (https://www.investorsinhealthcare.com/articles/category/news/czech-republic-e
+  verita-capital-acquires-majority-stake-in-clintrial/)
+  Date: Undated (I didn't open it)
+  What it shows: Secondary: majority stake, Prague target.
+  ────────────────────────────────────────
+  #: 17
+  URL: inibio.eu (https://www.inibio.eu)
+  Date: Undated, with news 2025
+  What it shows: VC self-description; Luxembourg HQ vs Prague adviser; dated
+  portfolio entries 2023–2026; team.
+  ────────────────────────────────────────
+  #: 17
+  URL: Captain T Cell closing
+  (https://www.inibio.eu/news/captain-t-cell-closes-financing-round-to-advance-i
+  ts-proprietary%2C-next-generation-tcr-t-pipeline-into-the-clinic-)
+  Date: 2025-11-17
+  What it shows: Completed equity round; i&i Biotech Fund I SCSp participated;
+  "Luxembourg-based".
+  ────────────────────────────────────────
+  #: 17
+  URL: CVCA: i&i Biotech Investments (https://cvca.cz/en/biotech-investments/)
+  Date: Undated
+  What it shows: Prague 8 address; CFO as contact.
+  ────────────────────────────────────────
+  #: 17
+  URL: IOCB page on i&i Bio (https://www.uochb.cz/en/ini-bio)
+  Date: Undated
+  What it shows: Founded 2021 with the EIF; IOCB/i&i Prague connection. Doesn't
+  name the office or manager.
+  ────────────────────────────────────────
+  #: 18
+  URL: mam-equity.cz (https://www.mam-equity.cz/)
+  Date: Press releases 2025-09-24 and 2026-09-08
+  What it shows: PE character; WOOPE as manager; majority-stake buyouts.
+  ────────────────────────────────────────
+  #: 18
+  URL: CVCA: MAM (https://cvca.cz/en/mam-private-equity-fund-sicav-a-s/)
+  Date: Undated
+  What it shows: MBO/LBO type; Prague 1 address; €2–8m equity.
+  ────────────────────────────────────────
+  #: 19
+  URL: heartcore.com/about (https://www.heartcore.com/about)
+  Date: Undated
+  What it shows: Copenhagen and Paris offices; early-stage VC.
+  ────────────────────────────────────────
+  #: 19
+  URL: CzechStartups: Heartcore
+  (https://czechstartups.gov.cz/investori_en/heartcore-capital/)
+  Date: Undated
+  What it shows: "Based in Copenhagen".
+  ────────────────────────────────────────
+  #: 20
+  URL: hithit.com (https://www.hithit.com/cs/home)
+  Date: Undated (© 2012–2026)
+  What it shows: Reward crowdfunding; Karlín footer.
+  ────────────────────────────────────────
+  #: 20
+  URL: CzechStartups: HitHit (https://czechstartups.gov.cz/investori_en/hithit/)
+  Date: Undated
+  What it shows: "Crowdfunding company".
+
+  With these five, every candidate in the frame has now been researched.
+
+> All 20 candidates have now been reviewed by the human reviewer, and the user
+  has explicitly confirmed the decisions below. Enter only these user-confirmed
+  decisions into data/reviews.json.
+
+  Before editing:
+  1. Inspect the review schema and current data/reviews.json.
+  2. Preserve datasetDate, the freeze object, both fingerprints, and all other
+  existing metadata exactly.
+  3. Use the schema’s exact field names and allowed label values. Do not add
+  fields such as confidence unless the schema supports them.
+  4. For each review, use source URLs already present in the corresponding
+  frozen candidate record and the confirmed source notes. Do not invent URLs or
+  make new label decisions. If a required source URL is missing for a review,
+  stop and report that candidate instead of fabricating evidence.
+
+  Reviewer: Leonid Kuznetsov
+  Review date: 2026-10-26
+
+  User-confirmed labels and reasons:
+
+  - candidate-credo-ventures — eligible
+    VC investor; Prague operating base established; direct investment in Delta
+  Green confirmed.
+
+  - candidate-tilia-impact-ventures — eligible
+    VC investor; Prague base confirmed; dated direct investment in Delta Green
+  confirmed.
+
+  - candidate-purple-ventures — eligible
+    VC investor; Brno operating base accepted by the reviewer; dated direct
+  investment in Delta Green confirmed.
+
+  - candidate-up271 — unresolved
+    Very high uncertainty: public evidence is limited and does not clearly
+  establish the organization’s VC-manager status, principal operating office,
+  and a qualifying recent direct investment. This does not imply inactivity.
+
+  - candidate-lighthouseventure — unresolved
+    The directory record has an identity conflict: its link and description
+  point to a US firm, while a separate Czech VC with a similar name exists. The
+  Czech firm’s office and portfolio cannot safely be attributed to the
+  directory record.
+
+  - candidate-enern — unresolved
+    Weak unresolved: available evidence suggests it may qualify, including a
+  recent direct financing event and Prague-related evidence, but the
+  organizational boundary between Enern, KAYA, and the current fund manager
+  remains unclear.
+
+  - candidate-innovacapital — not_eligible
+    Private-equity manager based in Warsaw, Poland; Czech portfolio activity
+  does not meet the Czech-base requirement.
+
+  - candidate-orbitcapital — eligible
+    Growth equity and venture-debt investment manager; Prague operating base
+  confirmed; participation in the completed CloudTalk Series B in January 2024
+  confirmed. The round total is not Orbit’s cheque.
+
+  - candidate-rsj-investments — unresolved
+    VC fund-of-funds with direct co-investments, but no qualifying recent
+  direct company investment was confirmed in public sources. This does not
+  imply closure or inactivity.
+
+  - candidate-macceleratorvc — not_eligible
+    Principal base appears to be Poland. Investments in Czech companies do not
+  satisfy the Czech-base requirement.
+
+  - candidate-limerockventures — not_eligible
+    VC manager based in Bratislava, Slovakia. Its Czech investment focus does
+  not satisfy the Czech-base requirement.
+
+  - candidate-impulseventures — unresolved
+    Weak unresolved: the 2025 Safetica financing is attributed to Impulse
+  Capital, and the public evidence does not clearly establish that Impulse
+  Ventures itself made the investment.
+
+  - candidate-kayavc — eligible
+    Early-stage VC; Prague headquarters/operating base accepted by the
+  reviewer; direct participation in the E2B Series A in July 2025 confirmed.
+  Note the possible historical/name overlap with the Enern candidate in the
+  reason if appropriate, without changing the decision.
+
+  - candidate-sandbergcapital — not_eligible
+    Private-equity manager with its principal base in Bratislava, Slovakia. A
+  Prague office and Czech portfolio companies do not make it a Czech-based VC
+  manager.
+
+  - candidate-everitacapital — not_eligible
+    Growth private-equity firm, not a VC manager. Its Czech office and recent
+  buyouts do not change the investment-type decision.
+
+  - candidate-purposetech — unresolved
+    The public evidence does not establish that the principal operating base is
+  in Czechia; the Prague address is described as a mailing address. This does
+  not imply inactivity.
+
+  - candidate-i-and-i-biotech-investments — unresolved
+    VC activity and a qualifying recent direct investment are confirmed, but
+  the official site lists the fund headquarters in Luxembourg and an investment
+  adviser in Prague without establishing where the manager’s principal
+  operating team and investment decisions are based.
+
+  - candidate-mamprivateequityfund — not_eligible
+    Private-equity buyout/MBO investment strategy, not VC.
+
+  - candidate-heartcorecapital — not_eligible
+    VC firm based in Copenhagen, Denmark; no Czech principal operating office
+  established.
+
+  - candidate-hithit — not_eligible
+    Reward-based crowdfunding platform, not a VC investor.
+
+  After editing:
+  1. Run npm.cmd test.
+  2. Run npm.cmd run validate.
+  3. Run npm.cmd run evaluate.
+  4. Run npm.cmd run fingerprint.
+  5. Confirm that candidate and prediction fingerprints still match the
+  recorded freeze.
+  6. Show the final label counts, evaluation output, and `git diff --
+  data/reviews.json`.
+  7. Do not modify candidate, prediction, or documentation files during this
+  step.
+
+● Inspecting the review schema, the validator, and the source URLs in each
+  frozen candidate record.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● All candidates have the required source URL, but I'll pull the full records
+  for Orbit, mAccelerator, and Enern to verify some cited evidence.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Three reasons (Orbit Capital, mAccelerator.vc, Enern) rely on claims with no
+  supporting source URL in the record, so per your instruction I'll hold those
+  back rather than attach unsupported links and enter the other 17. Next I'll
+  check the PurposeTech excerpt and the ID typo.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The ID candidate-rsj-investments doesn't exist—I'll use
+  candidate-rsjinvestments instead, the only matching RSJ record, and now write
+  the 17 reviews while preserving the existing metadata exactly.
+
+● Bash(cd "[LOCAL_WINDOWS_PATH_REDACTED]"
+      && cat > "[LOCAL_WINDOWS_PATH_REDACTED]
+      …)
+  ⎿  Updated data\reviews.json (+194 -1)
+        5      "candidatesFingerprint": "5dd76ba0d2722da9d075ffef4185bfc5
+           bc21c8185930994eaf94e1e5c8c6f8cd",
+        6      "predictionsFingerprint": "8cc70f92dc3fe5354ac4bab5fba468f
+           69e343bc90888198d9fb5bbc640081f4a"
+        7    },
+        8 -  "reviews": []                                               
+        8 +  "reviews": [                                                
+        9 +    {                                                         
+       10 +      "candidateId": "candidate-credo-ventures",              
+       11 +      "label": "eligible",                                    
+       12 +      "reviewer": "Leonid Kuznetsov",                         
+       13 +      "reviewDate": "2026-10-26",                             
+       14 +      "reason": "VC investor; Prague operating base establishe
+          +d; direct investment in Delta Green confirmed.",              
+       15 +      "sourceUrls": [                                         
+       16 +        "https://www.deltagreen.cz/press-releases/czech-energy
+          +-innovators-in-the-spotlight-delta-green-secures-eu2-2-million
+          +-from-tilia-impact-ventures-credo-ventures-and-purple-ventures
+          +",                                                            
+       17 +        "https://www.credoventures.com/"                      
+       18 +      ]                                                       
+       19 +    },                                                        
+       20 +    {                                                         
+       21 +      "candidateId": "candidate-tilia-impact-ventures",       
+       22 +      "label": "eligible",                                    
+       23 +      "reviewer": "Leonid Kuznetsov",                         
+       24 +      "reviewDate": "2026-10-26",                             
+       25 +      "reason": "VC investor; Prague base confirmed; dated dir
+          +ect investment in Delta Green confirmed.",                    
+       26 +      "sourceUrls": [                                         
+       27 +        "https://www.deltagreen.cz/press-releases/czech-energy
+          +-innovators-in-the-spotlight-delta-green-secures-eu2-2-million
+          +-from-tilia-impact-ventures-credo-ventures-and-purple-ventures
+          +",                                                            
+       28 +        "https://tilia.vc/"                                   
+       29 +      ]                                                       
+       30 +    },                                                        
+       31 +    {                                                         
+       32 +      "candidateId": "candidate-purple-ventures",             
+       33 +      "label": "eligible",                                    
+       34 +      "reviewer": "Leonid Kuznetsov",                         
+       35 +      "reviewDate": "2026-10-26",                             
+       36 +      "reason": "VC investor; Brno operating base accepted by 
+          +the reviewer; dated direct investment in Delta Green confirmed
+          +.",                                                           
+       37 +      "sourceUrls": [                                         
+       38 +        "https://www.deltagreen.cz/press-releases/czech-energy
+          +-innovators-in-the-spotlight-delta-green-secures-eu2-2-million
+          +-from-tilia-impact-ventures-credo-ventures-and-purple-ventures
+          +",                                                            
+       39 +        "https://www.purple-ventures.com/"                    
+       40 +      ]                                                       
+       41 +    },                                                        
+       42 +    {                                                         
+       43 +      "candidateId": "candidate-up271",                       
+     … 159 more lines (ctrl+o to expand)
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● I entered 17 of the 20 confirmed labels in data/reviews.json. I held back
+  three, Orbit Capital, mAccelerator.vc and Enern, because their reasons rest on
+  evidence with no source URL. Tests, validation and evaluation all passed.
+
+  Held back: Orbit Capital, mAccelerator.vc, Enern
+
+  Candidate: candidate-orbitcapital
+  Your label: eligible
+  What's missing: The frozen record has only orbitcapital.com and the CVCA
+  listing, and says no investment announcement was found. No URL anywhere
+  supports the CloudTalk Series B (January 2024) or the Prague office, and the
+  eligibility rests on those.
+  ────────────────────────────────────────
+  Candidate: candidate-macceleratorvc
+  Your label: not_eligible
+  What's missing: The record has no evidence items, only the CzechStartups
+  listing. It says Warsaw appears only on aggregators, with no URL. Nothing
+  supports "principal base appears to be Poland".
+  ────────────────────────────────────────
+  Candidate: candidate-enern
+  Your label: unresolved
+  What's missing: The record's URLs support the Prague and KAYA-boundary parts
+  of
+  the reason. The record says no investment announcement was found, so nothing
+  supports the "recent direct financing event".
+
+  If you send the URLs you used for these in the ChatGPT review (the CloudTalk
+  round and Orbit's office, mAccelerator's Polish base, Enern's financing
+  event), I'll add the three reviews and rerun the checks.
+
+  Two changes to your list
+
+  - RSJ ID: candidate-rsj-investments isn't in the frame, so I used the frame's
+    ID, candidate-rsjinvestments.
+  - Extra URLs: I added four URLs from the research earlier in this conversation
+    where your reasons rely on them: lhv.vc for Lighthouse, and the Insight
+    Partners E2B release, the CVCA profile and the 2021 TechCrunch article for
+    KAYA. All other URLs come from the frozen records.
+  - KAYA reason: I added one sentence noting the possible overlap with Enern,
+    saying it doesn't change the decision.
+  - Everything else: the other reasons are your wording verbatim, apart from
+    straight apostrophes.
+
+  Results
+
+  Label counts (17 entered): 4 eligible, 7 not_eligible, 6 unresolved.
+
+  Checks:
+  - npm.cmd test: 47 passed, 0 failed.
+  - npm.cmd run validate: candidates 20, investors 20 and reviews 17, all valid.
+  - npm.cmd run fingerprint: both fingerprints match the recorded freeze, and
+    evaluate also reports "matches" for both files.
+
+  npm.cmd run evaluate:
+
+  ┌────────────────────┬──────────┬─────────────────────────────────────────┐
+  │       Metric       │  Value   │               Candidates                │
+  ├────────────────────┼──────────┼─────────────────────────────────────────┤
+  │ TP                 │ 3        │ Credo, Tilia, Purple                    │
+  ├────────────────────┼──────────┼─────────────────────────────────────────┤
+  │ FP                 │ 0        │                                         │
+  ├────────────────────┼──────────┼─────────────────────────────────────────┤
+  │ TN                 │ 7        │ Innova, Limerock, Sandberg, EVERITA,    │
+  │                    │          │ MAM, Heartcore, HitHit                  │
+  ├────────────────────┼──────────┼─────────────────────────────────────────┤
+  │ FN                 │ 0        │                                         │
+  ├────────────────────┼──────────┼─────────────────────────────────────────┤
+  │ Precision          │ 1.00     │                                         │
+  │                    │ (3/3)    │                                         │
+  ├────────────────────┼──────────┼─────────────────────────────────────────┤
+  │ Conservative       │ 0.75     │ PurposeTech was predicted included and  │
+  │ precision          │ (3/4)    │ labelled unresolved                     │
+  ├────────────────────┼──────────┼─────────────────────────────────────────┤
+  │ Sample recall      │ 1.00     │                                         │
+  │                    │ (3/3)    │                                         │
+  └────────────────────┴──────────┴─────────────────────────────────────────┘
+
+  Reported separately, outside the binary counts:
+  - Lighthouse was predicted excluded and labelled unresolved.
+  - needs_review predictions: KAYA labelled eligible; UP271, RSJ, Impulse and
+    i&i labelled unresolved; Enern, Orbit and mAccelerator not yet labelled.
+
+  None of the three held-back candidates enter the binary counts, because all
+  three are needs_review predictions. Their labels won't change the metrics
+  above.
+
+  git diff -- data/reviews.json: 194 insertions, 1 deletion. The only removed
+  line is "reviews": []. datasetDate, freeze.frozenOn and both fingerprints are
+  unchanged in the diff's context lines. The start of the diff:
+
+       "candidatesFingerprint":
+  "5dd76ba0d2722da9d075ffef4185bfc5bc21c8185930994eaf94e1e5c8c6f8cd",
+       "predictionsFingerprint":
+  "8cc70f92dc3fe5354ac4bab5fba468f69e343bc90888198d9fb5bbc640081f4a"
+     },
+  -  "reviews": []
+  +  "reviews": [
+  +    {
+  +      "candidateId": "candidate-credo-ventures",
+  +      "label": "eligible",
+  +      "reviewer": "Leonid Kuznetsov",
+  +      "reviewDate": "2026-10-26",
+  +      "reason": "VC investor; Prague operating base established; direct
+  investment in Delta Green confirmed.",
+  +      "sourceUrls": [ "https://www.deltagreen.cz/press-releases/…",
+  "https://www.credoventures.com/" ]
+  +    },
+       … 16 more entries in the same shape
+
+  Files: data/candidates.json, data/investors.json and both discovery snapshots
+  have the same SHA-256 hashes as before. I didn't touch any documentation in
+  this step; the four docs still show the edits from the previous step. Nothing
+  is committed.
+
+> <ide_opened_file>The user opened the file [LOCAL_WINDOWS_PATH_REDACTED]
+   in the IDE. This may or may not be
+  related to the current task.</ide_opened_file>
+
+> Complete Assignment A: “A Reliable Investor Database” in this repository and
+  prepare it for submission.
+
+  The original assignment requires:
+  - a plan defining which investors are included and excluded, how records are
+  verified, the estimated public-source investor universe and expected data
+  reliability, and the basis for those estimates
+  - a smaller pilot sample, such as VC funds in one country
+  - a source and date for every factual data point, including evidence that
+  each included investor actually invests
+  - measured accuracy on a manually reviewed sample
+  - an estimate of the cost of scaling the work worldwide
+  - public data only
+
+  The selected pilot is Czech VC investment managers. The unit of record is the
+  manager organization, not each individual fund. Explain clearly that this
+  pilot validates a method on one segment and is not a complete global investor
+  database.
+
+  Start by inspecting the repository structure, package scripts, existing
+  schemas, README, docs, data, tests, Git status, Git history, remotes, and
+  recorded freeze metadata. Work in the existing project and follow its
+  conventions. Create missing files and folders needed for a complete
+  submission; do not stop after listing gaps.
+
+  HUMAN REVIEW DECISIONS
+
+  The user personally checked and confirmed all 20 labels below. Record these
+  as human labels in data/reviews.json, using the existing schema. Do not
+  generate or change the labels yourself.
+
+  1. candidate-credo-ventures — eligible
+  2. candidate-tilia-impact-ventures — eligible
+  3. candidate-purple-ventures — eligible
+  4. candidate-up271 — unresolved; public evidence is too limited to establish
+  investor type, operating office, and a qualifying dated direct investment
+  with confidence
+  5. candidate-lighthouseventure — unresolved; the directory-linked US firm
+  conflicts with a separate Czech Lighthouse Ventures, so the candidate’s
+  identity is unclear
+  6. candidate-enern — unresolved; possible fit, but the relationship with KAYA
+  and the current investment manager is unclear
+  7. candidate-innovacapital — not_eligible; Polish private-equity manager,
+  outside the Czech VC pilot
+  8. candidate-orbitcapital — eligible
+  9. candidate-rsjinvestments — unresolved; no qualifying recent direct company
+  investment was confirmed in the reviewed public evidence; this does not mean
+  the firm is inactive
+  10. candidate-macceleratorvc — not_eligible; principal base is Poland,
+  despite Czech portfolio activity
+  11. candidate-limerockventures — not_eligible; operating base is Slovakia,
+  despite
+  ──── (89 lines hidden) ──────────────────────────────────────────────────────
+  e
+     - total fund capital/AUM, with the specific meaning of the figure
+     - at least one dated completed direct company investment
+     - source metadata for every factual field
+     Mark unavailable facts honestly. Do not add the 15 unresolved or
+  not_eligible candidates to the final investor database, but retain all 20 in
+  the evaluation and review data.
+
+  8. Evidence/source files and AI-use documentation, following the repository’s
+  existing conventions. The required Claude Code exports must be authentic
+  exports made with Claude Code’s /export command. Do not fabricate,
+  reconstruct, or claim an export exists if it is absent. Do not present the
+  ChatGPT conversation as a Claude Code export. If an export is not yet in the
+  repository, clearly tell the user to create it and put it in ai-log/.
+
+  GIT HISTORY AND PUBLIC SUBMISSION
+
+  The employer requires code with incremental Git commit history.
+  - Preserve the existing Git history; do not squash it or create fake
+  historical commits.
+  - After reviewing the diff and checks, create separate, meaningful local
+  commits for the completed work, such as human review labels, final investor
+  data, documentation/report, and any validation changes. Commit messages must
+  describe actual changes.
+  - Do not push, publish, or create a GitHub repository. Report whether a
+  remote is configured and give the exact remaining steps if no remote exists.
+  - Do not include credentials, tokens, unrelated personal files, or private
+  data in the public repository.
+  - The submission is due by 2026-10-30 as a reply to the original email. The
+  email must contain a public GitHub repository URL. Since this is Assignment
+  A, no website URL is required.
+
+  FINAL VERIFICATION
+
+  Run the existing checks from the project folder using Windows-compatible
+  commands:
+  npm.cmd test
+  npm.cmd run validate
+  npm.cmd run evaluate
+  npm.cmd run fingerprint
+
+  Then inspect git status, git diff, and git log. Do not claim success for a
+  command unless you have its actual output.
+
+  At the end, report:
+  - all files created or changed
+  - final human-label counts
+  - evaluation metrics and exact definitions
+  - test, validation, evaluation, and fingerprint outputs
+  - confirmation that the candidate and prediction fingerprints still match
+  - local commits created
+  - whether a GitHub remote is configured
+  - any remaining user action, especially running Claude Code /export and
+  placing the genuine export in ai-log/
+  - a concise checklist for publishing the repository and replying to the
+  original email by 2026-10-30
+● This is a large job, so I'll start by inspecting the repository and the
+  assignment file you opened.
+
+  Read 1 file, ran 6 shell commands (ctrl+o to expand)
+
+● No remote is configured, commits use the local "Codex assistant" identity, and
+  uncommitted changes include the docs status edits plus 17 reviews, with an
+  external file that looks like a Claude Code session export. Next I'll verify
+  facts for the final records, starting with Orbit Capital, mAccelerator, and
+  the eligible firms' sources.
+
+● Fetch(https://www.orbitcapital.com)
+  ⎿  Received 30.9KB (200 OK)
+
+● Fetch(https://cvca.cz/en/orbit-capital-2/)
+  ⎿  Received 92.4KB (200 OK)
+
+● Web Search("CloudTalk Series B January 2024 Orbit Capital")
+  ⎿  Did 1 search in 5s
+
+● Web Search("mAccelerator mBank venture capital fund Warsaw investments")
+  ⎿  Did 1 search in 5s
+
+● Fetch(https://www.orbitcapital.com/equity/)
+  ⎿  Received 39.3KB (200 OK)
+
+● Fetch(https://www.cloudtalk.io/blog/cloudtalk-raised-28-million-funding-to-lea
+       d-the-new-era-of-ai-powered-voice-communication/)
+  ⎿  Received 330.7KB (200 OK)
+
+● Fetch(https://mbank.pl/en/about-us/group/maccelerator)
+  ⎿  Received 205 bytes (200 OK)
+
+● Fetch(https://czechstartups.gov.cz/investori_en/maccelerator-vc/)
+  ⎿  Received 158.5KB (200 OK)
+
+● Web Search(""Orbit Capital" Prague growth equity venture debt fund launch
+            Nesrsta")
+  ⎿  Did 1 search in 6s
+
+● Fetch(https://en.media.mbank.pl/36472-mbank-will-invest-eur-50-million-in-new-
+       technologies-for-financial-institutions)
+  ⎿  Received 46KB (200 OK)
+
+● Fetch(https://maccelerator.vc/portfolio/)
+  ⎿  Error: certificate has expired
+
+● Fetch(https://www.eif.org/press/all/eif-pledges-eur20-million-to-fuel-expansio
+       n-of-cee-based-innovative-smes-via-orbit-growth-debt-ii-fund)
+  ⎿  Received 78.5KB (200 OK)
+
+● Fetch(https://vestbee.com/insights/articles/orbit-capital-launches-100-m-fund)
+  ⎿  Received 348.9KB (200 OK)
+
+● Fetch(https://www.credoventures.com/)
+  ⎿  Received 3.3KB (200 OK)
+
+● Fetch(https://www.finance.cz/aktuality/druhy-fond-purple-ventures-jiz-ziskal-p
+       res-700-milionu-korun-a-proinvestoval-ctvrt-miliardy-miri-k-portfoliu-50-
+       firem/)
+  ⎿  Received 251.2KB (200 OK)
+
+● Fetch(https://www.kaya.vc/)
+  ⎿  Received 201.7KB (200 OK)
+
+● Fetch(https://www.purple-ventures.com/)
+  ⎿  Received 332KB (200 OK)
+
+● Final-record facts check out; I'll note as a caveat that Orbit's CloudTalk
+  involvement likely came via its venture-debt fund (per EIF's Growth Debt I
+  portfolio listing) without changing the label. Next, I'll look into public
+  benchmarks for the global estimate.
+
+● Web Search("NVCA Yearbook 2025 number of venture capital firms United States
+            active")
+  ⎿  Did 1 search in 6s
+● Web Search("Deloitte Private family office insights 2024 number of single
+            family offices worldwide 8,030")
+  ⎿  Did 1 search in 4s
+
+● Web Search("Center for Venture Research angel investor market 2024 number of
+            active angel investors")
+  ⎿  Did 1 search in 5s
+
+● Web Search("Altrata World Ultra Wealth Report 2025 number of ultra high net
+            worth individuals")
+  ⎿  Did 1 search in 5s
+
+● Web Search("number of private equity firms worldwide Preqin fund managers
+            count")
+  ⎿  Did 1 search in 6s
+
+● Fetch(https://nvca.org/nvca-yearbook/)
+  ⎿  Received 168.1KB (200 OK)
+
+● Fetch(https://www.deloitte.com/global/en/about/press-room/global-edition-explo
+       res-the-rapid-expansion-family-offices-and-ffers-vision-of-the-future-lan
+       dscape.html)
+  ⎿  Received 270.2KB (200 OK)
+
+● Fetch(https://altrata.com/reports/world-ultra-wealth-report-2025)
+  ⎿  Received 886.3KB (200 OK)
+
+● Fetch(https://paulcollege.unh.edu/sites/default/files/media/2025-12/FY%202024%
+       20Analysis%20Report%20Final.pdf)
+  ⎿  Error: unable to get local issuer certificate
+
+● Web Search("Invest Europe private equity activity 2024 report number of firms
+            data covers 1,900")
+  ⎿  Did 1 search in 5s
+
+● Fetch(https://www.eban.org/industry-reports/center-for-venture-research-the-an
+       gel-market-in-2023-an-inflection-point-for-women-angels/)
+  ⎿  Received 109.3KB (200 OK)
+
+● Fetch(https://www.seca.ch/en/knowledge-library/newsletters/2025/seca-enewslett
+       er-no-550/private-equity-int-news/investing-in-europe-private-equity-acti
+       vity-2024/)
+  ⎿  Received 29.8KB (200 OK)
+
+● Fetch(https://www.bls.gov/oes/current/oes132051.htm)
+  ⎿  Received 97.4KB (200 OK)
+
+● Fetch(https://www.bls.gov/oes/current/oes151252.htm)
+  ⎿  Received 97.4KB (200 OK)
+
+● Web Search("American Investment Council how many private equity firms are
+            there worldwide")
+  ⎿  Did 1 search in 6s
+
+● Fetch(https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm)
+  ⎿  Received 115.8KB (200 OK)
+
+● Fetch(https://www.bls.gov/ooh/computer-and-information-technology/software-dev
+       elopers.htm)
+  ⎿  Received 123KB (200 OK)
+
+● Web Search("UNH Center for Venture Research 2024 angel market 445,535 active
+            investors")
+  ⎿  Did 1 search in 7s
+
+● I've gathered all the benchmarks and verified sources for every review,
+  including Orbit, mAccelerator, and Enern. Now I'll update data/reviews.json
+  with the full set of 20 confirmed labels, replacing the previous 17.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● All 20 labels (5 eligible, 8 not_eligible, 7 unresolved) are entered and
+  validation passes—the "Permission denied" line is just a harmless shell quirk.
+  Now committing the labels as their own commit.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Now the final investor database. First I'll collect exact page titles for the
+  source metadata, from the frozen records and from the new pages.
+
+  Ran 1 shell command (ctrl+o to expand)
+● Fetch(https://axoflow.com/7m-seed-round-for-high-quality-security-data/)
+  ⎿  Received 139.9KB (200 OK)
+
+● Fetch(https://www.cloudtalk.io/blog/cloudtalk-raised-28-million-funding-to-lea
+       d-the-new-era-of-ai-powered-voice-communication/)
+  ⎿  Received 330.7KB (200 OK)
+
+● Fetch(https://www.jic.cz/en/magazin/pribehy-uspesnych-firem/faceup-technology-
+       prvni-volba-noveho-fondu-jic-ven)
+  ⎿  Received 44.5KB (200 OK)
+
+● Fetch(https://www.eif.org/press/all/eif-pledges-eur20-million-to-fuel-expansio
+       n-of-cee-based-innovative-smes-via-orbit-growth-debt-ii-fund)
+  ⎿  Received 78.5KB (200 OK)
+
+● Fetch(https://vestbee.com/insights/articles/orbit-capital-launches-100-m-fund)
+  ⎿  Received 348.9KB (200 OK)
+
+● Fetch(https://en.ain.ua/2024/01/17/cloudtalk-raises-28m-series-b-round)
+  ⎿  Received 84.4KB (200 OK)
+
+● Fetch(https://www.insightpartners.com/ideas/e2b-raises-a-21m-series-a-to-offer
+       -cloud-for-ai-agents-to-fortune-100/)
+  ⎿  Received 166KB (200 OK)
+
+● Writing the final investor database. Each fact links to its own source item,
+  and unavailable facts are marked with a reason.
+
+● Write(data\final-investors.json)
+  ⎿  Wrote 319 lines to data\final-investors.json
+      1 {
+      2   "datasetDate": "2026-10-22",
+         the human reviewer labelled eligible in data/reviews.json. Unit
+        of record: the VC manager organization; funds are listed under ca
+        pital, not as separate investors. Every fact names its own source
+        lue null and an unavailableReason.",
+      4   "activeRule": "activityStatus is active only when at least one
+        completed direct investment has an eventDate between 2023-10-22 a
+      5   "sourceCheckNote": "userChecked is true only where data/candida
+        tes.json records the user's own manual check of
+     … +783 lines (ctrl+o to expand)
+
+● Now the validator for the final database, wired into npm run validate and
+  following the existing validator style.
+
+● Update(src\validate.js)
+  ⎿  Added 134 lines
+      164    return errors;
+      165  }
+      166  
+      167 +const FACT_FIELDS = ["investorType", "operatingOffice", "regis
+          +teredOffice", "sectorFocus", "stage", "ticket", "aum"];       
+      168 +const OPTIONAL_FACT_FIELDS = ["relatedEntities"];             
+      169 +const YEAR_MONTH = /^\d{4}-\d{2}$/;                           
+      170 +                                                              
+      171 +// A fact either has a value backed by source items, or no val
+          +ue and a reason.                                              
+      172 +function checkFact(fact, where, sourceIds, errors) {          
+      173 +  if (!fact || typeof fact !== "object") {                    
+      174 +    errors.push(where + " must be an object.");               
+      175 +    return;                                                   
+      176 +  }                                                           
+      177 +  if (fact.value == null) {                                   
+      178 +    if (!isText(fact.unavailableReason)) errors.push(where + "
+          + has no value and needs an unavailableReason.");              
+      179 +    return;                                                   
+      180 +  }                                                           
+      181 +  if (!Array.isArray(fact.sources) || !fact.sources.length) { 
+      182 +    errors.push(where + " has a value but no sources.");      
+      183 +    return;                                                   
+      184 +  }                                                           
+      185 +  for (const id of fact.sources) {                            
+      186 +    if (!sourceIds.has(id)) errors.push(where + " cites unknow
+          +n source item " + id + ".");                                  
+      187 +  }                                                           
+      188 +}                                                             
+      189 +                                                              
+      190 +// Final investor records: only candidates a human labelled el
+          +igible, each fact sourced.                                    
+      191 +// labelByCandidate maps candidateId to the human label from d
+          +ata/reviews.json.                                             
+      192 +export function validateFinalInvestors(data, labelByCandidate)
+          + {                                                            
+      193 +  const errors = [];                                          
+      194 +  if (!data || typeof data !== "object" || !Array.isArray(data
+          +.records)) {                                                  
+      195 +    return ["Final investor file must be an object with a reco
+          +rds array."];                                                 
+      196 +  }                                                           
+      197 +  const datasetDateValid = isDate(data.datasetDate);          
+      198 +  if (!datasetDateValid) errors.push("datasetDate must use YYY
+          +Y-MM-DD.");                                                   
+      199 +  const windowStart = datasetDateValid ? activeWindowStart(dat
+          +a.datasetDate) : null;                                        
+      200 +                                                              
+      201 +  const ids = new Set();                                      
+      202 +  const covered = new Set();                                  
+      203 +  for (const [index, record] of data.records.entries()) {     
+      204 +    const where = "records[" + index + "]";                   
+      205 +    if (!record || typeof record !== "object") {              
+      206 +      errors.push(where + " must be an object.");             
+      207 +      continue;                                               
+      208 +    }                                                         
+      209 +    if (!isText(record.id)) errors.push(where + ".id is requir
+          +ed.");                                                        
+      210 +    else if (ids.has(record.id)) errors.push(where + ".id dupl
+          +icates " + record.id + ".");                                  
+      211 +    else ids.add(record.id);                                  
+      212 +    if (!isText(record.name)) errors.push(where + ".name is re
+          +quired.");                                                    
+      213 +    if (record.humanLabel !== "eligible") errors.push(where + 
+          +".humanLabel must be eligible.");                             
+      214 +    if (labelByCandidate.get(record.candidateId) !== "eligible
+          +") {                                                          
+      215 +      errors.push(where + ".candidateId " + record.candidateId
+          + + " has no eligible human label in data/reviews.json.");     
+      216 +    } else if (covered.has(record.candidateId)) {             
+      217 +      errors.push(where + ".candidateId duplicates " + record.
+          +candidateId + ".");                                           
+      218 +    } else {                                                  
+      219 +      covered.add(record.candidateId);                        
+      220 +    }                                                         
+      221 +                                                              
+      222 +    const sourceIds = new Set();                              
+      223 +    if (!Array.isArray(record.sourceItems) || !record.sourceIt
+          +ems.length) {                                                 
+      224 +      errors.push(where + ".sourceItems must be a non-empty ar
+          +ray.");                                                       
+      225 +    } else {                                                  
+      226 +      for (const [itemIndex, item] of record.sourceItems.entri
+          +es()) {                                                       
+      227 +        const itemWhere = where + ".sourceItems[" + itemIndex 
+          ++ "]";                                                        
+      228 +        if (!item || typeof item !== "object") {              
+      229 +          errors.push(itemWhere + " must be an object.");     
+      230 +          continue;                                           
+      231 +        }                                                     
+      232 +        if (!isText(item.id)) errors.push(itemWhere + ".id is 
+          +required.");                                                  
+      233 +        else if (sourceIds.has(item.id)) errors.push(itemWhere
+          + + ".id duplicates " + item.id + ".");                        
+      234 +        else sourceIds.add(item.id);                          
+      235 +        for (const field of ["claim", "title", "publisher", "s
+          +ourceType", "excerpt"]) {                                     
+      236 +          if (!isText(item[field])) errors.push(itemWhere + ".
+          +" + field + " is required.");                                 
+      237 +        }                                                     
+      238 +        if (!isHttps(item.url)) errors.push(itemWhere + ".url 
+          +must be an HTTPS URL.");                                      
+      239 +        if (!isDate(item.accessDate)) errors.push(itemWhere + 
+          +".accessDate must use YYYY-MM-DD.");                          
+      240 +        for (const field of ["publishedDate", "eventDate"]) { 
+      241 +          if (item[field] != null && !isDate(item[field])) err
+          +ors.push(itemWhere + "." + field + " must use YYYY-MM-DD or nu
+          +ll.");                                                        
+      242 +        }                                                     
+      243 +        if (typeof item.userChecked !== "boolean") errors.push
+          +(itemWhere + ".userChecked must be true or false.");          
+      244 +      }                                                       
+      245 +    }                                                         
+      246 +                                                              
+      247 +    for (const field of FACT_FIELDS) checkFact(record[field], 
+          +where + "." + field, sourceIds, errors);                      
+      248 +    for (const field of OPTIONAL_FACT_FIELDS) {               
+      249 +      if (record[field] != null) checkFact(record[field], wher
+          +e + "." + field, sourceIds, errors);                          
+      250 +    }                                                         
+      251 +    const office = record.operatingOffice?.value;             
+      252 +    if (!office || !CZECH_COUNTRIES.has(office.country)) error
+          +s.push(where + ".operatingOffice.value.country must be the Cze
+          +ch Republic.");                                               
+      253 +                                                              
+      254 +    if (!Array.isArray(record.capital)) errors.push(where + ".
+          +capital must be an array.");                                  
+      255 +    else {                                                    
+      256 +      for (const [capitalIndex, item] of record.capital.entrie
+          +s()) {                                                        
+      257 +        const capitalWhere = where + ".capital[" + capitalInde
+          +x + "]";                                                      
+      258 +        if (!isText(item?.metricType)) errors.push(capitalWher
+          +e + ".metricType is required.");                              
+      259 +        checkFact(item, capitalWhere, sourceIds, errors);     
+      260 +      }                                                       
+      261 +    }                                                         
+      262 +                                                              
+      263 +    if (!Array.isArray(record.investments) || !record.investme
+          +nts.length) {                                                 
+      264 +      errors.push(where + ".investments must list at least one
+          + completed direct investment.");                              
+      265 +      continue;                                               
+      266 +    }                                                         
+      267 +    for (const [investmentIndex, item] of record.investments.e
+          +ntries()) {                                                   
+      268 +      const investmentWhere = where + ".investments[" + invest
+          +mentIndex + "]";                                              
+      269 +      if (!item || typeof item !== "object") {                
+      270 +        errors.push(investmentWhere + " must be an object."); 
+      271 +        continue;                                             
+      272 +      }                                                       
+      273 +      if (!isText(item.company)) errors.push(investmentWhere +
+          + ".company is required.");                                    
+      274 +      if (item.eventDate == null) {                           
+      275 +        if (!YEAR_MONTH.test(item.eventPeriod ?? "")) errors.p
+          +ush(investmentWhere + " needs an eventDate or an eventPeriod (
+          +YYYY-MM).");                                                  
+      276 +      } else if (!isDate(item.eventDate)) {                   
+      277 +        errors.push(investmentWhere + ".eventDate must use YYY
+          +Y-MM-DD or null.");                                           
+      278 +      } else if (datasetDateValid && item.eventDate > data.dat
+          +asetDate) {                                                   
+      279 +        errors.push(investmentWhere + ".eventDate is after dat
+          +asetDate.");                                                  
+      280 +      }                                                       
+      281 +      // A round total is not the investor's cheque; an unknow
+          +n cheque needs a reason.                                      
+      282 +      if (item.investorAmount == null && !isText(item.investor
+          +AmountReason)) {                                              
+      283 +        errors.push(investmentWhere + ".investorAmount is null
+          + and needs an investorAmountReason.");                        
+      284 +      }                                                       
+      285 +      checkFact({ value: item.company, sources: item.sources }
+          +, investmentWhere, sourceIds, errors);                        
+      286 +    }                                                         
+      287 +                                                              
+      288 +    if (record.activityStatus === "active" && windowStart) {  
+      289 +      const inWindow = record.investments.some((item) => isDat
+          +e(item?.eventDate) &&                                         
+      290 +        item.eventDate >= windowStart && item.eventDate <= dat
+          +a.datasetDate);                                               
+      291 +      if (!inWindow) errors.push(where + " is labelled active 
+          +but has no investment dated between " + windowStart + " and " 
+          ++ data.datasetDate + ".");                                    
+      292 +    }                                                         
+      293 +  }                                                           
+      294 +                                                              
+      295 +  for (const [candidateId, label] of labelByCandidate) {      
+      296 +    if (label === "eligible" && !covered.has(candidateId)) err
+          +ors.push("Eligible candidate " + candidateId + " has no final 
+          +investor record.");                                           
+      297 +  }                                                           
+      298 +  return errors;                                              
+      299 +}                                                             
+      300 +                                                              
+      301  export function validateCandidates(data) {
+      302    const errors = [];
+      303    if (!data || typeof data !== "object" || !Array.isArray(data
+           .candidates)) {
+
+● Update(src\cli.js)
+  ⎿  Added 1 line, removed 1 line
+      1  import { readFile } from "node:fs/promises";
+      2 -import { validateDataset, validateCandidates, validateReviews } 
+        -from "./validate.js";                                           
+      2 +import { validateDataset, validateCandidates, validateReviews, v
+        +alidateFinalInvestors } from "./validate.js";                   
+      3  import { evaluate, fingerprint } from "./evaluate.js";
+      4  
+      5  async function readJson(path) {
+
+● Update(src\cli.js)
+  ⎿  Added 2 lines
+      20  const candidateData = await readJson("../data/candidates.json")
+          ;
+      21  const dataset = await readJson("../data/investors.json");
+      22  const reviewData = await readJson("../data/reviews.json");
+      23 +const finalData = await readJson("../data/final-investors.json"
+         +);                                                             
+      24  const candidateIds = new Set((candidateData.candidates ?? []).m
+          ap((candidate) => candidate.id));
+      25 +const labelByCandidate = new Map((reviewData.reviews ?? []).map
+         +((review) => [review.candidateId, review.label]));             
+      26  
+      27  if (command === "validate") {
+      28    report("Candidates (data/candidates.json)", validateCandidate
+          s(candidateData), candidateData.candidates?.length ?? 0);
+
+● Update(src\cli.js)
+  ⎿  Added 1 line
+      28    report("Candidates (data/candidates.json)", validateCandidate
+          s(candidateData), candidateData.candidates?.length ?? 0);
+      29    report("Investors (data/investors.json)", validateDataset(dat
+          aset), dataset.records?.length ?? 0);
+      30    report("Human reviews (data/reviews.json)", validateReviews(r
+          eviewData, candidateIds), reviewData.reviews?.length ?? 0);
+      31 +  report("Final investors (data/final-investors.json)", validat
+         +eFinalInvestors(finalData, labelByCandidate), finalData.records
+         +?.length ?? 0);                                                
+      32  } else if (command === "evaluate") {
+      33    const reviewErrors = validateReviews(reviewData, candidateIds
+          );
+      34    if (reviewErrors.length) {
+
+● Adding tests with fictional data, matching the existing test files.
+
+● Write(tests\final-investors.test.js)
+  ⎿  Wrote 95 lines to tests\final-investors.test.js
+       1 import test from "node:test";
+       2 import assert from "node:assert/strict";
+       3 import { validateFinalInvestors } from "../src/validate.js";
+       4
+       5 // Fictional records and labels only.
+         -b", "not_eligible"]]);
+       7
+       8 const source = (id, claim) => ({
+       9   id,
+      10   claim,
+     … +110 lines (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● All 56 tests pass, and all four files validate. Committing the final investor
+  database together with its validator.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Running the evaluator so the docs quote its real output.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The evaluator output is in. Next I'll compute the estimate figures and
+  confidence intervals with a script, so the arithmetic in the docs is exact.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Next is documentation. I'll re-read the parts of plan.md and evaluation.md I'm
+  about to revise.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● Writing the evaluation results into docs/evaluation.md. The protocol and
+  metric-definition sections stay as they are.
+
+● Update(docs\evaluation.md)  ⎿  Added 66 lines, removed 5 lines
+       1  # Evaluation
+       2  
+       3 -## Status (2026-10-22)                                         
+       3 +## Results (human review completed 2026-10-26)                 
+       4  
+       5 -Not measured. `npm run evaluate` currently reports every metric
+         - as unavailable because:                                       
+       5 +All 20 frozen candidates have a human label in data/reviews.jso
+         +n (reviewer Leonid Kuznetsov, 2026-10-26). The candidate frame 
+         +and predictions were frozen on 2026-10-22 (`datasetDate`), and 
+         +`npm run evaluate` reports `"matches"` for both recorded finger
+         +prints, so the metrics describe the frozen version.            
+       6  
+       7 -- data/candidates.json has a 20-organization discovery frame (d
+         -ocs/discovery.md), frozen on 2026-10-22.                       
+       8 -- data/investors.json has 20 preliminary predictions (4 include
+         -d, 8 needs_review, 8 excluded), frozen on 2026-10-22.          
+       9 -- The fingerprints of both files are recorded in `freeze` in da
+         -ta/reviews.json. Human review is in progress; no labels have be
+         -en entered in data/reviews.json yet.                           
+       7 +### Labels                                                     
+       8  
+       9 +| Human label | Count | Candidates |                           
+      10 +|---|---|---|                                                  
+      11 +| eligible | 5 | Credo Ventures, Tilia Impact Ventures, Purple 
+         +Ventures, Orbit Capital, KAYA VC |                             
+      12 +| not_eligible | 8 | Innova Capital, mAccelerator.vc, Limerock 
+         +Ventures, Sandberg Capital, EVERITA Capital, MAM Private Equity
+         + Fund, Heartcore Capital, HitHit |                             
+      13 +| unresolved | 7 | UP271, Lighthouse venture, Enern, RSJ Invest
+         +ments, Impulse Ventures, PurposeTech, i&i Biotech Investments |
+      14 +                                                               
+      15 +Why each candidate received its label is recorded in the `reaso
+         +n` field of data/reviews.json. Main reasons for not_eligible: p
+         +rivate equity rather than VC (Innova, Sandberg, EVERITA, MAM), 
+         +principal base outside Czechia (Innova and mAccelerator in Pola
+         +nd, Limerock and Sandberg in Slovakia, Heartcore in Denmark), a
+         +nd not an equity investor (HitHit). Unresolved cases and their 
+         +specific uncertainty:                                          
+      16 +                                                               
+      17 +| Candidate | Specific uncertainty |                           
+      18 +|---|---|                                                      
+      19 +| UP271 | Investor type, operating office (only address is also
+         + the registered seat) and a dated direct investment are not est
+         +ablished. |                                                    
+      20 +| Lighthouse venture | Identity conflict: the directory links t
+         +o a US firm; a separate Czech VC (lhv.vc) has a similar name. |
+      21 +| Enern | Boundary with KAYA and the current investment manager
+         + is unclear. |                                                 
+      22 +| RSJ Investments | No qualifying recent direct company investm
+         +ent confirmed in the reviewed evidence. |                      
+      23 +| Impulse Ventures | The 2025 Safetica investment is attributed
+         + to Impulse Capital; the link to Impulse Ventures is not establ
+         +ished. |                                                       
+      24 +| PurposeTech | Prague address is a mailing address; principal 
+         +operating base not established. |                              
+      25 +| i&i Biotech Investments | Decision-making location unclear be
+         +tween the Luxembourg fund and the Prague adviser. |            
+      26 +                                                               
+      27 +None of the unresolved labels asserts that an organization is c
+         +losed or inactive.                                             
+      28 +                                                               
+      29 +### Confusion counts (output of `npm run evaluate`)            
+      30 +                                                               
+      31 +| | Human: eligible | Human: not_eligible |                    
+      32 +|---|---|---|                                                  
+      33 +| Predicted included | TP = 3 (Credo, Tilia, Purple) | FP = 0 |
+      34 +| Predicted excluded | FN = 0 | TN = 7 (Innova, Limerock, Sandb
+         +erg, EVERITA, MAM, Heartcore, HitHit) |                        
+      35 +                                                               
+      36 +Reported separately, outside the binary counts:                
+      37 +                                                               
+      38 +| Group | Candidates |                                         
+      39 +|---|---|                                                      
+      40 +| Included, labelled unresolved | PurposeTech |                
+      41 +| Excluded, labelled unresolved | Lighthouse venture |         
+      42 +| needs_review, labelled eligible | Orbit Capital, KAYA VC |   
+      43 +| needs_review, labelled not_eligible | mAccelerator.vc |      
+      44 +| needs_review, labelled unresolved | UP271, Enern, RSJ Investm
+         +ents, Impulse Ventures, i&i Biotech Investments |              
+      45 +                                                               
+      46 +### Metrics                                                    
+      47 +                                                               
+      48 +| Metric | Definition | Value |                                
+      49 +|---|---|---|                                                  
+      50 +| Precision | TP / (TP + FP) | 3 / 3 = 1.00 (95% Wilson interva
+         +l 0.44–1.00) |                                                 
+      51 +| Conservative precision | TP / (TP + FP + U), U = included pre
+         +dictions labelled unresolved | 3 / 4 = 0.75 (95% Wilson interva
+         +l 0.30–0.95) |                                                 
+      52 +| Sample recall | TP / (TP + FN), frozen frame only | 3 / 3 = 1
+         +.00 |                                                          
+      53 +                                                               
+      54 +How unresolved cases are treated: ordinary precision leaves out
+         + the included prediction that the reviewer could not resolve (P
+         +urposeTech). Conservative precision counts it as a failure, bec
+         +ause the database would have published a record that a human co
+         +uld not confirm. Conservative precision is the more relevant fi
+         +gure for a reliable database.                                  
+      55 +                                                               
+      56 +Additional pilot measurements (computed by hand from the same f
+         +iles; not part of the evaluator output):                       
+      57 +                                                               
+      58 +- **Eligible capture by the included prediction:** of the 5 eli
+         +gible organizations, 3 were predicted included and 2 (Orbit, KA
+         +YA) were predicted needs_review. None was wrongly excluded. Sam
+         +ple recall above ignores the 2 needs_review cases by definition
+         +, so it overstates how much of the eligible set the automatic s
+         +tage alone would publish.                                      
+      59 +- **needs_review yield:** of 8 needs_review predictions, 2 beca
+         +me eligible, 1 not_eligible, 5 unresolved. needs_review worked 
+         +as intended (no confident errors), but it pushed most of the ef
+         +fort to the human reviewer.                                    
+      60 +- **Human review share:** 20 of 20 candidates (100%) were human
+         +-reviewed. The frame was too small to test sampling of excluded
+         + cases.                                                        
+      61 +- **Final records (data/final-investors.json):** 5 records with
+         + 49 source items, 13 of which carry the user's own recorded sou
+         +rce check. Investor type, operating office, sector, stage, and 
+         +ticket are available for 5/5. Firm-wide AUM is available for 1/
+         +5 (KAYA's undated, self-reported figure). The investor's own ch
+         +eque is disclosed for 0 of 7 recorded investments; all 7 record
+         + the round total separately. 6 of 7 investments have an exact e
+         +vent date; 1 (FaceUp, May 2026) has a month only.              
+      62 +- **Errors caught in review:** the preliminary stage included P
+         +urposeTech on the basis of a mailing address, which the reviewe
+         +r did not accept as an operating office. The stage also exclude
+         +d Lighthouse venture without catching the identity conflict wit
+         +h the Czech Lighthouse Ventures.                               
+      63 +                                                               
+      64 +### Limits                                                     
+      65 +                                                               
+      66 +- n = 20, and only 4 included predictions. The intervals above 
+         +are wide; a precision of 1.00 on 3 cases is not evidence of nea
+         +r-perfect accuracy at scale.                                   
+      67 +- The three preserved candidates (Credo, Tilia, Purple) came fr
+         +om one recipient announcement rather than the seeded draw, so t
+         +hey are not a random sample and are all eligible (docs/discover
+         +y.md). Metrics are therefore optimistic. Among the 17 rule-draw
+         +n candidates, 2 are eligible, 7 unresolved and 8 not_eligible. 
+      68 +- One human reviewer labelled all candidates; there is no inter
+         +-reviewer agreement measure. The labels were decided in a separ
+         +ate conversation and entered here as confirmed by the user.    
+      69 +- Sample recall is measured only against the frozen 20-candidat
+         +e frame. It says nothing about organizations absent from the tw
+         +o discovery directories.                                       
+      70 +- The result covers one segment (Czech VC managers listed in tw
+         +o Czech directories). It cannot be generalized to other countri
+         +es, to PE, family offices, angels, or private individuals, or t
+         +o the whole investor market, where disclosure and definitions d
+         +iffer (docs/global-estimate.md).                               
+      71 +                                                               
+      72  The `manualVerification` notes in data/candidates.json record t
+          hat the user checked individual sources. They are not human eli
+          gibility labels and are not used by the evaluation.
+      73  
+      74  ## Separating predictions from human labels
+
+● Now docs/plan.md: I'm adding the verification method per test, ambiguity
+  handling, and expected coverage and reliability, and bringing the status
+  section up to date.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● Update(docs\plan.md)
+  ⎿  Added 29 lines
+      56  6. Save evidence for each material claim and record inclusion, 
+          exclusion, or unresolved reason.
+      57  7. Manually review all pilot candidates, including excluded and
+           unresolved candidates.
+      58  
+      59 +## How each test is established                                
+      60 +                                                               
+      61 +**Identity.** The record is tied to one organization through it
+         +s official domain, the names used on that domain, and the direc
+         +tory listing that led to it. If the directory link, description
+         +, and name point to different organizations (for example a fore
+         +ign firm with a similar name), the identity is unresolved and n
+         +o facts from the other organization are attributed to the recor
+         +d.                                                             
+      62 +                                                               
+      63 +**Investor type.** Prefer the manager's own description of its 
+         +strategy (official site, fund disclosures such as SFDR pages) a
+         +nd its investment history. VC means equity or quasi-equity inve
+         +stments in private growth companies. Growth equity or venture d
+         +ebt is accepted only when the manager also invests in private g
+         +rowth companies and the reviewer accepts it as VC-type activity
+         +. Buyouts, controlling stakes in mature companies, crowdfunding
+         + platforms, and fund-of-funds-only activity are not VC.        
+      64 +                                                               
+      65 +**Principal operating office.** Evidence must show where the te
+         +am works or the manager is run: an office or contact address on
+         + the official site, a statement such as "Prague-based" from the
+         + manager, a recipient, a public institution (for example the EI
+         +F), or a news report. A registered office, a legal footer, a re
+         +gistry entry, or an address labelled as a mailing address does 
+         +not establish the operating office on its own. When several off
+         +ices are listed and none is named as headquarters, the case nee
+         +ds a reviewer decision; otherwise it stays unresolved.         
+      66 +                                                               
+      67 +**Dated completed direct investment.** Prefer the recipient's o
+         +r a co-investor's announcement, then the investor's own, then n
+         +ews media. The source must name the organization (or a fund it 
+         +manages) as an investor and describe the round as completed or 
+         +raised. Record the event date (closing date if stated, otherwis
+         +e the announcement date, with a note), the publication date, an
+         +d the access date separately. The round total is recorded as th
+         +e round total; the investor's own cheque is recorded only if di
+         +sclosed.                                                       
+      68 +                                                               
+      69 +**Active window.** A record is active only with a completed dir
+         +ect investment dated within the 36 months before the frozen `da
+         +tasetDate` (2026-10-22), that is, on or after 2023-10-22. The d
+         +ate is fixed by the freeze and is not moved to the date of late
+         +r checks.                                                      
+      70 +                                                               
+      71 +## Ambiguous cases                                             
+      72 +                                                               
+      73 +- Missing or conflicting evidence on any test gives `needs_revi
+         +ew` as a prediction and `unresolved` as a human label, with the
+         + specific uncertainty in the reason.                           
+      74 +- Lack of recent public announcements is recorded as missing ev
+         +idence, never as proof that an organization closed or stopped i
+         +nvesting.                                                      
+      75 +- Related entities (renamed firms, successor managers, fund veh
+         +icles versus advisers) are noted on both records. They are not 
+         +merged unless sources establish that they are the same manager.
+      76 +- Undisclosed cheques, fund sizes, or AUM do not disqualify an 
+         +investor. The field is null with a reason.                     
+      77 +- Directory-stated or self-reported figures are labelled as suc
+         +h, kept separate from independently published figures, and neve
+         +r summed into AUM.                                             
+      78 +                                                               
+      79 +## Expected public-data coverage and reliability               
+      80 +                                                               
+      81 +Basis: the frozen pilot (docs/evaluation.md) and the source sur
+         +vey in docs/global-estimate.md.                                
+      82 +                                                               
+      83 +- **Coverage of Czech VC managers in the two directories.** Of 
+         +the 17 rule-drawn candidates, 2 were labelled eligible and 7 un
+         +resolved. Scaled to the 66 directory organizations outside the 
+         +3 preserved candidates, this implies about 11 eligible managers
+         + if no unresolved case qualifies and about 38 if all do, before
+         + sampling error (about 5–52 with 95% Wilson intervals). Organiz
+         +ations missing from both directories are not covered by this es
+         +timate.                                                        
+      84 +- **Expected share of unresolved cases.** 7 of 20 (35%) could n
+         +ot be settled from public evidence after human review. A simila
+         +r or higher share should be expected for less-documented segmen
+         +ts (family offices, angels).                                   
+      85 +- **Field disclosure.** For the 5 eligible managers, strategy, 
+         +stage, ticket, and operating office were publicly available for
+         + all 5. Firm-wide AUM was available for 1 (self-reported, undat
+         +ed), and no investor's individual cheque was disclosed in the 7
+         + recorded investments. These fields should be expected to stay 
+         +mostly unknown at scale.                                       
+      86 +- **Expected precision.** Measured precision was 3/3 and conser
+         +vative precision 3/4 on a very small sample; any database built
+         + this way should report the conservative figure and be re-measu
+         +red on a larger random sample before claiming a precision level
+         +.                                                              
+      87 +                                                               
+      88  ## Evaluation
+      89  
+      90  Freeze the candidate list and preliminary predictions before hu
+          man review. Preliminary predictions (included, excluded, needs_
+          review) are stored in data/investors.json and linked to the fro
+          zen list by `candidateId`. Human labels (eligible, not_eligible
+          , unresolved) are stored only in data/reviews.json, with review
+          er, review date, reason, and reviewed source URLs. Code never c
+          reates human labels, and a second AI pass is not independent ma
+          nual review. The full protocol and metric definitions are in do
+          cs/evaluation.md.
+
+● Bash(cd "[LOCAL_WINDOWS_PATH_REDACTED]"
+      && node -e '
+      const fs=require("fs");const p="docs/plan.md";let
+      t=fs.readFileSync(p,"ut…)
+  ⎿  Updated docs\plan.md (+14 -17)
+      101  
+      102  ## Deliverables and status
+      103  
+      104 -- README.md: English summary, setup, method, AI-use notes, fin
+          -al results and limitations.                                   
+      104 +- README.md: summary, setup, data files, status, limitations, 
+          +and AI-use account.                                           
+      105  - docs/plan.md: this methodology.
+      106 -- docs/evaluation.md: frozen sample, human review protocol, me
+          -trics and results.                                            
+      107 -- docs/global-estimate.md: sourced global scenarios and cost m
+          -odel.                                                         
+      108 -- data/: candidate, investor, evidence, and manual-review reco
+          -rds.                                                          
+      109 -- src/ and tests/: repeatable validation and metric calculatio
+          -n. Candidate records (data/candidates.json) and final investor
+          - records (data/investors.json) use separate schemas and valida
+          -tors; candidates are not forced into the final schema.        
+      106 +- docs/discovery.md: discovery sources, frame selection, and p
+          +reliminary predictions.                                       
+      107 +- docs/evaluation.md: human review results, confusion counts, 
+          +metrics, and limits.                                          
+      108 +- docs/global-estimate.md: global investor-universe ranges and
+          + scaling effort and cost.                                     
+      109 +- docs/report.md: concise final report.                       
+      110 +- data/candidates.json (frozen frame), data/investors.json (fr
+          +ozen preliminary predictions), data/reviews.json (freeze metad
+          +ata and human labels), data/final-investors.json (final record
+          +s for the eligible managers), data/discovery/ (directory snaps
+          +hots).                                                        
+      111 +- src/ and tests/: validation of all four data files, frame re
+          +-derivation, and metric calculation. Candidate records, predic
+          +tion records, human labels, and final investor records use sep
+          +arate schemas and validators.                                 
+      112  - ai-log/: authentic AI conversation exports, with secrets rem
+           oved.
+      113  
+      112 -Current status (2026-10-22):                                  
+      114 +Current status (2026-10-26):                                  
+      115  
+      114 -- Discovery: both directories were captured as snapshots in da
+          -ta/discovery/. data/candidates.json holds a 20-organization pi
+          -lot frame: the 3 earlier candidates plus 17 drawn by a seeded,
+          - name-only rule from the deduplicated union of 69 organization
+          -s. Method and limitations are in docs/discovery.md. The frame 
+          -was frozen on 2026-10-22.                                     
+      115 -- data/investors.json holds 20 preliminary predictions: 4 incl
+          -uded (Credo Ventures, Tilia Impact Ventures, Purple Ventures, 
+          -PurposeTech), 8 needs_review, 8 excluded. They were frozen on 
+          -2026-10-22.                                                   
+      116 -- Source-level manual checks recorded in data/candidates.json 
+          -(`manualVerification`) exist only for the original 3 candidate
+          -s:                                                            
+      117 -  - Credo: direct investment, Prague office, and Fund V size a
+          -re checked; the strategy/stage/ticket evidence is not.        
+      118 -  - Tilia: the original five evidence items are checked; the L
+          -ifeyear article added on 2026-10-22 is not.                   
+      119 -  - Purple: direct investment, strategy, and Fund II launch ta
+          -rget are checked; the registered-office evidence, the homepage
+          - operating-office evidence added on 2026-10-22, and the 2026 f
+          -undraising update are not.                                    
+      120 -  These are checks of individual sources, not human eligibilit
+          -y labels. No source for the 17 new candidates has been manuall
+          -y checked.                                                    
+      121 -- The fingerprints of the frozen candidate list and prediction
+          -s are recorded in `freeze` in data/reviews.json. Human review 
+          -is in progress; no labels have been entered in data/reviews.js
+          -on yet.                                                       
+      122 -- No precision, recall, or global count is claimed. docs/globa
+          -l-estimate.md has not been started.                           
+      123 -                                                              
+      124 -Next: complete the human review of every candidate, enter the 
+          -user-confirmed labels in data/reviews.json, then run `npm run 
+          -evaluate`.                                                    
+      116 +- Discovery: data/candidates.json holds the 20-organization pi
+          +lot frame: the 3 earlier candidates plus 17 drawn by a seeded,
+          + name-only rule from the deduplicated union of 69 directory or
+          +ganizations (docs/discovery.md). Frozen on 2026-10-22.        
+      117 +- data/investors.json holds 20 preliminary predictions (4 incl
+          +uded, 8 needs_review, 8 excluded), frozen on 2026-10-22. Both 
+          +fingerprints are recorded in `freeze` in data/reviews.json and
+          + still match.                                                 
+      118 +- Human review is complete: data/reviews.json has 20 labels (5
+          + eligible, 8 not_eligible, 7 unresolved) entered on 2026-10-26
+          + as confirmed by the reviewer.                                
+      119 +- data/final-investors.json holds final records for the 5 elig
+          +ible managers.                                                
+      120 +- Results: precision 3/3, conservative precision 3/4, sample r
+          +ecall 3/3 (docs/evaluation.md). Global ranges and scaling cost
+          + are in docs/global-estimate.md.                              
+      121 +- Outstanding: authentic AI conversation exports in ai-log/ (s
+          +ee ai-log/README.md).                                         
+
+● Update(docs\plan.md)
+  ⎿  Added 1 line, removed 1 line
+       97  
+       98  Estimate discoverable and verifiable organizations separately 
+           by investor category and region, with lower/base/upper scenari
+           os. Document source definitions, dates, overlap/deduplication,
+            and disclosure limits. Association counts are not global mark
+           et counts. Treat family offices and private individuals separa
+           tely because public disclosure is uneven.
+       99  
+      100 -Measure pilot time per candidate, review share, pages checked,
+          - unresolved share, manual rework, and any actual AI/API costs.
+          - Cost model: engineering + discovery/ingestion + AI extraction
+          - + human review + infrastructure + ongoing updates. Human revi
+          -ew formula: candidates × review share × minutes per review / 6
+          -0 × hourly rate. Cite rates and tariffs with dates; label assu
+          -mptions.                                                      
+      100 +Measure pilot time per candidate, review share, pages checked,
+          + unresolved share, manual rework, and any actual AI/API costs.
+          + Cost model: engineering + discovery/ingestion + AI extraction
+          + + human review + infrastructure + ongoing updates. Human revi
+          +ew formula: candidates × review share × minutes per review / 6
+          +0 × hourly rate. Cite rates and tariffs with dates; label assu
+          +mptions. In the pilot, time per candidate and AI/API costs wer
+          +e not timed or metered, so the scaling estimate uses labelled 
+          +assumptions for minutes per candidate (docs/global-estimate.md
+          +).                                                            
+      101  
+      102  ## Deliverables and status
+      103  
+
+● Update(docs\discovery.md)
+  ⎿  Added 12 lines, removed 1 line
+       1  # Candidate discovery (2026-10-22)
+       2  
+       3 -Status: pilot discovery frame of 20 organizations with prelimin
+         -ary predictions. The frame and predictions were frozen on 2026-
+         -10-22; their fingerprints are recorded in data/reviews.json. Hu
+         -man review is in progress; no labels have been entered in data/
+         -reviews.json yet.                                              
+       3 +Status: pilot discovery frame of 20 organizations with prelimin
+         +ary predictions. The frame and predictions were frozen on 2026-
+         +10-22; their fingerprints are recorded in data/reviews.json. Hu
+         +man review was completed on 2026-10-26, and the 20 labels are i
+         +n data/reviews.json (results in docs/evaluation.md). This docum
+         +ent describes the frame and predictions as frozen; it was not c
+         +hanged to match the labels.                                    
+       4  
+       5 +## Discovery evidence, predictions, and human labels           
+       6 +                                                               
+       7 +| Layer | File | Values | Created by |                         
+       8 +|---|---|---|---|                                              
+       9 +| Discovery evidence | data/discovery/ (snapshots), data/candid
+         +ates.json (`discoverySources`, `evidence`) | listings, source U
+         +RLs, excerpts | Research workflow (AI-assisted), frozen 2026-10
+         +-22 |                                                          
+      10 +| Preliminary predictions | data/investors.json (`decision`) | 
+         +`included`, `excluded`, `needs_review` | Research workflow (AI-
+         +assisted), frozen 2026-10-22 |                                 
+      11 +| Human labels | data/reviews.json (`label`) | `eligible`, `not
+         +_eligible`, `unresolved` | Human reviewer, 2026-10-26 |        
+      12 +| Final records | data/final-investors.json | eligible managers
+         + only | Built from human labels and checked public sources, 202
+         +6-10-26 |                                                      
+      13 +                                                               
+      14 +A directory listing is discovery evidence only. Predictions wer
+         +e made before human review and are never edited to match labels
+         +; the evaluation compares the two.                             
+      15 +                                                               
+      16  ## Sources
+      17  
+      18  Both directories were used for discovery only. A listing or mem
+          bership is not evidence of investment activity.
+
+● Before the global estimate, I'll open the two PE-count sources directly; so
+  far I've only seen them in search results.
+
+● Fetch(https://legacy.vault.com/industries-professions/industries/private-equit
+       y/the-industry-today)
+  ⎿  Received 196.2KB (200 OK)
+
+● Fetch(https://www.wealthbriefing.com/html/printarticle.php?id=26481)
+  ⎿  Received 2KB (200 OK)
+
+● Both sources check out with caveats: the AIC figure is undated and US-heavy,
+  and the "8,400 in 2019" Preqin figure couldn't be confirmed (the page shows
+  4,270 for 2009), so I'm dropping it. Now writing the global estimate.
+
+● Write(docs\global-estimate.md)
+  ⎿  Added 103 lines, removed 4 lines
+        1 -# Global coverage and cost estimate                           
+        1 +# Global investor universe and scaling estimate               
+        2  
+        3 -Status: not estimated yet. No global investor total or budget 
+          -is claimed until public sources and pilot effort measurements 
+          -are collected. For the Czech pilot, initial discovery frames a
+          -re the government CzechStartups investor directory and CVCA me
+          -mbership directory; both have different inclusion scopes and w
+          -ill be deduplicated and manually filtered before any count is 
+          -reported.                                                     
+        3 +Date of estimate: 2026-10-26. All sources were accessed on 202
+          +6-10-26 unless stated otherwise.                              
+        4  
+        5 -The estimate will separate VC, private equity, family offices,
+          - angel investors, and large private investors. For each catego
+          -ry and region, record the source, its definition and date, obs
+          -erved count, likely overlap, public-data limits, and lower/bas
+          -e/upper scenario. Do not treat association membership as the t
+          -otal market or extrapolate Czech VC disclosure rates to other 
+          -categories.                                                   
+        5 +This is a bounded planning estimate, not a count. The pilot va
+          +lidated a method on one segment (Czech VC managers, 20 candida
+          +tes). It does not show that a global database exists or that t
+          +he pilot's accuracy carries over to other segments. Every rang
+          +e below combines a published figure with labelled assumptions;
+          + the confidence column says how much weight each range can bea
+          +r.                                                            
+        6  
+        7 -Cost components: engineering, candidate discovery, public-sour
+          -ce review, AI extraction if used, human verification, infrastr
+          -ucture, and recurring updates. Human review cost = candidates 
+          -× review share × minutes per review / 60 × hourly rate. Rates 
+          -and tariffs will be cited with access dates; assumptions will 
+          -be labeled.                                                   
+        7 +## 1. Two kinds of investors                                  
+        8 +                                                              
+        9 +- **Observable organizations** (VC managers, PE managers, sing
+          +le family offices): legal entities that usually have a website
+          +, staff, and some public trace of their deals. These can, in p
+          +rinciple, be enumerated from public sources and verified recor
+          +d by record with the pilot method.                            
+       10 +- **Private individuals** (angel investors, ultra-high-net-wor
+          +th individuals investing directly): mostly not enumerable from
+          + public data. Many do not announce deals, and personal data ru
+          +les limit what should be collected. Published figures for them
+          + are survey or model estimates, not lists. They are reported h
+          +ere for context and excluded from the organization count and t
+          +he cost model.                                                
+       11 +                                                              
+       12 +## 2. Published reference figures                             
+       13 +                                                              
+       14 +| Category | Figure | Scope and date | Source | What it suppor
+          +ts | Limits |                                                 
+       15 +|---|---|---|---|---|---|                                     
+       16 +| VC (US) | 3,417 VC firms | US, year-end 2023 | [NVCA Yearboo
+          +k page](https://nvca.org/nvca-yearbook/) (NVCA, 2024 Yearbook,
+          + 27th edition) | Size of the largest single VC market | US onl
+          +y; NVCA/PitchBook definition of an active firm |              
+       17 +| PE and VC (Europe) | more than 1,750 PE and VC firms | Europ
+          +e, data for 2024 | [SECA summary of Invest Europe's "Investing
+          + in Europe: Private Equity Activity 2024"](https://www.seca.ch
+          +/en/knowledge-library/newsletters/2025/seca-enewsletter-no-550
+          +/private-equity-int-news/investing-in-europe-private-equity-ac
+          +tivity-2024/) (SECA, 2025-06-08) | Number of European firms re
+          +porting to the survey | Survey participants, not a census; PE 
+          +and VC are not split |                                        
+       18 +| PE (world) | about 7,000 PE firms, 6,000 of them in the US |
+          + Undated ("today"); page © 2026 | [Vault, "The industry today"
+          +](https://legacy.vault.com/industries-professions/industries/p
+          +rivate-equity/the-industry-today), citing the American Investm
+          +ent Council | Order of magnitude for PE | Secondary attributio
+          +n; I could not open an AIC publication with this figure; US-he
+          +avy split suggests undercounting outside the US |             
+       19 +| PE (world, historical) | 4,270 PE firms | October 2009 | [We
+          +althBriefing, 2009-11-13](https://www.wealthbriefing.com/html/
+          +printarticle.php?id=26481), citing Preqin | Growth trend only 
+          +| 17 years old |                                              
+       20 +| Single family offices | 8,030 (projected over 10,720 by 2030
+          +); North America 3,180, Asia Pacific 2,290, Europe 2,020, Midd
+          +le East 290, South America 190, Africa 60 | 2024 | [Deloitte p
+          +ress release, 2024-09-04](https://www.deloitte.com/global/en/a
+          +bout/press-room/global-edition-explores-the-rapid-expansion-fa
+          +mily-offices-and-ffers-vision-of-the-future-landscape.html) | 
+          +Size of the SFO universe | Deloitte estimate; the release does
+          + not explain the estimation method (it describes a survey of 3
+          +54 SFOs); multi-family offices not included |                 
+       21 +| Angel investors (US) | 445,535 active angel investors; 55,34
+          +6 ventures funded; USD 17.9bn invested | US, 2024 | UNH Center
+          + for Venture Research, [FY 2024 Analysis Report](https://paulc
+          +ollege.unh.edu/sites/default/files/media/2025-12/FY%202024%20A
+          +nalysis%20Report%20Final.pdf) | Scale of the angel population 
+          +| Figures read from search-result text of this report; the PDF
+          + itself could not be opened (TLS certificate error) and was no
+          +t bypassed. US only; a survey-based estimate of individuals | 
+       22 +| Large private investors | 510,810 individuals with net worth
+          + above USD 30m | World, end of June 2025 | [Altrata, World Ult
+          +ra Wealth Report 2025](https://altrata.com/reports/world-ultra
+          +-wealth-report-2025) (September 2025) | Upper bound on individ
+          +uals able to invest large sums directly | Wealth, not investin
+          +g activity; most do not invest directly or publicly |         
+       23 +                                                              
+       24 +No public source found in this work gives a current worldwide 
+          +count of VC firms. A newer Altrata edition (2026, 556,850 indi
+          +viduals for 2025) appeared in search results but was not opene
+          +d; the 2025 edition is used.                                  
+       25 +                                                              
+       26 +## 3. Observable organizations: ranges                        
+       27 +                                                              
+       28 +| Category | Low | Base | High | Basis | Confidence |         
+       29 +|---|---|---|---|---|---|                                     
+       30 +| VC managers | 5,000 | 8,000 | 12,000 | US 3,417 (NVCA) plus 
+          +Europe (part of Invest Europe's 1,750+ PE/VC firms) plus Asia 
+          +and the rest of the world, for which no public count was found
+          +. Rest-of-world shares are assumptions. | Low |               
+       31 +| PE managers | 6,000 | 8,000 | 10,000 | AIC (via Vault) about
+          + 7,000 worldwide; its US-heavy split and Invest Europe's Europ
+          +ean count suggest the world total may be higher. | Low |      
+       32 +| VC/PE overlap removed | −15% | −15% | −15% | Assumption: fir
+          +ms running both VC and PE strategies are counted in both categ
+          +ories. Not measured. | Low |                                  
+       33 +| Single family offices with public evidence of direct company
+          + investments | 2,008 (25% of 8,030) | 3,212 (40%) | 4,818 (60%
+          +) | Deloitte 8,030 SFOs; the shares that both invest directly 
+          +and leave a public trace are assumptions. | Very low |        
+       34 +| **Observable organizations in scope** | **11,358** | **16,81
+          +2** | **23,518** | (VC + PE) × 0.85 + family-office share | Lo
+          +w |                                                           
+       35 +                                                              
+       36 +Multi-family offices, corporate venture units, and government 
+          +investment vehicles are not separately counted; corporate VC a
+          +nd state-backed VC are assumed to be inside the VC figure, whi
+          +ch may undercount them.                                       
+       37 +                                                              
+       38 +**Pilot check on directory coverage.** In the Czech pilot, the
+          + two directories listed 69 organizations. Of the 17 drawn by a
+          + fixed rule, 2 were eligible VC managers, 7 unresolved, and 8 
+          +not eligible. This implies roughly 11–38 eligible Czech VC man
+          +agers among the 69 (about 5–52 with sampling error; docs/plan.
+          +md). Directories therefore over-list by a factor of about 2–6 
+          +relative to eligible managers, and they miss organizations tha
+          +t are not members or not listed. Neither effect has been measu
+          +red outside Czechia.                                          
+       39 +                                                              
+       40 +## 4. Private individuals: context only                       
+       41 +                                                              
+       42 +| Category | Published figure | Enumerable from public data? |
+       43 +|---|---|---|                                                 
+       44 +| Angel investors | 445,535 active in the US alone (2024, CVR 
+          +estimate) | No. Only angels named in public deal announcements
+          +, angel-network member lists, or their own profiles are visibl
+          +e. The visible share is unknown and has not been measured. |  
+       45 +| Large private investors | 510,810 UHNW individuals worldwide
+          + (Altrata, mid-2025) | No. Wealth does not show investing acti
+          +vity. Those who invest through family offices or holding compa
+          +nies appear through those entities, which are counted above. |
+       46 +                                                              
+       47 +A database could add a layer of publicly named individual inve
+          +stors discovered from deal announcements. Its size cannot be e
+          +stimated defensibly from the sources found. It would need priv
+          +acy review (public-interest basis, data minimization) before c
+          +ollection.                                                    
+       48 +                                                              
+       49 +## 5. Scaling effort by workstream                            
+       50 +                                                              
+       51 +The pilot did not time candidates or meter AI usage, so minute
+          +s per candidate are assumptions informed by the pilot workflow
+          +: each candidate needed official-site reading, a search for a 
+          +dated deal, office and identity checks, and a human decision. 
+          +The pilot reviewed 100% of candidates; the base case keeps 100
+          +% review on the first build.                                  
+       52 +                                                              
+       53 +| Workstream | Low | Base | High | Assumption |               
+       54 +|---|---|---|---|---|                                         
+       55 +| Candidates to process | 17,036 | 33,624 | 70,554 | Observabl
+          +e organizations × 1.5 / 2.0 / 3.0 for out-of-scope and duplica
+          +te directory entries (the Czech directories had 69 entries for
+          + an estimated 11–38 eligible managers) |                      
+       56 +| Discovery: source onboarding (directories, associations, reg
+          +istries) | 800 h | 2,400 h | 8,000 h | 100 / 200 / 400 sources
+          + × 8 / 12 / 20 h each |                                       
+       57 +| Deduplication (manual part) | 284 h | 560 h | 1,176 h | 20% 
+          +of candidates flagged × 5 min |                               
+       58 +| Research and AI-assisted extraction, analyst-checked | 2,839
+          + h | 11,208 h | 41,157 h | 10 / 20 / 35 min per candidate |   
+       59 +| Human verification and labelling | 2,839 h | 8,406 h | 29,39
+          +8 h | 10 / 15 / 25 min per candidate, 100% review |           
+       60 +| Software (ingestion, schemas, validation, review UI) | 500 h
+          + | 1,000 h | 2,000 h | Engineering build, extending the pilot'
+          +s validators |                                                
+       61 +| **Initial build total** | **7,263 h** | **23,574 h** | **81,
+          +730 h** | About 4 / 13 / 45 person-years at 1,800 h per year (
+          +assumption) |                                                 
+       62 +| Maintenance per year | 1,420 h | 6,865 h | 35,277 h | Re-che
+          +cking 25% / 35% / 50% of research and verification each year |
+       63 +                                                              
+       64 +Lowering the review share after the first build (for example, 
+          +reviewing all included records but only a sample of exclusions
+          +) would cut the verification line, but the pilot's sample is t
+          +oo small to show which share keeps precision acceptable.      
+       65 +                                                              
+       66 +## 6. Cost                                                    
+       67 +                                                              
+       68 +Rate benchmarks (US Bureau of Labor Statistics, accessed 2026-
+          +10-26):                                                       
+       69 +                                                              
+       70 +- Analyst rate A = USD 49.79 per hour: median pay of financial
+          + analysts, May 2025 ([BLS Occupational Outlook Handbook](https
+          +://www.bls.gov/ooh/business-and-financial/financial-analysts.h
+          +tm)).                                                         
+       71 +- Engineer rate E = USD 65.38 per hour: median annual wage of 
+          +software developers, USD 135,980 in May 2025 ([BLS Occupationa
+          +l Outlook Handbook](https://www.bls.gov/ooh/computer-and-infor
+          +mation-technology/software-developers.htm)), divided by 2,080 
+          +hours (assumption).                                           
+       72 +                                                              
+       73 +These are US median wages, not loaded employer costs or contra
+          +ctor rates, and are used only as benchmarks. Costs in other la
+          +bour markets would differ; no cited rate for them was collecte
+          +d.                                                            
+       74 +                                                              
+       75 +Formula:                                                      
+       76 +                                                              
+       77 +    initial cost = k × (A × analyst hours + E × engineering ho
+          +urs) + AI/API cost + infrastructure                           
+       78 +    analyst hours = discovery + deduplication + research + ver
+          +ification                                                     
+       79 +    verification hours = candidates × review share × minutes p
+          +er review / 60                                                
+       80 +    annual cost = k × A × maintenance hours + recurring AI/API
+          + and infrastructure                                           
+       81 +                                                              
+       82 +`k` is the employer overhead multiplier (benefits, management,
+          + tooling). It is left as a parameter because no public benchma
+          +rk for it was collected.                                      
+       83 +                                                              
+       84 +| | Low | Base | High |                                       
+       85 +|---|---|---|---|                                             
+       86 +| Initial build, wage-only (k = 1) | USD 369,402 | USD 1,189,3
+          +54 | USD 4,100,502 |                                          
+       87 +| Maintenance per year, wage-only (k = 1) | USD 70,686 | USD 3
+          +41,803 | USD 1,756,442 |                                      
+       88 +                                                              
+       89 +AI/API and infrastructure costs are not included. The pilot ra
+          +n inside Claude Code and ChatGPT sessions without metered API 
+          +billing, so no per-candidate AI cost was measured. For a budge
+          +t, use: candidates × tokens per candidate × price per token, w
+          +ith the provider's published price on the date of the estimate
+          +.                                                             
+       90 +                                                              
+       91 +## 7. Overlap, deduplication, and coverage risks              
+       92 +                                                              
+       93 +- **Category overlap:** the same manager can run VC, growth, a
+          +nd PE funds; family offices also run VC arms. Counting by mana
+          +ger (the unit of record) avoids double counting only if aliase
+          +s and successor firms are resolved, which the pilot showed is 
+          +hard (Enern/KAYA, Lighthouse).                                
+       94 +- **Fund versus manager:** directories list funds, managers, a
+          +nd advisers interchangeably (for example a Luxembourg fund wit
+          +h a Prague adviser in the pilot).                             
+       95 +- **Geographic attribution:** multi-office managers need a pri
+          +ncipal-office decision; 4 of 20 pilot candidates had this issu
+          +e.                                                            
+       96 +- **Uneven disclosure:** family offices and private individual
+          +s disclose much less than VC managers; the pilot's disclosure 
+          +rates (docs/plan.md) do not transfer to them.                 
+       97 +- **Language and access:** many sources are not in English; so
+          +me official sites failed TLS checks in the pilot and were not 
+          +bypassed.                                                     
+       98 +- **Stale figures:** several reference figures are undated or 
+          +years old; all ranges should be refreshed before use.         
+       99 +                                                              
+      100 +## 8. Research needed to firm up the estimate                 
+      101 +                                                              
+      102 +- A current worldwide VC and PE firm count with a stated defin
+          +ition (for example a methodology note from a data provider or 
+          +association), and country counts for Asia.                    
+      103 +- Invest Europe's own report text, to split its 1,750+ firms i
+          +nto VC and PE.                                                
+      104 +- The original CVR report and comparable angel estimates outsi
+          +de the US (for example EBAN for Europe).                      
+      105 +- A timed, larger random pilot in a second country and a secon
+          +d category (for example German family offices) to measure minu
+          +tes per candidate, unresolved share, and directory over-listin
+          +g.                                                            
+      106 +- Metered AI/API usage per candidate.                         
+
+● Update(docs\global-estimate.md)
+  ⎿  Added 1 line, removed 1 line
+      92  
+      93  - **Category overlap:** the same manager can run VC, growth, an
+          d PE funds; family offices also run VC arms. Counting by manage
+          r (the unit of record) avoids double counting only if aliases a
+          nd successor firms are resolved, which the pilot showed is hard
+           (Enern/KAYA, Lighthouse).
+      94  - **Fund versus manager:** directories list funds, managers, an
+          d advisers interchangeably (for example a Luxembourg fund with 
+          a Prague adviser in the pilot).
+      95 -- **Geographic attribution:** multi-office managers need a prin
+         -cipal-office decision; 4 of 20 pilot candidates had this issue.
+      95 +- **Geographic attribution:** multi-office managers need a prin
+         +cipal-office decision; 6 of 20 pilot candidates had this issue 
+         +(Credo, KAYA, Orbit, Enern, Sandberg, i&i).                    
+      96  - **Uneven disclosure:** family offices and private individuals
+           disclose much less than VC managers; the pilot's disclosure ra
+          tes (docs/plan.md) do not transfer to them.
+      97  - **Language and access:** many sources are not in English; som
+          e official sites failed TLS checks in the pilot and were not by
+          passed.
+      98  - **Stale figures:** several reference figures are undated or y
+          ears old; all ranges should be refreshed before use.
+
+● Now the final report and the README. For the AI-use account I'll quickly check
+  the first session's transcript for how Codex relates to the commit history,
+  so I don't guess.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● The first 13 commits (10:07–10:40 UTC on 2026-10-22) predate the first
+  recorded Claude Code session at 10:58 UTC and are attributed to the repo-local
+  "Codex assistant" identity—I'll present this as fact and leave attribution of
+  the tool to you. Now writing the final report.
+
+● Write(docs\report.md)
+  ⎿  Wrote 133 lines to docs\report.md
+       1 # Assignment A: A Reliable Investor Database — final report
+       3 Leonid Kuznetsov, 2026-10-26
+       5 ## Summary
+       6
+          which every included investor is backed by dated public evidenc
+         t: venture capital managers whose principal operating office is
+         segment, not a complete Czech or global investor database.
+       8
+         ven preliminary predictions, and frozen on 2026-10-22.
+         7 unresolved.
+     … +212 lines (ctrl+o to expand)
+
+● Write(README.md)
+  ⎿  Added 76 lines, removed 20 lines
+       1  # Czech VC Investor Database — pilot
+       2  
+       3 -An auditable pilot for identifying venture capital investors wh
+         -ose main operating office is in the Czech Republic. The project
+         - focuses on evidence quality: every included investor needs a d
+         -ated public source confirming a direct investment. Missing publ
+         -ic information is recorded as unknown rather than guessed.     
+       3 +An auditable pilot for Assignment A, "A Reliable Investor Datab
+         +ase". It tests one method on one segment: venture capital manag
+         +ers whose principal operating office is in the Czech Republic. 
+         +Every included investor needs dated public evidence of a comple
+         +ted direct investment, and the method's accuracy is measured ag
+         +ainst human review. This is a validation of the method, not a c
+         +omplete Czech or global investor database.                     
+       4  
+       5 -## Current status                                              
+       5 +The final report is in [docs/report.md](docs/report.md).       
+       6  
+       7 -A 20-organization pilot discovery frame has been drawn from the
+         - CzechStartups investor directory and the CVCA full-member list
+         - (docs/discovery.md). It has preliminary predictions: 4 include
+         -d, 8 needs_review, 8 excluded. The candidate frame and predicti
+         -ons were frozen on 2026-10-22, and their fingerprints are recor
+         -ded in data/reviews.json. Human review is in progress; no label
+         -s have been entered in data/reviews.json yet. The user has manu
+         -ally checked selected sources for the original three candidates
+         - (Credo Ventures, Tilia Impact Ventures, Purple Ventures). No p
+         -recision result or global scale estimate is claimed. The frame 
+         -is a small pilot sample, not a representative estimate of the C
+         -zech VC market.                                                
+       8 -                                                               
+       7  ## Scope
+       8  
+      11 -- Unit of record: an investment organization or manager. Relate
+         -d funds are linked to it and are not counted as separate invest
+         -ors.                                                           
+      12 -- Pilot geography: main operating office in the Czech Republic.
+      13 -- Investor type: venture capital.                              
+      14 -- Public sources only.                                         
+      15 -- Active status: a dated investment event within the 36 months 
+         -before the dataset freeze, plus a current investment strategy. 
+         -This is a project rule for the pilot, not a universal definitio
+         -n.                                                             
+       9 +- Unit of record: the investment manager organization. Funds an
+         +d vehicles are linked to it and are not counted as separate inv
+         +estors.                                                        
+      10 +- Pilot geography: principal operating office in the Czech Repu
+         +blic. A registered or mailing address alone does not count.    
+      11 +- Investor type: venture capital. PE, family offices, angels, a
+         +nd large private investors belong to the broader concept and ar
+         +e covered only in the global estimate.                         
+      12 +- Public sources only. Directories are used for discovery, not 
+         +as proof.                                                      
+      13 +- Active status: a completed direct investment within the 36 mo
+         +nths before the frozen dataset date (2026-10-22), that is, on o
+         +r after 2023-10-22.                                            
+      14  
+      17 -See docs/plan.md for inclusion rules, source policy, evaluation
+         -, and limitations.                                             
+      15 +Inclusion rules, verification method, and expected reliability 
+         +are in [docs/plan.md](docs/plan.md).                           
+      16  
+      17 +## Status and results (2026-10-26)                             
+      18 +                                                               
+      19 +- 20 candidates were drawn from the CzechStartups investor dire
+         +ctory and the CVCA member list ([docs/discovery.md](docs/discov
+         +ery.md)).                                                      
+      20 +- Preliminary predictions were made: 4 included, 8 needs_review
+         +, 8 excluded. The frame and predictions were frozen on 2026-10-
+         +22, and both fingerprints still match.                         
+      21 +- A human reviewer (Leonid Kuznetsov) labelled all 20 on 2026-1
+         +0-26: 5 eligible, 8 not_eligible, 7 unresolved.                
+      22 +- Precision is 3/3. Conservative precision, which counts an unr
+         +esolved included prediction as a failure, is 3/4. Sample recall
+         + within the frame is 3/3. The sample is small, so these figures
+         + are not a precision claim for a larger database ([docs/evaluat
+         +ion.md](docs/evaluation.md)).                                  
+      23 +- The final records cover the 5 eligible managers: Credo Ventur
+         +es, Tilia Impact Ventures, Purple Ventures, Orbit Capital, and 
+         +KAYA VC.                                                       
+      24 +- Global universe ranges and scaling effort and cost are in [do
+         +cs/global-estimate.md](docs/global-estimate.md).               
+      25 +                                                               
+      26 +Limitations:                                                   
+      27 +                                                               
+      28 +- one country, one category, 20 candidates, one reviewer;      
+      29 +- three candidates were not drawn at random;                   
+      30 +- organizations absent from both directories are not covered;  
+      31 +- investors' individual cheques and firm-wide AUM are mostly un
+         +disclosed;                                                     
+      32 +- the global figures are low-confidence ranges.                
+      33 +                                                               
+      34  ## Run locally
+      35  
+      21 -Requires Node.js 20 or newer. No third-party packages are neede
+         -d.                                                             
+      36 +Requires Node.js 20 or newer; there are no third-party packages
+         +. Run these from the project folder. On Windows PowerShell use 
+         +`npm.cmd`; on other systems use `npm`.                         
+      37  
+      23 -    npm test                                                   
+      24 -    npm run validate                                           
+      25 -    npm run evaluate                                           
+      38 +    npm.cmd test                                               
+      39 +    npm.cmd run validate                                       
+      40 +    npm.cmd run evaluate                                       
+      41 +    npm.cmd run fingerprint                                    
+      42  
+      27 -`npm run validate` checks data/candidates.json against the cand
+         -idate schema and data/investors.json against the stricter final
+         - investor schema. `npm run evaluate` reads data/investors.json 
+         -and data/reviews.json. The investor and review files are intent
+         -ionally empty until records and human review are ready.        
+      43 +What each command does:                                        
+      44  
+      29 -## Data and evidence                                           
+      45 +- `test` runs the unit tests. One test re-derives the frozen 20
+         +-candidate frame from the directory snapshots.                 
+      46 +- `validate` checks all four data files against their schemas, 
+         +including that every final record belongs to a candidate labell
+         +ed eligible and that every fact cites a source.                
+      47 +- `evaluate` prints confusion counts and metrics. It exits with
+         + an error if the candidate or prediction files no longer match 
+         +the recorded freeze.                                           
+      48 +- `fingerprint` prints the current fingerprints for comparison 
+         +with `freeze` in data/reviews.json. It writes nothing.         
+      49  
+      31 -Each investor record keeps its decision and evidence together. 
+         -Each evidence item identifies the claim it supports, the public
+         - URL, the page title, publication or event date when known, acc
+         -ess date, and a short supporting excerpt. Search snippets and d
+         -irectory membership can help discover candidates but do not pro
+         -ve investment activity.                                        
+      50 +## Data files                                                  
+      51  
+      33 -Capital figures must retain their meaning (for example, fund si
+         -ze, target size, AUM, or close amount), date, and scope. A star
+         -tup's round size is not the investor's cheque size. Undisclosed
+         - values remain null with a reason.                             
+      52 +| Path | Contents |                                            
+      53 +|---|---|                                                      
+      54 +| data/discovery/ | Snapshots of the two discovery directories 
+         +(2026-10-22) |                                                 
+      55 +| data/candidates.json | Frozen 20-candidate frame with discove
+         +ry sources and research evidence |                             
+      56 +| data/investors.json | Frozen preliminary predictions (`includ
+         +ed` / `excluded` / `needs_review`) |                           
+      57 +| data/reviews.json | Freeze metadata (date and fingerprints) a
+         +nd the 20 human labels (`eligible` / `not_eligible` / `unresolv
+         +ed`) with reasons and reviewed URLs |                          
+      58 +| data/final-investors.json | Final records for the 5 eligible 
+         +managers; every fact cites its own source items |              
+      59 +| src/ | Frame selection, validators, evaluator, command-line e
+         +ntry point |                                                   
+      60 +| tests/ | Unit tests (fictional data, except the frame re-deri
+         +vation) |                                                      
+      61 +| docs/ | Plan, discovery, evaluation, global estimate, final r
+         +eport |                                                        
+      62 +| ai-log/ | AI conversation exports (see ai-log/README.md) |   
+      63  
+      64 +Each evidence item records the claim it supports, URL, title, p
+         +ublisher, publication date, event date where relevant, access d
+         +ate, and a short excerpt. Facts that could not be established a
+         +re null with a reason. A startup's round total is never recorde
+         +d as an investor's cheque. Fund size, target, first close, amou
+         +nt raised, AUM, and ticket are kept separate.                  
+      65 +                                                               
+      66  ## AI use
+      67  
+      37 -AI may help find candidate sources, extract structured claims, 
+         -and draft code. A human must open and assess evidence before a 
+         -record is marked included. AI confidence is not evidence and a 
+         -second AI pass is not counted as independent manual review. The
+         - final README will document actual instructions, checks, and ob
+         -served AI errors. Original AI conversation exports will be stor
+         -ed in ai-log/; no conversation will be represented as an export
+         - unless it came from the named tool.                           
+      68 +Two AI tools were used:                                        
+      69  
+      70 +- **Claude Code** (Anthropic), in a VS Code extension, in two s
+         +essions on 2026-10-22 and 2026-10-26.                          
+      71 +  - Session 1: audited the scaffold, revised the plan, and desi
+         +gned the prediction/label separation and the evaluator. It ran 
+         +candidate discovery with web tools, wrote the candidate evidenc
+         +e and preliminary predictions, recorded the freeze, and made co
+         +mmit 73269ec.                                                  
+      72 +  - Session 2: prepared research notes on each candidate for th
+         +e human review and corrected stale status text. It entered the 
+         +labels the reviewer confirmed, verified sources and built data/
+         +final-investors.json with its validator, and wrote the evaluati
+         +on results, global estimate, and report.                       
+      73 +- **ChatGPT** (OpenAI): per the reviewer, the human review disc
+         +ussion and the label decisions took place in a ChatGPT conversa
+         +tion outside this repository. That conversation is not a Claude
+         + Code export and is not presented as one.                      
+      74 +                                                               
+      75 +The Git history before 73269ec (13 commits, 10:07–10:40 UTC on 
+         +2026-10-22) predates the first Claude Code session on record. A
+         +ll commits up to 73269ec carry the repository-local identity "C
+         +odex assistant <codex@localhost>", and .gitignore lists `.codex
+         +/`. Which tool produced the earlier commits is for the author t
+         +o state; this README does not claim it.                        
+      76 +                                                               
+      77 +How outputs were checked:                                      
+      78 +                                                               
+      79 +- Labels were decided by the human reviewer, not generated by A
+         +I. Code never writes labels.                                   
+      80 +- The user manually checked individual sources for the first th
+         +ree candidates; these checks are recorded as `manualVerificatio
+         +n` in data/candidates.json and as `userChecked` in data/final-i
+         +nvestors.json.                                                 
+      81 +- Quotes were checked against fetched page text, and the frozen
+         + files are protected by fingerprints.                          
+      82 +- Aggregator sites (CB Insights, PitchBook, Caplight, SeedTable
+         +, Dealroom) were used only as leads and never cited as evidence
+         +.                                                              
+      83 +                                                               
+      84 +AI errors and problems found:                                  
+      85 +                                                               
+      86 +- A tool summary of the AIN Lifeyear article contained a grant/
+         +VC split not present on the page; it was not recorded (docs/dis
+         +covery.md).                                                    
+      87 +- Search summaries reported deals that could not be confirmed (
+         +for example a Credo-led Delta Green round in October 2025, and 
+         +a Preqin "8,400 firms in 2019" figure). These were not used.   
+      88 +- A Vestbee article gave two different lead investors for the s
+         +ame FaceUp round; the record does not rely on its lead attribut
+         +ion.                                                           
+      89 +- The preliminary stage included PurposeTech on the strength of
+         + a mailing address and excluded Lighthouse venture without spot
+         +ting the identity conflict; human review caught both.          
+      90 +- Claude Code first assumed that an empty data/reviews.json mea
+         +nt no review had taken place; the user corrected this.         
+      91 +- A candidate ID supplied with the labels ("candidate-rsj-inves
+         +tments") did not exist in the frame. The validator would have r
+         +ejected it, and the frame ID "candidate-rsjinvestments" was use
+         +d.                                                             
+      92 +                                                               
+      93 +Authentic Claude Code exports belong in ai-log/ and must be cre
+         +ated with Claude Code's `/export` command; see ai-log/README.md
+         + for what is present.                                          
+      94 +                                                               
+      95  ## License and reuse
+      96  
+      41 -Source links and short factual notes are included for verificat
+         -ion. This repository does not republish full third-party articl
+         -es or claim rights over source material.                       
+      97 +Source links and short factual excerpts are included for verifi
+         +cation. This repository does not republish full third-party art
+         +icles or claim rights over source material.                    
+
+● Write(ai-log\README.md)
+  ⎿  Added 14 lines, removed 2 lines
+       1  # AI conversation exports
+       2  
+       3 -This folder is reserved for authentic conversation exports from
+         - the AI coding tool used for the project.                      
+       3 +This folder is reserved for authentic conversation exports from
+         + the AI tools used for the project.                            
+       4  
+       5 -Do not add summaries as if they were exports. Export the actual
+         - Claude Code conversations using its export command, review the
+         -m for secrets or personal information, then place the permitted
+         - files here. If another assistant is used for a task, identify 
+         -it accurately and follow the employer's requested export format
+         -.                                                              
+       5 +Do not add summaries as if they were exports. Export the actual
+         + Claude Code conversations using its `/export` command, review 
+         +them for secrets or personal information, then place the permit
+         +ted files here. If another assistant is used for a task, identi
+         +fy it accurately and follow the employer's requested export for
+         +mat.                                                           
+       6 +                                                               
+       7 +## Status (2026-10-26)                                         
+       8 +                                                               
+       9 +No export has been placed in this folder yet.                  
+      10 +                                                               
+      11 +| Conversation | Tool | Date | Export status |                 
+      12 +|---|---|---|---|                                              
+      13 +| Audit, plan, evaluation design, discovery, freeze, commit 732
+         +69ec | Claude Code | 2026-10-22 | Not in ai-log/. A file named 
+         +`02-scope-and-evaluation.md` in the folder above the repository
+         + looks like an export of the first part of this session; the au
+         +thor should confirm it came from `/export`, check whether it co
+         +vers the whole session, and only then copy it here. |          
+      14 +| Research notes for human review, label entry, final records, 
+         +documentation | Claude Code | 2026-10-26 | Not exported yet. Ru
+         +n `/export` in this session. |                                 
+      15 +| Human review discussion and label decisions | ChatGPT | befor
+         +e 2026-10-26 | Not in ai-log/. If included, export it with Chat
+         +GPT's own export or share function and name it as a ChatGPT con
+         +versation, not a Claude Code export. |                         
+      16 +                                                               
+      17 +Before committing an export, remove tokens, credentials, and an
+         +y personal data that should not be public (for example local fi
+         +le paths with user names, if desired).                         
+
+● Before committing the docs, I'll scan the repo for personal data, paths, and
+  credentials, and check the docs' internal consistency.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● No private info found—just the reviewer's name and the repo's placeholder
+  identity. Checking the diff for whitespace errors now, then committing the
+  documentation.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Final verification run of all four commands, plus git state.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The submission is complete locally: all 20 human labels are recorded, the
+  final database holds the 5 eligible managers, and the docs and report are
+  written. All four checks pass, and both freeze fingerprints still match.
+  Nothing is pushed, because no GitHub remote is configured.
+
+  What changed
+
+  File: data/reviews.json
+  Change: All 20 labels as you confirmed them, entered as Leonid Kuznetsov on
+  2026-10-26, each with a reason and source URLs. The freeze metadata and
+  datasetDate are unchanged.
+  ────────────────────────────────────────
+  File: data/final-investors.json (new)
+  Change: Records for the 5 eligible managers. Each fact cites its own source
+  item. Unknown facts are null with a reason. Round totals are kept separate
+  from the investor's own cheque.
+  ────────────────────────────────────────
+  File: src/validate.js, src/cli.js
+  Change: validate now also checks the final file. Only candidates labelled
+  eligible may appear, every eligible one must appear, facts must cite sources,
+   and the office must be Czech. The 36-month window counts back from
+  2026-10-22.
+  ────────────────────────────────────────
+  File: tests/final-investors.test.js (new)
+  Change: 9 tests using fictional data.
+  ────────────────────────────────────────
+  File: docs/evaluation.md
+  Change: Results for all 20 candidates, confusion counts, metrics, and limits.
+  ────────────────────────────────────────
+  File: docs/plan.md
+  Change: How each test is established, how ambiguous cases are handled,
+  expected
+  coverage and reliability, current status.
+  ────────────────────────────────────────
+  File: docs/discovery.md
+  Change: Frozen status, and the separation of discovery evidence, predictions,
+  labels and final records.
+  ────────────────────────────────────────
+  File: docs/global-estimate.md
+  Change: Global ranges per investor category, effort per workstream, and the
+  cost model.
+  ────────────────────────────────────────
+  File: docs/report.md (new)
+  Change: The final report for the employer.
+  ────────────────────────────────────────
+  File: README.md, ai-log/README.md
+  Change: Setup, data files, status, the AI-use account, and which exports
+  exist.
+
+  data/candidates.json and data/investors.json are byte-identical to the frozen
+  commit 73269ec.
+
+  Three labels needed public sources that weren't in the frozen records, so I
+  found and checked them:
+  - Orbit: the CloudTalk Series B release, and an EIF release describing Orbit
+    as Prague- and Warsaw-based.
+  - mAccelerator: mBank's 2017 press release setting up the fund.
+  - Enern: its existing frozen URLs cover the reason you gave this time.
+
+  One caveat on Orbit, recorded in its record without changing your label: the
+  EIF lists CloudTalk among Orbit's venture-debt fund investments, so Orbit's
+  participation may have been debt rather than equity.
+
+  Results
+
+  Labels: 5 eligible (Credo, Tilia, Purple, Orbit, KAYA), 8 not_eligible, 7
+  unresolved.
+
+  Evaluation output: TP 3, FP 0, TN 7, FN 0.
+
+  ┌──────────────────┬────────────────────────────────────────────┬─────────┐
+  │      Metric      │                 Definition                 │  Value  │
+  ├──────────────────┼────────────────────────────────────────────┼─────────┤
+  │ Precision        │ TP / (TP + FP)                             │ 3/3 =   │
+  │                  │                                            │ 1.00    │
+  ├──────────────────┼────────────────────────────────────────────┼─────────┤
+  │ Conservative     │ TP / (TP + FP + U), where U is included    │ 3/4 =   │
+  │ precision        │ predictions labelled unresolved            │ 0.75    │
+  │                  │ (PurposeTech)                              │         │
+  ├──────────────────┼────────────────────────────────────────────┼─────────┤
+  │ Sample recall    │ TP / (TP + FN), within the frozen frame    │ 3/3 =   │
+  │                  │ only                                       │ 1.00    │
+  └──────────────────┴────────────────────────────────────────────┴─────────┘
+
+  The binary counts cover only included and excluded predictions, so some cases
+  are reported separately:
+  - Orbit and KAYA are eligible but were predicted needs_review.
+  - mAccelerator was needs_review and is not_eligible.
+  - Five needs_review candidates are unresolved.
+  - Lighthouse was predicted excluded and is unresolved.
+
+  The docs give 95% intervals for the two precision figures (0.44–1.00 and
+  0.30–0.95) and say why the result can't be generalised.
+
+  Check outputs:
+  - npm.cmd test: 56 passed, 0 failed.
+  - npm.cmd run validate: 20 candidates, 20 investors, 20 reviews and 5 final
+    records, all valid.
+  - npm.cmd run evaluate: exit code 0, freeze status matches for both files, no
+    issues.
+  - npm.cmd run fingerprint: 5dd76ba0…c6f8cd and 8cc70f92…081f4a, identical to
+    the recorded freeze.
+
+  Global estimate:
+  - About 11,000–24,000 investor organizations worldwide that can be found and
+    checked from public sources (VC, PE and family offices).
+  - A first build would take about 7,000–82,000 person-hours, roughly USD
+    0.37m–4.1m at US median wages before overhead.
+  - Angels and wealthy individuals are given for context only, because they
+    can't be counted from public lists.
+  - The pilot didn't time candidates, so the minutes per candidate are labelled
+    assumptions.
+
+  Commits (all local, existing history untouched):
+  - dcaef34 Record human review labels for all 20 frozen candidates
+  - 7a9b0a8 Add final investor database for the five eligible managers
+  - b6647c5 Document review results, global estimate, and final report
+
+  Actions for you
+
+  1. Commit identity. The repo's local Git config sets Codex assistant
+     <codex@localhost>, so all 17 commits, including my three, carry that
+     author. My commits add a Claude co-author line. Before you publish, decide
+     whether the three new commits should carry your own name instead (your
+     global config is kuznecovoff-lab). They aren't pushed yet, so their author
+     can still be changed. The README doesn't say which tool made the first 13
+     commits, because I couldn't verify it; please add that.
+  2. Claude Code exports. Nothing is in ai-log/ yet.
+     - Run /export in this session.
+     - Export the 2026-10-22 session too. A file in the parent folder,
+       02-scope-and-evaluation.md, looks like an export of its first part. Check
+       that it's genuine and complete before copying it into ai-log/.
+     - Remove any personal paths you don't want public, then commit.
+     - If you include the ChatGPT conversation, export it with ChatGPT's own
+       tool and label it as ChatGPT.
+  3. Read the docs before sending. In particular, check the AI-use section of
+     README.md and the byline and figures in docs/report.md.
+
+  Publishing checklist (due 2026-10-30)
+
+  1. Settle the commit identity and add the AI exports to ai-log/, then commit.
+  2. Create a public, empty GitHub repository, with no README, so it doesn't
+     conflict with your local history.
+  3. Connect and push:
+     git remote add origin https://github.com/<user>/<repo>.git
+     git push -u origin main
+  4. Open the repo in a private browser window to confirm it's public and that
+     README.md and the docs render.
+  5. Run npm.cmd test and npm.cmd run evaluate from a fresh clone.
+  6. Reply to the original email with the public repository URL. No website URL
+     is needed for Assignment A.

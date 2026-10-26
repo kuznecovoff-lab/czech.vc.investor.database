@@ -72,7 +72,7 @@ Two AI tools were used:
   - Session 2: prepared research notes on each candidate for the human review and corrected stale status text. It entered the labels the reviewer confirmed, verified sources and built data/final-investors.json with its validator, and wrote the evaluation results, global estimate, and report.
 - **ChatGPT** (OpenAI): per the reviewer, the human review discussion and the label decisions took place in a ChatGPT conversation outside this repository. That conversation is not a Claude Code export and is not presented as one.
 
-The Git history before 73269ec (13 commits, 10:07–10:40 UTC on 2026-10-22) predates the first Claude Code session on record. All commits up to 73269ec carry the repository-local identity "Codex assistant <codex@localhost>", and .gitignore lists `.codex/`. Which tool produced the earlier commits is for the author to state; this README does not claim it.
+Git author metadata: every commit up to and including b6647c5 shows "Codex assistant <codex@localhost>" as author and committer, because that was the name and email in the repository's local Git configuration when those commits were made (it has since been changed). This metadata does not identify which AI tool contributed to each earlier commit. The first 13 commits (10:07–10:40 UTC on 2026-10-22) predate the first Claude Code session on record. The message of 73269ec ends with the trailer `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. The 2026-10-26 Claude Code session reports that it created commits dcaef34, 7a9b0a8, and b6647c5; their commit messages also carry the Claude Opus 5.5 co-author trailer (see ai-log/claude-code-session-2026-10-26.txt).
 
 How outputs were checked:
 

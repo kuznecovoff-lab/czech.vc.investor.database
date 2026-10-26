@@ -109,7 +109,7 @@ Measure pilot time per candidate, review share, pages checked, unresolved share,
 - docs/report.md: concise final report.
 - data/candidates.json (frozen frame), data/investors.json (frozen preliminary predictions), data/reviews.json (freeze metadata and human labels), data/final-investors.json (final records for the eligible managers), data/discovery/ (directory snapshots).
 - src/ and tests/: validation of all four data files, frame re-derivation, and metric calculation. Candidate records, prediction records, human labels, and final investor records use separate schemas and validators.
-- ai-log/: authentic AI conversation exports, with secrets removed.
+- ai-log/: authentic Claude Code conversation exports, listed and described in ai-log/README.md.
 
 Current status (2026-10-26):
 
@@ -118,4 +118,4 @@ Current status (2026-10-26):
 - Human review is complete: data/reviews.json has 20 labels (5 eligible, 8 not_eligible, 7 unresolved) entered on 2026-10-26 as confirmed by the reviewer.
 - data/final-investors.json holds final records for the 5 eligible managers.
 - Results: precision 3/3, conservative precision 3/4, sample recall 3/3 (docs/evaluation.md). Global ranges and scaling cost are in docs/global-estimate.md.
-- Outstanding: authentic AI conversation exports in ai-log/ (see ai-log/README.md).
+- AI-use records: ai-log/ now holds authentic Claude Code exports made with `/export`. The extended export of the 2026-10-22 session (claude-code-session-2026-10-22-complete.txt) runs through the freeze commit 73269ec; the export of the 2026-10-26 session (claude-code-session-2026-10-26.txt) covers the human-label entry and final deliverables. The earlier partial export of the 2026-10-22 session (claude-code-session-2026-10-22.md) is retained but superseded by the extended export. No ChatGPT export is included. Details are in ai-log/README.md.
