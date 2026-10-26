@@ -5,5 +5,235 @@
     "candidatesFingerprint": "5dd76ba0d2722da9d075ffef4185bfc5bc21c8185930994eaf94e1e5c8c6f8cd",
     "predictionsFingerprint": "8cc70f92dc3fe5354ac4bab5fba468f69e343bc90888198d9fb5bbc640081f4a"
   },
-  "reviews": []
+  "reviews": [
+    {
+      "candidateId": "candidate-credo-ventures",
+      "label": "eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "VC investor; Prague operating base established; direct investment in Delta Green confirmed.",
+      "sourceUrls": [
+        "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+        "https://www.credoventures.com/"
+      ]
+    },
+    {
+      "candidateId": "candidate-tilia-impact-ventures",
+      "label": "eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "VC investor; Prague base confirmed; dated direct investment in Delta Green confirmed.",
+      "sourceUrls": [
+        "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+        "https://tilia.vc/",
+        "https://tilia.vc/sfdr/"
+      ]
+    },
+    {
+      "candidateId": "candidate-purple-ventures",
+      "label": "eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "VC investor; Brno operating base accepted by the reviewer; dated direct investment in Delta Green confirmed.",
+      "sourceUrls": [
+        "https://www.deltagreen.cz/press-releases/czech-energy-innovators-in-the-spotlight-delta-green-secures-eu2-2-million-from-tilia-impact-ventures-credo-ventures-and-purple-ventures",
+        "https://www.purple-ventures.com/"
+      ]
+    },
+    {
+      "candidateId": "candidate-up271",
+      "label": "unresolved",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Public evidence is too limited to establish investor type, operating office, and a qualifying dated direct investment with confidence. The only office address found is also the registered seat. This does not imply inactivity.",
+      "sourceUrls": [
+        "https://up271.com/en/home/",
+        "https://up271.com/en/contact/",
+        "https://czechstartups.gov.cz/investori_en/up-271/"
+      ]
+    },
+    {
+      "candidateId": "candidate-lighthouseventure",
+      "label": "unresolved",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Identity unclear: the directory links to and describes a US firm (Lighthouse Ventures LLC, Mercer Island, WA), while a separate Czech VC, Lighthouse Ventures (lhv.vc, Prague), has a similar name. The Czech firm's office and portfolio cannot safely be attributed to this directory record.",
+      "sourceUrls": [
+        "https://czechstartups.gov.cz/investori_en/lighthouse-venture/",
+        "https://lighthouse.ventures/",
+        "https://lighthouse.ventures/contact-us/",
+        "https://lhv.vc/"
+      ]
+    },
+    {
+      "candidateId": "candidate-enern",
+      "label": "unresolved",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Possible fit, but the relationship with KAYA and the identity of the current investment manager are unclear: sources describe KAYA as launched by or succeeding Enern, and Enern describes itself as a family of investment vehicles.",
+      "sourceUrls": [
+        "https://enern.eu/",
+        "https://enern.eu/contact/",
+        "https://www.privateequityinternational.com/kaya-vc-rolls-out-80m-fund"
+      ]
+    },
+    {
+      "candidateId": "candidate-innovacapital",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Polish private-equity manager (controlling stakes in mid-sized companies; Warsaw address), outside the Czech VC pilot.",
+      "sourceUrls": [
+        "https://www.innovacap.com",
+        "https://cvca.cz/en/innova-capital-2/"
+      ]
+    },
+    {
+      "candidateId": "candidate-orbitcapital",
+      "label": "eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Growth equity and venture-debt investment manager; Prague operating base accepted by the reviewer (EIF describes Orbit as Prague- and Warsaw-based); participation in the completed CloudTalk Series B in January 2024 confirmed. The round total is not Orbit's cheque.",
+      "sourceUrls": [
+        "https://www.orbitcapital.com",
+        "https://cvca.cz/en/orbit-capital-2/",
+        "https://www.cloudtalk.io/blog/cloudtalk-raised-28-million-funding-to-lead-the-new-era-of-ai-powered-voice-communication/",
+        "https://www.eif.org/press/all/eif-pledges-eur20-million-to-fuel-expansion-of-cee-based-innovative-smes-via-orbit-growth-debt-ii-fund"
+      ]
+    },
+    {
+      "candidateId": "candidate-rsjinvestments",
+      "label": "unresolved",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "No qualifying recent direct company investment was confirmed in the reviewed public evidence; the official page lists VC holdings and fund commitments without dated direct investment announcements. This does not mean the firm is inactive.",
+      "sourceUrls": [
+        "https://www.rsj.com/en/investments"
+      ]
+    },
+    {
+      "candidateId": "candidate-macceleratorvc",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Principal base is Poland (fund set up and run by managers from the Polish bank mBank), despite Czech portfolio activity.",
+      "sourceUrls": [
+        "https://czechstartups.gov.cz/investori_en/maccelerator-vc/",
+        "https://en.media.mbank.pl/36472-mbank-will-invest-eur-50-million-in-new-technologies-for-financial-institutions"
+      ]
+    },
+    {
+      "candidateId": "candidate-limerockventures",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Operating base is Bratislava, Slovakia, despite investments in Czech companies.",
+      "sourceUrls": [
+        "https://www.limerock.sk/main",
+        "https://czechstartups.gov.cz/investori_en/limerock-ventures/"
+      ]
+    },
+    {
+      "candidateId": "candidate-impulseventures",
+      "label": "unresolved",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "The 2025 Safetica investment is attributed to Impulse Capital, and the connection to Impulse Ventures is not established.",
+      "sourceUrls": [
+        "https://safetica.com/resources/press/safetica-secures-4musd-investment-to-accelerate-u-s-expansion-ai-innovation"
+      ]
+    },
+    {
+      "candidateId": "candidate-kayavc",
+      "label": "eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Early-stage VC; Prague headquarters/operating base accepted by the reviewer; direct participation in the completed E2B Series A in July 2025 confirmed. Possible overlap or successor relationship with the Enern candidate: sources describe KAYA as formerly named Enern or as Enern's VC successor.",
+      "sourceUrls": [
+        "https://www.kaya.vc/",
+        "https://cvca.cz/en/kaya-vc-2/",
+        "https://www.insightpartners.com/ideas/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100/",
+        "https://www.pillsburylaw.com/en/news-and-insights/pillsbury-advises-kaya-investment-e2b.html",
+        "https://techcrunch.com/?p=2132469"
+      ]
+    },
+    {
+      "candidateId": "candidate-sandbergcapital",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Private-equity strategy and principal base in Bratislava, Slovakia; a Prague office and Czech portfolio companies do not make it a Czech VC manager.",
+      "sourceUrls": [
+        "https://sandbergcapital.com/",
+        "https://cvca.cz/en/sandberg-capital/"
+      ]
+    },
+    {
+      "candidateId": "candidate-everitacapital",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Growth private equity (EUR 2-5m stakes in SMEs beyond the startup phase), outside the VC pilot.",
+      "sourceUrls": [
+        "https://everitacap.com/",
+        "https://cvca.cz/en/everita-capital-en/"
+      ]
+    },
+    {
+      "candidateId": "candidate-purposetech",
+      "label": "unresolved",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Available evidence does not establish with sufficient confidence that its principal operating base is in Czechia; the Prague address found is labelled a mailing address, which is not proof of the operating office. This does not imply inactivity.",
+      "sourceUrls": [
+        "https://www.purposetech.vc",
+        "https://en.ain.ua/2025/07/01/lifeyear-raises-eur28m/"
+      ]
+    },
+    {
+      "candidateId": "candidate-i-and-i-biotech-investments",
+      "label": "unresolved",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "VC activity and a recent completed investment (Captain T Cell, 2025-11-17) are supported, but the location of principal operations and investment decisions is unclear between the Luxembourg fund (headquarters) and the Prague investment adviser.",
+      "sourceUrls": [
+        "https://www.inibio.eu",
+        "https://www.inibio.eu/news/captain-t-cell-closes-financing-round-to-advance-its-proprietary%2C-next-generation-tcr-t-pipeline-into-the-clinic-",
+        "https://cvca.cz/en/biotech-investments/"
+      ]
+    },
+    {
+      "candidateId": "candidate-mamprivateequityfund",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Private-equity buyout strategy (majority stakes, MBO/LBO), outside the VC pilot.",
+      "sourceUrls": [
+        "https://www.mam-equity.cz/",
+        "https://cvca.cz/en/mam-private-equity-fund-sicav-a-s/"
+      ]
+    },
+    {
+      "candidateId": "candidate-heartcorecapital",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Principal base is Copenhagen, Denmark, outside the Czech pilot.",
+      "sourceUrls": [
+        "https://www.heartcore.com/about",
+        "https://czechstartups.gov.cz/investori_en/heartcore-capital/"
+      ]
+    },
+    {
+      "candidateId": "candidate-hithit",
+      "label": "not_eligible",
+      "reviewer": "Leonid Kuznetsov",
+      "reviewDate": "2026-10-26",
+      "reason": "Reward-based crowdfunding platform, not an equity investor.",
+      "sourceUrls": [
+        "https://www.hithit.com/cs/home",
+        "https://czechstartups.gov.cz/investori_en/hithit/"
+      ]
+    }
+  ]
 }
