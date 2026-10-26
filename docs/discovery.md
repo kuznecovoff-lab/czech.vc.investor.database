@@ -1,6 +1,17 @@
 # Candidate discovery (2026-10-22)
 
-Status: pilot discovery frame of 20 organizations with preliminary predictions. **Not frozen and not human-reviewed.** No human labels exist (data/reviews.json is empty).
+Status: pilot discovery frame of 20 organizations with preliminary predictions. The frame and predictions were frozen on 2026-10-22; their fingerprints are recorded in data/reviews.json. Human review was completed on 2026-10-26, and the 20 labels are in data/reviews.json (results in docs/evaluation.md). This document describes the frame and predictions as frozen; it was not changed to match the labels.
+
+## Discovery evidence, predictions, and human labels
+
+| Layer | File | Values | Created by |
+|---|---|---|---|
+| Discovery evidence | data/discovery/ (snapshots), data/candidates.json (`discoverySources`, `evidence`) | listings, source URLs, excerpts | Research workflow (AI-assisted), frozen 2026-10-22 |
+| Preliminary predictions | data/investors.json (`decision`) | `included`, `excluded`, `needs_review` | Research workflow (AI-assisted), frozen 2026-10-22 |
+| Human labels | data/reviews.json (`label`) | `eligible`, `not_eligible`, `unresolved` | Human reviewer, 2026-10-26 |
+| Final records | data/final-investors.json | eligible managers only | Built from human labels and checked public sources, 2026-10-26 |
+
+A directory listing is discovery evidence only. Predictions were made before human review and are never edited to match labels; the evaluation compares the two.
 
 ## Sources
 

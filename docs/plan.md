@@ -56,6 +56,35 @@ Use association and ecosystem directories only to discover candidates. Membershi
 6. Save evidence for each material claim and record inclusion, exclusion, or unresolved reason.
 7. Manually review all pilot candidates, including excluded and unresolved candidates.
 
+## How each test is established
+
+**Identity.** The record is tied to one organization through its official domain, the names used on that domain, and the directory listing that led to it. If the directory link, description, and name point to different organizations (for example a foreign firm with a similar name), the identity is unresolved and no facts from the other organization are attributed to the record.
+
+**Investor type.** Prefer the manager's own description of its strategy (official site, fund disclosures such as SFDR pages) and its investment history. VC means equity or quasi-equity investments in private growth companies. Growth equity or venture debt is accepted only when the manager also invests in private growth companies and the reviewer accepts it as VC-type activity. Buyouts, controlling stakes in mature companies, crowdfunding platforms, and fund-of-funds-only activity are not VC.
+
+**Principal operating office.** Evidence must show where the team works or the manager is run: an office or contact address on the official site, a statement such as "Prague-based" from the manager, a recipient, a public institution (for example the EIF), or a news report. A registered office, a legal footer, a registry entry, or an address labelled as a mailing address does not establish the operating office on its own. When several offices are listed and none is named as headquarters, the case needs a reviewer decision; otherwise it stays unresolved.
+
+**Dated completed direct investment.** Prefer the recipient's or a co-investor's announcement, then the investor's own, then news media. The source must name the organization (or a fund it manages) as an investor and describe the round as completed or raised. Record the event date (closing date if stated, otherwise the announcement date, with a note), the publication date, and the access date separately. The round total is recorded as the round total; the investor's own cheque is recorded only if disclosed.
+
+**Active window.** A record is active only with a completed direct investment dated within the 36 months before the frozen `datasetDate` (2026-10-22), that is, on or after 2023-10-22. The date is fixed by the freeze and is not moved to the date of later checks.
+
+## Ambiguous cases
+
+- Missing or conflicting evidence on any test gives `needs_review` as a prediction and `unresolved` as a human label, with the specific uncertainty in the reason.
+- Lack of recent public announcements is recorded as missing evidence, never as proof that an organization closed or stopped investing.
+- Related entities (renamed firms, successor managers, fund vehicles versus advisers) are noted on both records. They are not merged unless sources establish that they are the same manager.
+- Undisclosed cheques, fund sizes, or AUM do not disqualify an investor. The field is null with a reason.
+- Directory-stated or self-reported figures are labelled as such, kept separate from independently published figures, and never summed into AUM.
+
+## Expected public-data coverage and reliability
+
+Basis: the frozen pilot (docs/evaluation.md) and the source survey in docs/global-estimate.md.
+
+- **Coverage of Czech VC managers in the two directories.** Of the 17 rule-drawn candidates, 2 were labelled eligible and 7 unresolved. Scaled to the 66 directory organizations outside the 3 preserved candidates, this implies about 11 eligible managers if no unresolved case qualifies and about 38 if all do, before sampling error (about 5–52 with 95% Wilson intervals). Organizations missing from both directories are not covered by this estimate.
+- **Expected share of unresolved cases.** 7 of 20 (35%) could not be settled from public evidence after human review. A similar or higher share should be expected for less-documented segments (family offices, angels).
+- **Field disclosure.** For the 5 eligible managers, strategy, stage, ticket, and operating office were publicly available for all 5. Firm-wide AUM was available for 1 (self-reported, undated), and no investor's individual cheque was disclosed in the 7 recorded investments. These fields should be expected to stay mostly unknown at scale.
+- **Expected precision.** Measured precision was 3/3 and conservative precision 3/4 on a very small sample; any database built this way should report the conservative figure and be re-measured on a larger random sample before claiming a precision level.
+
 ## Evaluation
 
 Freeze the candidate list and preliminary predictions before human review. Preliminary predictions (included, excluded, needs_review) are stored in data/investors.json and linked to the frozen list by `candidateId`. Human labels (eligible, not_eligible, unresolved) are stored only in data/reviews.json, with reviewer, review date, reason, and reviewed source URLs. Code never creates human labels, and a second AI pass is not independent manual review. The full protocol and metric definitions are in docs/evaluation.md.
@@ -68,28 +97,25 @@ Also report geography/type correctness, claim-level evidence coverage, dated inv
 
 Estimate discoverable and verifiable organizations separately by investor category and region, with lower/base/upper scenarios. Document source definitions, dates, overlap/deduplication, and disclosure limits. Association counts are not global market counts. Treat family offices and private individuals separately because public disclosure is uneven.
 
-Measure pilot time per candidate, review share, pages checked, unresolved share, manual rework, and any actual AI/API costs. Cost model: engineering + discovery/ingestion + AI extraction + human review + infrastructure + ongoing updates. Human review formula: candidates × review share × minutes per review / 60 × hourly rate. Cite rates and tariffs with dates; label assumptions.
+Measure pilot time per candidate, review share, pages checked, unresolved share, manual rework, and any actual AI/API costs. Cost model: engineering + discovery/ingestion + AI extraction + human review + infrastructure + ongoing updates. Human review formula: candidates × review share × minutes per review / 60 × hourly rate. Cite rates and tariffs with dates; label assumptions. In the pilot, time per candidate and AI/API costs were not timed or metered, so the scaling estimate uses labelled assumptions for minutes per candidate (docs/global-estimate.md).
 
 ## Deliverables and status
 
-- README.md: English summary, setup, method, AI-use notes, final results and limitations.
+- README.md: summary, setup, data files, status, limitations, and AI-use account.
 - docs/plan.md: this methodology.
-- docs/evaluation.md: frozen sample, human review protocol, metrics and results.
-- docs/global-estimate.md: sourced global scenarios and cost model.
-- data/: candidate, investor, evidence, and manual-review records.
-- src/ and tests/: repeatable validation and metric calculation. Candidate records (data/candidates.json) and final investor records (data/investors.json) use separate schemas and validators; candidates are not forced into the final schema.
+- docs/discovery.md: discovery sources, frame selection, and preliminary predictions.
+- docs/evaluation.md: human review results, confusion counts, metrics, and limits.
+- docs/global-estimate.md: global investor-universe ranges and scaling effort and cost.
+- docs/report.md: concise final report.
+- data/candidates.json (frozen frame), data/investors.json (frozen preliminary predictions), data/reviews.json (freeze metadata and human labels), data/final-investors.json (final records for the eligible managers), data/discovery/ (directory snapshots).
+- src/ and tests/: validation of all four data files, frame re-derivation, and metric calculation. Candidate records, prediction records, human labels, and final investor records use separate schemas and validators.
 - ai-log/: authentic AI conversation exports, with secrets removed.
 
-Current status (2026-10-22):
+Current status (2026-10-26):
 
-- Discovery: both directories were captured as snapshots in data/discovery/. data/candidates.json holds a 20-organization pilot frame: the 3 earlier candidates plus 17 drawn by a seeded, name-only rule from the deduplicated union of 69 organizations. Method and limitations are in docs/discovery.md. The frame is **not frozen**.
-- data/investors.json holds 20 preliminary predictions: 4 included (Credo Ventures, Tilia Impact Ventures, Purple Ventures, PurposeTech), 8 needs_review, 8 excluded. None has been human-reviewed.
-- Source-level manual checks recorded in data/candidates.json (`manualVerification`) exist only for the original 3 candidates:
-  - Credo: direct investment, Prague office, and Fund V size are checked; the strategy/stage/ticket evidence is not.
-  - Tilia: the original five evidence items are checked; the Lifeyear article added on 2026-10-22 is not.
-  - Purple: direct investment, strategy, and Fund II launch target are checked; the registered-office evidence, the homepage operating-office evidence added on 2026-10-22, and the 2026 fundraising update are not.
-  These are checks of individual sources, not human eligibility labels. No source for the 17 new candidates has been manually checked.
-- data/reviews.json has 0 human labels, and its freeze fingerprints are unset.
-- No precision, recall, or global count is claimed. docs/global-estimate.md has not been started.
-
-Next: a human reviews the frame and predictions, the candidate list and predictions are frozen with `npm run fingerprint`, a human labels every candidate in data/reviews.json, then run `npm run evaluate`.
+- Discovery: data/candidates.json holds the 20-organization pilot frame: the 3 earlier candidates plus 17 drawn by a seeded, name-only rule from the deduplicated union of 69 directory organizations (docs/discovery.md). Frozen on 2026-10-22.
+- data/investors.json holds 20 preliminary predictions (4 included, 8 needs_review, 8 excluded), frozen on 2026-10-22. Both fingerprints are recorded in `freeze` in data/reviews.json and still match.
+- Human review is complete: data/reviews.json has 20 labels (5 eligible, 8 not_eligible, 7 unresolved) entered on 2026-10-26 as confirmed by the reviewer.
+- data/final-investors.json holds final records for the 5 eligible managers.
+- Results: precision 3/3, conservative precision 3/4, sample recall 3/3 (docs/evaluation.md). Global ranges and scaling cost are in docs/global-estimate.md.
+- Outstanding: authentic AI conversation exports in ai-log/ (see ai-log/README.md).
